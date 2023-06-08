@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="D:/AppData/Local/Temp/leetcode/editor/cn/[2611]老鼠和奶酪.go">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="D:/AppData/Local/Temp/leetcode/editor/cn/doc/content/[2611]老鼠和奶酪.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2611" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="D:/AppData/Local/Temp/leetcode/editor/cn/[2611]老鼠和奶酪.go" />
+              <option name="titleSlug" value="mice-and-cheese" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
