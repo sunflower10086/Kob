@@ -1,8 +1,8 @@
 package logger
 
 import (
-	"backend/conf/settings"
 	"io"
+	"matching/conf/settings"
 	"os"
 	"time"
 

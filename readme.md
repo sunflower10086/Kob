@@ -3,7 +3,7 @@
 * gin
 * grpc
 * ETCD
-* Grom
+* Gorm
 * mysql
 * redis
 * redis-go

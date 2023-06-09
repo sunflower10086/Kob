@@ -1,7 +1,6 @@
-package util
+package consumer
 
 import (
-	"backend/internal/consumer"
 	"log"
 	"strings"
 
@@ -15,9 +14,9 @@ type Req struct {
 	Direction int    `json:"direction,omitempty"`
 }
 
-var Clt *consumer.Client
+var Clt *Client
 
-func Router(ctx *gin.Context, client *consumer.Client, message string) {
+func Router(ctx *gin.Context, client *Client, message string) {
 	Clt = client
 	var data Req
 
@@ -72,7 +71,7 @@ func stopMatching(ctx *gin.Context) {
 	//}
 }
 
-func move(client *consumer.Client, d int) {
+func move(client *Client, d int) {
 	// TODO: 设置下一步
 	////klog.Infof("direction: ", d)
 	//

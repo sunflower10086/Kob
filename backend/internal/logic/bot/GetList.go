@@ -14,18 +14,20 @@ import (
 func GetListService(userId int) (*botPublic.GetListBotResp, error) {
 	// TODO: 获得用户的bot列表
 	var resp botPublic.GetListBotResp
-	var ctx context.Context
+	ctx := context.Background()
 
 	//先去redis中尝试获取 key: kob:bot:`userId`
-	redisBotList, _ := redis.RDB.Get(ctx, "kob:bot:"+strconv.Itoa(userId)).Result()
-	// 获取到直接返回，没有得到再去数据库中获取
-	if len(redisBotList) != 0 {
-		err := json.Unmarshal([]byte(redisBotList), &resp.BotList)
-		if err != nil {
-			return nil, err
+	redisBotList, err := redis.RDB.Get(ctx, "cache:kob:bot:"+strconv.Itoa(userId)).Result()
+	if err != nil {
+		if len(redisBotList) != 0 {
+			err := json.Unmarshal([]byte(redisBotList), &resp.BotList)
+			if err != nil {
+				return nil, err
+			}
+			return &resp, nil
 		}
-		return &resp, nil
 	}
+	// 获取到直接返回，没有得到再去数据库中获取
 
 	//直接获取
 	Bot := mysql.Q.Bot
@@ -48,16 +50,17 @@ func GetListService(userId int) (*botPublic.GetListBotResp, error) {
 	}
 
 	// 往redis中添加这个缓存  key: kob:bot:`userId`，在redis中的类型是
-	go func() {
-		for i := 0; i < 5; i++ {
-			marshal, err := json.Marshal(resp.BotList)
-			if err != nil {
-				continue
+	if len(resp.BotList) > 0 {
+		go func() {
+			for i := 0; i < 5; i++ {
+				marshal, err := json.Marshal(resp.BotList)
+				if err != nil {
+					continue
+				}
+				redis.RDB.Set(ctx, "cache:kob:bot:"+strconv.Itoa(userId), marshal, time.Minute*30)
 			}
-			redis.RDB.Set(ctx, "kob:bot:"+strconv.Itoa(userId), marshal, time.Minute*30)
-			return
-		}
-	}()
+		}()
+	}
 
 	return &resp, nil
 }

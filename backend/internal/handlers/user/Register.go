@@ -5,8 +5,10 @@ import (
 	logicUser "backend/internal/logic/user"
 	"backend/pkg/myerr"
 	"backend/pkg/result"
+	"fmt"
 
 	"github.com/gin-gonic/gin"
+	"go.uber.org/zap"
 )
 
 func RegisterHandler(c *gin.Context) {
@@ -17,6 +19,8 @@ func RegisterHandler(c *gin.Context) {
 		return
 	}
 
+	fmt.Println(registerParam)
+
 	// TODO: 写逻辑
 	resp, err := logicUser.RegisterService(
 		registerParam.UserName,
@@ -24,9 +28,10 @@ func RegisterHandler(c *gin.Context) {
 		registerParam.ConfirmedPassword,
 	)
 	if err != nil {
-		result.SendResult(c, result.Fail(myerr.ParamErr))
+		zap.L().Error(err.Error())
+		result.SendResult(c, result.Fail(err))
 		return
 	}
 
-	result.SendResult(c, result.Success(resp))
+	result.SendResult(c, result.Success("success", resp))
 }

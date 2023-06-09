@@ -38,5 +38,5 @@ func GetInfoHandler(c *gin.Context) {
 		return
 	}
 
-	result.SendResult(c, result.Success(resp))
+	result.SendResult(c, result.Success("success", resp))
 }

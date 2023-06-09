@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package kob.matching;
+option go_package=".;proto";
+
+service matching_system {
+  // 在匹配池中添加玩家
+  rpc AddUser(User) returns (Response);
+  // 在匹配池中删除玩家
+  rpc Remove(User) returns(Response);
+}
+
+message User {
+  int32 userId = 1;
+  int32 botId = 2;
+}
+
+message AddUserResponse {
+  int32 aID = 1;
+  int32 aBotId = 2;
+  int32 bId = 3;
+  int32 bBotId= 4;
+}
+
+message Response {
+  string message = 1;
+}

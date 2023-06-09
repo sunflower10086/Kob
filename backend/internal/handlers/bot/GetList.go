@@ -9,12 +9,14 @@ import (
 	"strconv"
 
 	"github.com/gin-gonic/gin"
+	"go.uber.org/zap"
 )
 
 func GetListBotHandler(c *gin.Context) {
 	var getListBotParam handlers.GetListBotReq
 
 	if err := c.ShouldBind(&getListBotParam); err != nil {
+		zap.L().Debug(err.Error())
 		result.SendResult(c, result.Fail(myerr.ParamErr))
 		return
 	}
@@ -40,5 +42,5 @@ func GetListBotHandler(c *gin.Context) {
 		return
 	}
 
-	result.SendResult(c, result.Success(resp))
+	result.SendResult(c, result.Success("success", resp))
 }

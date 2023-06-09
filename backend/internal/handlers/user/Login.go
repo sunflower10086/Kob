@@ -7,6 +7,7 @@ import (
 	"backend/pkg/result"
 
 	"github.com/gin-gonic/gin"
+	"go.uber.org/zap"
 )
 
 func LoginHandler(c *gin.Context) {
@@ -22,9 +23,10 @@ func LoginHandler(c *gin.Context) {
 		loginParam.PassWord,
 	)
 	if err != nil {
+		zap.L().Debug(err.Error())
 		result.SendResult(c, result.Fail(err))
 		return
 	}
 
-	result.SendResult(c, result.Success(resp))
+	result.SendResult(c, result.Success("success", resp))
 }

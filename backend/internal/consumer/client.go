@@ -2,7 +2,6 @@ package consumer
 
 import (
 	"backend/conf/logger"
-	"backend/internal/consumer/util"
 	"bytes"
 	"log"
 	"net/http"
@@ -74,7 +73,7 @@ func (c *Client) ReadPump(ctx *gin.Context) {
 		logger.SugarLogger.Infof("receive message %s", string(message))
 		message = bytes.TrimSpace(bytes.Replace(message, newline, space, -1)) // 收到信息了，就要去匹配
 
-		util.Router(ctx, c, string(message))
+		Router(ctx, c, string(message))
 	}
 }
 

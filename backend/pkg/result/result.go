@@ -1,17 +1,18 @@
 package result
 
 import (
-	"github.com/gin-gonic/gin"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 type Result struct {
 	Message string `json:"message"`
-	Date    any    `json:"date"`
+	Date    any    `json:"data"`
 }
 
-func Success(data any) *Result {
-	return &Result{Date: data}
+func Success(message string, data any) *Result {
+	return &Result{Message: message, Date: data}
 }
 
 func Fail(Err error) *Result {

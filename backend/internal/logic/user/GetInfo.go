@@ -1,7 +1,6 @@
 package user
 
 import (
-	"backend/conf/logger"
 	"backend/conf/mysql"
 	"backend/conf/redis"
 	userPublic "backend/internal/handlers"
@@ -11,6 +10,7 @@ import (
 	"time"
 
 	"github.com/goccy/go-json"
+	"go.uber.org/zap"
 )
 
 func GetInfoService(userId int) (*userPublic.GetUserInfoResponse, error) {
@@ -28,10 +28,9 @@ func GetInfoService(userId int) (*userPublic.GetUserInfoResponse, error) {
 			return &resp, err
 		}
 
-		resp.UserId = string(user.ID)
+		resp.UserId = user.ID
 		resp.Username = user.Username
 		resp.Photo = user.Photo
-		logger.SugarLogger.Debugf("GetInfoHandler in redis %v", resp)
 		return &resp, nil
 	}
 
@@ -48,10 +47,11 @@ func GetInfoService(userId int) (*userPublic.GetUserInfoResponse, error) {
 		if err != nil {
 			return
 		}
+		zap.L().Debug(string(userJson))
 		redis.RDB.Set(ctx, "cache:kob:user:"+strconv.Itoa(userId), userJson, time.Second*60*60*24)
 	}()
 
-	resp.UserId = string(user[0].ID)
+	resp.UserId = user[0].ID
 	resp.Username = user[0].Username
 	resp.Photo = user[0].Photo
 

@@ -13,7 +13,7 @@ import (
 func RemoveService(botId, userId int) (*botPublic.RemoveBotResp, error) {
 	var resp botPublic.RemoveBotResp
 	var err error
-	var ctx context.Context
+	ctx := context.Background()
 
 	Bot := mysql.Q.Bot
 	botSile, err := Bot.WithContext(ctx).Where(Bot.ID.Eq(int32(botId))).Limit(1).Find()

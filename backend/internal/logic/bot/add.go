@@ -14,7 +14,7 @@ import (
 func AddBotService(title, code, description string, userId int) (*botPublic.AddBotResp, error) {
 	var resp botPublic.AddBotResp
 	var err error
-	var ctx context.Context
+	ctx := context.Background()
 
 	// TrimSpace 删除字符串两边的空格，中间的无法删除
 	if strings.EqualFold(strings.TrimSpace(title), "") || len(title) == 0 {

@@ -6,7 +6,7 @@ type GetUserInfoRequest struct {
 
 type GetUserInfoResponse struct {
 	Message  string `json:"message"`
-	UserId   string `json:"user_id"`
+	UserId   int32  `json:"user_id"`
 	Username string `json:"username"`
 	Photo    string `json:"photo"`
 }

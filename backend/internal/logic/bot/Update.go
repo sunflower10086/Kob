@@ -5,7 +5,6 @@ import (
 	"backend/conf/redis"
 	botPublic "backend/internal/handlers"
 	"backend/internal/models"
-	"log"
 	"strconv"
 	"strings"
 	"time"
@@ -18,7 +17,7 @@ import (
 func UpdateBotService(botId, userId int, title, code, description string) (*botPublic.UpdateBotResp, error) {
 	// TODO: 对bot的信息做修改
 	var err error
-	var ctx context.Context
+	ctx := context.Background()
 
 	Bot := mysql.Q.Bot
 
@@ -89,8 +88,7 @@ func UpdateBotService(botId, userId int, title, code, description string) (*botP
 		redis.RDB.Del(ctx, "kob:bot:"+strconv.Itoa(userId))
 	}()
 
-	updateInfo, err := forBotId.Updates(botUpdate)
-	log.Println(updateInfo)
+	_, err = forBotId.Updates(botUpdate)
 	if err != nil {
 		return nil, err
 	}
