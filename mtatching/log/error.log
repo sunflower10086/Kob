@@ -1,0 +1,2 @@
+2023-06-10 16:16:22	ERROR	grpclog/component.go:46	[core][Server #1] grpc: server failed to encode response: rpc error: code = Internal desc = grpc: error while marshaling: proto: Marshal called with nil	{"system": "grpc", "grpc_log": true}
+2023-06-10 16:18:59	ERROR	grpclog/component.go:46	[core][Server #1] grpc: server failed to encode response: rpc error: code = Internal desc = grpc: error while marshaling: proto: Marshal called with nil	{"system": "grpc", "grpc_log": true}

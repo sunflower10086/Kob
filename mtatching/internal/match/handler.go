@@ -3,7 +3,6 @@ package match
 import (
 	"context"
 	"matching/internal/match/logic"
-
 	pb "matching/internal/pb/matchingServer"
 )
 
@@ -17,6 +16,8 @@ func (m *MatchingSystemServerImpl) AddUser(ctx context.Context, user *pb.User) (
 		return nil, err
 	}
 	return addUser, nil
+	//mw.SugarLogger.Debug(user)
+	//return nil, nil
 }
 
 func (m *MatchingSystemServerImpl) Remove(ctx context.Context, user *pb.User) (*pb.Response, error) {

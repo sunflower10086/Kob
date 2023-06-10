@@ -1,10 +1,9 @@
 package logic
 
 import (
-	"fmt"
-	"matching/conf/logger"
 	"matching/internal/match/logic/matchutil"
 	pb "matching/internal/pb/matchingServer"
+	"matching/pkg/mw"
 	"strconv"
 
 	"go.uber.org/zap"
@@ -12,7 +11,7 @@ import (
 )
 
 func Remove(ctx context.Context, userId int32) (*pb.Response, error) {
-	fmt.Println("remove")
+	zap.L().Debug("Remove func used")
 	// 其他线程调用这个函数的时候我们这个线程本身可能也会调用这个players可能读写冲突所以要加锁
 	lock.Lock()
 	defer lock.Unlock()
@@ -26,7 +25,7 @@ func Remove(ctx context.Context, userId int32) (*pb.Response, error) {
 
 	matchutil.Players = newPlayer
 
-	logger.SugarLogger.Debugf("Players: %v", matchutil.Players)
+	mw.SugarLogger.Debugf("Players: %v", matchutil.Players)
 
 	var resp pb.Response
 	resp.Message = "remove user" + strconv.Itoa(int(userId))

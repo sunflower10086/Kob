@@ -18,6 +18,7 @@ var (
 )
 
 func AddUser(ctx context.Context, userId, botId int32) (*pb.Response, error) {
+	zap.L().Debug("AddUser func used")
 
 	var User = mysql.Q.User
 	user, err := User.WithContext(ctx).Where(User.ID.Eq(userId)).First()

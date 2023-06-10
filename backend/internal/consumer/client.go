@@ -70,8 +70,9 @@ func (c *Client) ReadPump(ctx *gin.Context) {
 			}
 			break
 		}
-		logger.SugarLogger.Infof("receive message %s", string(message))
+
 		message = bytes.TrimSpace(bytes.Replace(message, newline, space, -1)) // 收到信息了，就要去匹配
+		logger.SugarLogger.Infof("receive message %s", string(message))
 
 		Router(ctx, c, string(message))
 	}

@@ -1,11 +1,15 @@
 package consumer
 
 import (
-	"log"
+	"backend/internal/grpc/client/match"
+	pb "backend/internal/grpc/client/match/pb"
+	"backend/pkg/result"
+	"strconv"
 	"strings"
 
 	"github.com/gin-gonic/gin"
 	"github.com/goccy/go-json"
+	"go.uber.org/zap"
 )
 
 type Req struct {
@@ -22,7 +26,7 @@ func Router(ctx *gin.Context, client *Client, message string) {
 
 	err := json.Unmarshal([]byte(message), &data)
 	if err != nil {
-		log.Println(err)
+		zap.L().Error(err.Error())
 		return
 	}
 
@@ -39,36 +43,36 @@ func Router(ctx *gin.Context, client *Client, message string) {
 
 func starMatching(ctx *gin.Context, botId string) {
 	// TODO: 通过rpc去访问matchingSystem
-	//log.Println("star-matching")
-	//intBotId, _ := strconv.Atoi(botId)
-	//intUserId, _ := strconv.Atoi(Clt.UserId)
-	//
-	//req := &matching_system.User{
-	//	UserId: int32(intUserId),
-	//	BotId:  int32(intBotId),
-	//}
-	//
-	//_, err := match.AddUser(ctx, req)
-	//if err != nil {
-	//	handlers.SendResponse(ctx, err, nil)
-	//	return
-	//}
+	zap.L().Debug("star-matching")
+	intBotId, _ := strconv.Atoi(botId)
+	intUserId, _ := strconv.Atoi(Clt.UserId)
+
+	req := &pb.User{
+		UserId: int32(intUserId),
+		BotId:  int32(intBotId),
+	}
+
+	_, err := match.AddUser(ctx, req)
+	if err != nil {
+		result.SendResult(ctx, result.Fail(err))
+		return
+	}
 }
 
 func stopMatching(ctx *gin.Context) {
 	// TODO: 通过rpc去访问matchingSystem
-	//log.Println("stop-matching")
-	//
-	//intUserId, _ := strconv.Atoi(Clt.UserId)
-	//
-	//req := &matching_system.User{
-	//	UserId: int32(intUserId),
-	//}
-	//
-	//_, err := match.RemoveUser(ctx, req)
-	//if err != nil {
-	//	handlers.SendResponse(ctx, err, nil)
-	//}
+	zap.L().Debug("stop-matching")
+
+	intUserId, _ := strconv.Atoi(Clt.UserId)
+
+	req := &pb.User{
+		UserId: int32(intUserId),
+	}
+
+	_, err := match.RemoveUser(ctx, req)
+	if err != nil {
+		result.SendResult(ctx, result.Fail(err))
+	}
 }
 
 func move(client *Client, d int) {

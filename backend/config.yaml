@@ -1,7 +1,17 @@
-app:
-  name: "backend"
-  mode: "dev"
-  port: ":3000"
+server:
+  http:
+    name: "backend"
+    mode: "dev"
+    host: "127.0.0.1"
+    port: ":3000"
+  match:
+    name: "match"
+    host: "127.0.0.1"
+    port: ":3001"
+  botrun:
+    name: "botrun"
+    host: "127.0.0.1"
+    port: ":3002"
 
 log:
   level: "debug"

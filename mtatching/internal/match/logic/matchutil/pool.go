@@ -1,7 +1,7 @@
 package matchutil
 
 import (
-	"matching/conf/logger"
+	"matching/pkg/mw"
 	"time"
 )
 
@@ -52,7 +52,7 @@ func matchPlayers() {
 			if checkMatched(a, b) {
 				used[i] = true
 				used[j] = true
-				logger.SugarLogger.Infof("matching success playerA:%v, playerB:%v", a, b)
+				mw.SugarLogger.Infof("matching success playerA:%v, playerB:%v", a, b)
 				sendResult(a, b)
 				break
 			}

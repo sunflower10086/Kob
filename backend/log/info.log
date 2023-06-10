@@ -1,0 +1,177 @@
+2023-06-10 15:38:09	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 16, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 15:38:11	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 15:38:13	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 15:38:13	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 15:38:13	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 4, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-10 15:38:22	INFO	consumer/client.go:73	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 15:38:23	INFO	consumer/client.go:73	receive message {"event":"stop-matching"}
+2023-06-10 15:38:33	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 15:38:33	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-10 15:38:33	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 15:39:45	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 15:39:45	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 15:39:45	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 2, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-10 15:39:46	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 15:39:48	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 15:39:50	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 15:39:50	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-10 15:39:50	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 15:39:51	INFO	consumer/client.go:73	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 15:39:55	INFO	consumer/client.go:73	receive message {"event":"stop-matching"}
+2023-06-10 15:41:25	INFO	consumer/client.go:73	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 15:41:27	INFO	consumer/client.go:73	receive message {"event":"stop-matching"}
+2023-06-10 15:41:30	INFO	consumer/client.go:73	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 15:41:33	INFO	consumer/client.go:73	receive message {"event":"stop-matching"}
+2023-06-10 15:42:28	INFO	consumer/client.go:73	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 15:42:29	INFO	consumer/client.go:73	receive message {"event":"stop-matching"}
+2023-06-10 15:42:30	INFO	consumer/client.go:73	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 15:42:31	INFO	consumer/client.go:73	receive message {"event":"stop-matching"}
+2023-06-10 15:42:31	INFO	consumer/client.go:73	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 15:42:31	INFO	consumer/client.go:73	receive message {"event":"stop-matching"}
+2023-06-10 15:42:32	INFO	consumer/client.go:73	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 15:42:32	INFO	consumer/client.go:73	receive message {"event":"stop-matching"}
+2023-06-10 15:42:32	INFO	consumer/client.go:73	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 15:48:17	INFO	consumer/client.go:73	receive message {"event":"stop-matching"}
+2023-06-10 15:48:18	INFO	consumer/client.go:73	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 15:48:19	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-10 15:48:19	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 15:48:19	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 15:48:21	INFO	consumer/client.go:73	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 15:48:22	INFO	consumer/client.go:73	receive message {"event":"stop-matching"}
+2023-06-10 15:57:06	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-10 15:57:06	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 15:57:06	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 5, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:01:10	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:01:10	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-10 16:01:10	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:01:11	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:01:11	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-10 16:01:11	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:01:12	INFO	consumer/client.go:73	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:01:32	INFO	consumer/client.go:73	receive message {"event":"stop-matching"}
+2023-06-10 16:05:42	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:05:44	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:05:45	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:05:45	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 2, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-10 16:05:45	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:05:47	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:05:49	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:05:49	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:05:50	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:05:51	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:05:51	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:09:28	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:09:28	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-10 16:09:28	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:09:29	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:09:30	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:10:03	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:10:03	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:10:05	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:10:05	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-10 16:10:05	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:10:05	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:10:05	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-10 16:10:05	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:10:07	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:10:07	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:10:08	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:10:08	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:10:08	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:10:08	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:10:08	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:10:09	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:10:52	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:10:54	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:10:54	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-10 16:10:54	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:10:55	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:10:56	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:10:56	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-10 16:10:56	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:10:58	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:10:59	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:11:15	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:11:16	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:11:17	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:11:18	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:01	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:01	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:02	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:12:02	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:12:02	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-10 16:12:03	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:12:03	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-10 16:12:03	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:12:05	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:05	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:05	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:06	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:06	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:06	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:06	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:06	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:06	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:06	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:07	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:07	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:07	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:07	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:07	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:07	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:08	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:08	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:08	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:08	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:08	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:08	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:08	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:09	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:09	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:09	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:09	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:09	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:09	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:10	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:10	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:10	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:10	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:10	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:10	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:11	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:11	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:11	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:11	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:11	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:11	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:12	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:12	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:12:12	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:12:12	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:16:21	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:16:21	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-10 16:16:21	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:16:22	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:16:24	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:18:59	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:18:59	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:21:09	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 2, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:21:10	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:21:10	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 2, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-10 16:21:10	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:21:13	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:21:15	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:24:38	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 8, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:24:39	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:24:39	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 4, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-10 16:24:39	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:24:41	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:24:43	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:24:44	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:24:48	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-06-10 16:25:47	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 5, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:25:48	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:25:48	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 2, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-10 16:25:48	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg2Mzk2OTEyLCJpYXQiOjE2ODYzMTA1MTIsImlzcyI6ImtvYiJ9.GTibv0yvFDVsfxFCy20ZBtuj350m8OGepJacDyhKdjo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-10 16:25:49	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-06-10 16:25:50	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}

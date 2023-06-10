@@ -5,15 +5,15 @@ import (
 	"backend/conf/mysql"
 	"backend/conf/redis"
 	"backend/conf/settings"
+	"backend/internal/grpc/client"
 	"backend/internal/routes"
 	"backend/pkg/gin_run"
 	"fmt"
 
-	"github.com/spf13/viper"
 	"go.uber.org/zap"
 )
 
-func main() {
+func init() {
 	// 1.加载配置
 	if err := settings.Init(); err != nil {
 		fmt.Printf("init settings failed err: %v\n", err)
@@ -44,9 +44,14 @@ func main() {
 	}
 	defer redis.RDB.Close()
 
+	client.Init()
+}
+
+func main() {
+
 	// 5.注册路由
 	r := routes.Setup()
 
 	// 6.优雅关机
-	gin_run.Run(r, viper.GetString("app.name"))
+	gin_run.Run(r, settings.Conf.AllServer.HttpConfig.Port)
 }

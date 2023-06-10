@@ -11,14 +11,16 @@ import (
 var Conf = new(AppConfig)
 
 type AppConfig struct {
+	Server    *Server      `mapstructure:"app"`
+	LogConf   *LogConfig   `mapstructure:"log"`
+	MysqlConf *MysqlConfig `mapstructure:"mysql"`
+}
+
+type Server struct {
 	Name string `mapstructure:"name"`
 	Mode string `mapstructure:"mode"`
 	Host string `mapstructure:"host"`
 	Port string `mapstructure:"port"`
-
-	LogConf   *LogConfig   `mapstructure:"log"`
-	MysqlConf *MysqlConfig `mapstructure:"mysql"`
-	RedisConf *RedisConfig `mapstructure:"redis"`
 }
 
 type LogConfig struct {
@@ -38,13 +40,6 @@ type MysqlConfig struct {
 	Dbname       string `mapstructure:"dbname"`
 	MaxIdleConns int    `mapstructure:"max_idle_conns"`
 	MaxOpenConns int    `mapstructure:"max_open_conns"`
-}
-
-type RedisConfig struct {
-	Host     string `mapstructure:"host"`
-	Port     int    `mapstructure:"port"`
-	Password string `mapstructure:"password"`
-	Db       int    `mapstructure:"db"`
 }
 
 func Init() error {

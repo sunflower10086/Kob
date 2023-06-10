@@ -10,7 +10,6 @@ import (
 	"time"
 
 	"github.com/goccy/go-json"
-	"go.uber.org/zap"
 )
 
 func GetInfoService(userId int) (*userPublic.GetUserInfoResponse, error) {
@@ -47,7 +46,6 @@ func GetInfoService(userId int) (*userPublic.GetUserInfoResponse, error) {
 		if err != nil {
 			return
 		}
-		zap.L().Debug(string(userJson))
 		redis.RDB.Set(ctx, "cache:kob:user:"+strconv.Itoa(userId), userJson, time.Second*60*60*24)
 	}()
 

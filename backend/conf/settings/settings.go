@@ -11,13 +11,23 @@ import (
 var Conf = new(AppConfig)
 
 type AppConfig struct {
-	Name string `mapstructure:"name"`
-	Mode string `mapstructure:"mode"`
-	Port string `mapstructure:"port"`
-
+	AllServer *AllServer   `mapstructure:"server"`
 	LogConf   *LogConfig   `mapstructure:"log"`
 	MysqlConf *MysqlConfig `mapstructure:"mysql"`
 	RedisConf *RedisConfig `mapstructure:"redis"`
+}
+
+type AllServer struct {
+	HttpConfig   *Server `mapstructure:"http"`
+	MatchConfig  *Server `mapstructure:"match"`
+	BotRunConfig *Server `mapstructure:"botrun"`
+}
+
+type Server struct {
+	Name string `mapstructure:"name"`
+	Mode string `mapstructure:"mode"`
+	Host string `mapstructure:"host"`
+	Port string `mapstructure:"port"`
 }
 
 type LogConfig struct {

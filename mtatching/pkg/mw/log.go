@@ -1,4 +1,4 @@
-package logger
+package mw
 
 import (
 	"io"
@@ -6,15 +6,16 @@ import (
 	"os"
 	"time"
 
-	"github.com/gin-gonic/gin"
-	"github.com/natefinch/lumberjack"
+	grpc_zap "github.com/grpc-ecosystem/go-grpc-middleware/logging/zap"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
+	"gopkg.in/natefinch/lumberjack.v2"
 )
 
 var SugarLogger *zap.SugaredLogger
 
-func Init(conf *settings.AppConfig) error {
+// ZapInterceptor 返回zap.logger实例(把日志写到文件中)
+func ZapInterceptor(conf *settings.AppConfig) *zap.Logger {
 	config := zapcore.EncoderConfig{
 		MessageKey:   "msg",                       //结构化（json）输出：msg的key
 		LevelKey:     "level",                     //结构化（json）输出：日志级别的key（INFO，WARN，ERROR等）
@@ -35,7 +36,8 @@ func Init(conf *settings.AppConfig) error {
 	var logLevel zapcore.Level
 	err := logLevel.UnmarshalText([]byte(conf.LogConf.Level))
 	if err != nil {
-		return err
+
+		return nil
 	}
 
 	//自定义日志级别：自定义debug级别
@@ -74,11 +76,13 @@ func Init(conf *settings.AppConfig) error {
 	logger := zap.New(core, zap.AddCaller())
 	SugarLogger = logger.Sugar()
 
+	grpc_zap.ReplaceGrpcLoggerV2(logger)
+
 	// 替换全局的logger
 	// 使用的话就zap.L().
 	zap.ReplaceGlobals(logger)
 
-	return nil
+	return logger
 }
 
 func getWriter(filename string, maxSize, maxBackups, maxAge int) io.Writer {
@@ -88,39 +92,5 @@ func getWriter(filename string, maxSize, maxBackups, maxAge int) io.Writer {
 		MaxBackups: maxBackups, //最大文件保留数，超过就删除最老的日志文件，备份数量
 		MaxAge:     maxAge,     //保存30天，备份天数
 		Compress:   false,      //是否压缩
-	}
-}
-
-func GinLog() gin.HandlerFunc {
-	return func(c *gin.Context) {
-		statusCode := c.Writer.Status()
-		start := time.Now()
-		path := c.Request.URL.Path
-		query := c.Request.URL.RawQuery
-		c.Next()
-
-		cost := time.Since(start)
-
-		if statusCode != 200 {
-			zap.L().Error(path,
-				zap.Int("status", statusCode),
-				zap.String("method", c.Request.Method),
-				zap.String("path", path),
-				zap.Duration("cost", cost),
-				zap.String("query", query),
-				zap.String("ip", c.ClientIP()),
-				zap.String("errors", c.Errors.ByType(gin.ErrorTypePrivate).String()),
-			)
-		} else {
-			zap.L().Info(path,
-				zap.Int("status", statusCode),
-				zap.String("method", c.Request.Method),
-				zap.String("path", path),
-				zap.Duration("cost", cost),
-				zap.String("query", query),
-				zap.String("ip", c.ClientIP()),
-				zap.String("errors", c.Errors.ByType(gin.ErrorTypePrivate).String()),
-			)
-		}
 	}
 }
