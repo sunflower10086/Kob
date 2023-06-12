@@ -28,3 +28,46 @@
 2023-06-10 16:24:39	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
 2023-06-10 16:25:47	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
 2023-06-10 16:25:48	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-12 10:54:51	WARN	grpclog/component.go:41	[core][Channel #1 SubChannel #2] grpc: addrConn.createTransport failed to connect to {
+  "Addr": ":3001",
+  "ServerName": "localhost:3001",
+  "Attributes": null,
+  "BalancerAttributes": null,
+  "Type": 0,
+  "Metadata": null
+}. Err: connection error: desc = "transport: Error while dialing: dial tcp :3001: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-06-12 10:55:18	WARN	grpclog/component.go:41	[core][Channel #1 SubChannel #2] grpc: addrConn.createTransport failed to connect to {
+  "Addr": ":3001",
+  "ServerName": "localhost:3001",
+  "Attributes": null,
+  "BalancerAttributes": null,
+  "Type": 0,
+  "Metadata": null
+}. Err: connection error: desc = "transport: Error while dialing: dial tcp :3001: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-06-12 10:55:36	WARN	grpclog/component.go:41	[core][Channel #1 SubChannel #2] grpc: addrConn.createTransport failed to connect to {
+  "Addr": ":3001",
+  "ServerName": "localhost:3001",
+  "Attributes": null,
+  "BalancerAttributes": null,
+  "Type": 0,
+  "Metadata": null
+}. Err: connection error: desc = "transport: Error while dialing: dial tcp :3001: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-06-12 10:57:00	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-12 10:57:12	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-12 10:57:39	ERROR	user/Register.go:31	该用户已存在
+2023-06-12 10:57:46	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-12 10:58:02	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-12 10:58:02	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-12 10:58:04	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-12 10:58:04	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-06-12 11:00:04	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-12 11:00:04	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-06-12 11:00:06	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-12 11:00:06	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-06-12 11:00:09	ERROR	result/handler.go:15	Result: MatchResult:{AId:18 ABotId:-1 BId:19 BBotId:-1}
+2023-06-12 11:02:43	ERROR	result/handler.go:15	Result: MatchResult:{AId:18 ABotId:-1 BId:19 BBotId:-1}
+2023-06-12 11:04:40	ERROR	result/handler.go:15	Result: MatchResult:{AId:18 ABotId:-1 BId:19 BBotId:-1}
+2023-06-12 11:08:00	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-12 11:08:00	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-06-12 11:08:02	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-12 11:08:02	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}

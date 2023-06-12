@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"matching/conf/mysql"
 	"matching/conf/settings"
+	"matching/internal/grpc/client"
 	"matching/internal/match"
 	"matching/internal/match/logic/matchutil"
 	pb "matching/internal/pb/matchingServer"
@@ -25,7 +26,6 @@ func init() {
 		fmt.Printf("init settings failed err: %v\n", err)
 		panic(err)
 	}
-
 	// 下面可以直接注册logger中间间，不需要额外注册
 
 	// 2.初始化mysql
@@ -35,10 +35,12 @@ func init() {
 	}
 	fmt.Println("mysql init success ... ")
 
+	go client.InitResult()
 }
 
 func main() {
-	Address := fmt.Sprintf("%s%s", settings.Conf.Server.Host, settings.Conf.Server.Port)
+	matchConf := settings.Conf.AllServer.MatchConfig
+	Address := fmt.Sprintf("%s%s", matchConf.Host, matchConf.Port)
 
 	listener, err := net.Listen("tcp", Address)
 
@@ -70,5 +72,4 @@ func main() {
 	if err != nil {
 		mw.SugarLogger.Errorf("grpcServer.Serve err: %v", err)
 	}
-
 }

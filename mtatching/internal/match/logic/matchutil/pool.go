@@ -1,6 +1,10 @@
 package matchutil
 
 import (
+	"context"
+	"log"
+	"matching/internal/grpc/client"
+	pb "matching/internal/grpc/client/pb"
 	"matching/pkg/mw"
 	"time"
 )
@@ -53,7 +57,7 @@ func matchPlayers() {
 				used[i] = true
 				used[j] = true
 				mw.SugarLogger.Infof("matching success playerA:%v, playerB:%v", a, b)
-				sendResult(a, b)
+				go sendResult(a, b)
 				break
 			}
 		}
@@ -65,7 +69,6 @@ func matchPlayers() {
 			newPlayer = append(newPlayer, Players[i])
 		}
 	}
-
 	Players = newPlayer
 }
 
@@ -77,11 +80,20 @@ func checkMatched(a, b Player) bool {
 
 func sendResult(a, b Player) {
 	// TODO : 把结果返回给backend层
-	//resp := matching_system.AddUserResponse{
-	//	AID:    a.UserId,
-	//	ABotId: a.BotId,
-	//	BId:    b.UserId,
-	//	BBotId: b.BotId,
-	//}
-	//matchResponse <- &resp
+	// EventType 0表示匹配的结果，1表示游戏的结果
+	req := pb.ResultReq{
+		EventType: 0,
+		MatchResult: &pb.MatchResult{
+			AId:    a.UserId,
+			ABotId: a.BotId,
+			BId:    b.UserId,
+			BBotId: b.BotId,
+		},
+	}
+	ctx := context.Background()
+	result, err := client.Result(ctx, &req)
+	if err != nil {
+		log.Println(err)
+	}
+	log.Println("sendResult", result)
 }

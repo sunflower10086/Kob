@@ -6,6 +6,7 @@ import (
 	"backend/conf/redis"
 	"backend/conf/settings"
 	"backend/internal/grpc/client"
+	"backend/internal/grpc/server"
 	"backend/internal/routes"
 	"backend/pkg/gin_run"
 	"fmt"
@@ -44,7 +45,8 @@ func init() {
 	}
 	defer redis.RDB.Close()
 
-	client.Init()
+	go client.Init()
+	go server.Init()
 }
 
 func main() {

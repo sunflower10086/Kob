@@ -8,10 +8,18 @@ server:
     name: "match"
     host: "127.0.0.1"
     port: ":3001"
+  gameSnake:
+    name: "snake"
+    host: "127.0.0.1"
+    port : ":3002"
+  result:
+    name: "result"
+    host: "127.0.0.1"
+    port: ":3003"
   botrun:
     name: "botrun"
     host: "127.0.0.1"
-    port: ":3002"
+    port: ":3004"
 
 log:
   level: "debug"

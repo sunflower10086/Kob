@@ -9,3 +9,117 @@
 2023-06-10 16:24:44	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-06-10T16:24:44+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "AddUser", "peer.address": "127.0.0.1:43516", "grpc.code": "OK", "grpc.time_ms": 1.323}
 2023-06-10 16:25:49	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-06-10T16:25:49+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "AddUser", "peer.address": "127.0.0.1:43524", "grpc.code": "OK", "grpc.time_ms": 1.064}
 2023-06-10 16:25:50	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-06-10T16:25:50+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "Remove", "peer.address": "127.0.0.1:43524", "grpc.code": "OK", "grpc.time_ms": 0.381}
+2023-06-12 10:55:55	INFO	grpclog/component.go:36	[core][Server #1] Server created	{"system": "grpc", "grpc_log": true}
+2023-06-12 10:55:55	INFO	grpclog/component.go:36	[core][Server #1 ListenSocket #2] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-06-12 10:58:18	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-06-12T10:58:18+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "AddUser", "peer.address": "127.0.0.1:48790", "grpc.code": "OK", "grpc.time_ms": 1.45}
+2023-06-12 10:58:20	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-06-12T10:58:20+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "AddUser", "peer.address": "127.0.0.1:48790", "grpc.code": "OK", "grpc.time_ms": 1.018}
+2023-06-12 10:58:21	INFO	matchutil/pool.go:60	matching success playerA:{18 -1 1500 0}, playerB:{19 -1 1500 0}
+2023-06-12 10:59:45	INFO	grpclog/component.go:36	[core][Server #2] Server created	{"system": "grpc", "grpc_log": true}
+2023-06-12 10:59:45	INFO	grpclog/component.go:36	[core][Channel #1] original dial target is: ":3003"	{"system": "grpc", "grpc_log": true}
+2023-06-12 10:59:45	INFO	grpclog/component.go:36	[core][Channel #1] dial target ":3003" parse failed: parse ":3003": missing protocol scheme	{"system": "grpc", "grpc_log": true}
+2023-06-12 10:59:45	INFO	grpclog/component.go:36	[core][Channel #1] fallback to scheme "passthrough"	{"system": "grpc", "grpc_log": true}
+2023-06-12 10:59:45	INFO	grpclog/component.go:36	[core][Server #2 ListenSocket #3] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-06-12 10:59:45	INFO	grpclog/component.go:36	[core][Channel #1] parsed dial target is: {Scheme:passthrough Authority: URL:{Scheme:passthrough Opaque: User: Host: Path:/:3003 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}	{"system": "grpc", "grpc_log": true}
+2023-06-12 10:59:45	INFO	grpclog/component.go:36	[core][Channel #1] Channel authority set to "localhost:3003"	{"system": "grpc", "grpc_log": true}
+2023-06-12 10:59:45	INFO	grpclog/component.go:36	[core][Channel #1] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": ":3003",
+      "ServerName": "",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": null,
+  "Attributes": null
+} (resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-06-12 10:59:45	INFO	grpclog/component.go:36	[core][Channel #1] Channel switches to new LB policy "pick_first"	{"system": "grpc", "grpc_log": true}
+2023-06-12 10:59:45	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-06-12 10:59:45	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-06-12 10:59:45	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-06-12 10:59:45	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel picks a new address ":3003" to connect	{"system": "grpc", "grpc_log": true}
+2023-06-12 10:59:45	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-06-12 10:59:45	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:00:01	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-06-12T11:00:01+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "Remove", "peer.address": "127.0.0.1:48796", "grpc.code": "OK", "grpc.time_ms": 0.098}
+2023-06-12 11:00:02	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-06-12T11:00:02+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "Remove", "peer.address": "127.0.0.1:48796", "grpc.code": "OK", "grpc.time_ms": 0.148}
+2023-06-12 11:00:06	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-06-12T11:00:06+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "AddUser", "peer.address": "127.0.0.1:48796", "grpc.code": "OK", "grpc.time_ms": 1.442}
+2023-06-12 11:00:08	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-06-12T11:00:08+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "AddUser", "peer.address": "127.0.0.1:48796", "grpc.code": "OK", "grpc.time_ms": 1.194}
+2023-06-12 11:00:09	INFO	matchutil/pool.go:60	matching success playerA:{18 -1 1500 0}, playerB:{19 -1 1500 0}
+2023-06-12 11:02:33	INFO	grpclog/component.go:36	[core][Server #2] Server created	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:02:33	INFO	grpclog/component.go:36	[core][Channel #1] original dial target is: ":3003"	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:02:33	INFO	grpclog/component.go:36	[core][Channel #1] dial target ":3003" parse failed: parse ":3003": missing protocol scheme	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:02:33	INFO	grpclog/component.go:36	[core][Channel #1] fallback to scheme "passthrough"	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:02:33	INFO	grpclog/component.go:36	[core][Server #2 ListenSocket #3] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:02:33	INFO	grpclog/component.go:36	[core][Channel #1] parsed dial target is: {Scheme:passthrough Authority: URL:{Scheme:passthrough Opaque: User: Host: Path:/:3003 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:02:33	INFO	grpclog/component.go:36	[core][Channel #1] Channel authority set to "localhost:3003"	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:02:33	INFO	grpclog/component.go:36	[core][Channel #1] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": ":3003",
+      "ServerName": "",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": null,
+  "Attributes": null
+} (resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:02:33	INFO	grpclog/component.go:36	[core][Channel #1] Channel switches to new LB policy "pick_first"	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:02:33	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:02:33	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:02:33	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:02:33	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel picks a new address ":3003" to connect	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:02:33	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:02:33	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:02:37	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-06-12T11:02:37+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "Remove", "peer.address": "127.0.0.1:48806", "grpc.code": "OK", "grpc.time_ms": 0.103}
+2023-06-12 11:02:39	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-06-12T11:02:39+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "Remove", "peer.address": "127.0.0.1:48806", "grpc.code": "OK", "grpc.time_ms": 0.131}
+2023-06-12 11:02:40	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-06-12T11:02:40+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "AddUser", "peer.address": "127.0.0.1:48806", "grpc.code": "OK", "grpc.time_ms": 1.271}
+2023-06-12 11:02:41	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-06-12T11:02:41+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "AddUser", "peer.address": "127.0.0.1:48806", "grpc.code": "OK", "grpc.time_ms": 1.036}
+2023-06-12 11:02:43	INFO	matchutil/pool.go:60	matching success playerA:{18 -1 1500 0}, playerB:{19 -1 1500 0}
+2023-06-12 11:04:32	INFO	grpclog/component.go:36	[core][Server #2] Server created	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:04:32	INFO	grpclog/component.go:36	[core][Channel #1] original dial target is: ":3003"	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:04:32	INFO	grpclog/component.go:36	[core][Server #2 ListenSocket #3] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:04:32	INFO	grpclog/component.go:36	[core][Channel #1] dial target ":3003" parse failed: parse ":3003": missing protocol scheme	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:04:32	INFO	grpclog/component.go:36	[core][Channel #1] fallback to scheme "passthrough"	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:04:32	INFO	grpclog/component.go:36	[core][Channel #1] parsed dial target is: {Scheme:passthrough Authority: URL:{Scheme:passthrough Opaque: User: Host: Path:/:3003 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:04:32	INFO	grpclog/component.go:36	[core][Channel #1] Channel authority set to "localhost:3003"	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:04:32	INFO	grpclog/component.go:36	[core][Channel #1] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": ":3003",
+      "ServerName": "",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": null,
+  "Attributes": null
+} (resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:04:32	INFO	grpclog/component.go:36	[core][Channel #1] Channel switches to new LB policy "pick_first"	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:04:32	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:04:32	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:04:32	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:04:32	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel picks a new address ":3003" to connect	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:04:32	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:04:32	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:04:36	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-06-12T11:04:36+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "Remove", "peer.address": "127.0.0.1:48812", "grpc.code": "OK", "grpc.time_ms": 0.116}
+2023-06-12 11:04:37	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-06-12T11:04:37+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "Remove", "peer.address": "127.0.0.1:48812", "grpc.code": "OK", "grpc.time_ms": 0.225}
+2023-06-12 11:04:39	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-06-12T11:04:39+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "AddUser", "peer.address": "127.0.0.1:48812", "grpc.code": "OK", "grpc.time_ms": 1.555}
+2023-06-12 11:04:40	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-06-12T11:04:40+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "AddUser", "peer.address": "127.0.0.1:48812", "grpc.code": "OK", "grpc.time_ms": 2.32}
+2023-06-12 11:04:40	INFO	matchutil/pool.go:59	matching success playerA:{18 -1 1500 0}, playerB:{19 -1 1500 0}
+2023-06-12 11:07:52	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:07:52	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:08:03	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-06-12T11:08:03+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "AddUser", "peer.address": "127.0.0.1:48816", "grpc.code": "OK", "grpc.time_ms": 1.158}
+2023-06-12 11:08:04	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-06-12T11:08:04+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "AddUser", "peer.address": "127.0.0.1:48816", "grpc.code": "OK", "grpc.time_ms": 1.221}
+2023-06-12 11:08:04	INFO	matchutil/pool.go:59	matching success playerA:{18 -1 1500 0}, playerB:{19 -1 1500 0}
+2023-06-12 11:08:04	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:08:04	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel picks a new address ":3003" to connect	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:08:04	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:08:04	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-06-12 11:08:04	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}

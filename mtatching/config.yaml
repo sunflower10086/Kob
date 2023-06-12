@@ -1,8 +1,12 @@
-app:
-  name: "match"
-  mode: "dev"
-  host: "127.0.0.1"
-  port: ":3001"
+server:
+  match:
+    name: "match"
+    host: "127.0.0.1"
+    port: ":3001"
+  result:
+    name: "result"
+    host: "127.0.0.1"
+    port: ":3003"
 
 log:
   level: "debug"

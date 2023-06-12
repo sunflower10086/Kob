@@ -8,6 +8,7 @@ require (
 	github.com/goccy/go-json v0.10.2
 	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/gorilla/websocket v1.5.0
+	github.com/grpc-ecosystem/go-grpc-middleware v1.4.0
 	github.com/natefinch/lumberjack v2.0.0+incompatible
 	github.com/pkg/errors v0.9.1
 	github.com/redis/go-redis/v9 v9.0.5
@@ -21,7 +22,10 @@ require (
 	gorm.io/gen v0.3.22
 	gorm.io/gorm v1.25.1
 	gorm.io/plugin/dbresolver v1.3.0
+	matching v0.0.0
 )
+
+replace matching => /home/lzuser/kob/mtatching/
 
 require (
 	github.com/bytedance/sonic v1.9.1 // indirect
@@ -46,6 +50,7 @@ require (
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
+	github.com/opentracing/opentracing-go v1.1.0 // indirect
 	github.com/pelletier/go-toml/v2 v2.0.8 // indirect
 	github.com/spf13/afero v1.9.5 // indirect
 	github.com/spf13/cast v1.5.1 // indirect

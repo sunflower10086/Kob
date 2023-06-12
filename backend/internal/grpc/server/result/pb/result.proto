@@ -1,0 +1,30 @@
+syntax="proto3";
+
+package result.pb;
+option go_package = ".;result";
+
+service Result {
+  rpc Result(ResultReq) returns(ResultResp) {}
+}
+
+// EventType 0表示匹配的结果，1表示游戏的结果
+message ResultReq {
+  int32 EventType = 1;
+  matchResult MatchResult = 2;
+  gameResult GameResult = 3;
+}
+
+message matchResult {
+  int32 AId = 1;
+  int32 ABotId = 2;
+  int32 BId = 3;
+  int32 BBotId = 4;
+}
+
+message gameResult {
+  string Loser = 1;
+}
+
+message ResultResp {
+  string Message = 1;
+}
