@@ -1,0 +1,26 @@
+server:
+  snake:
+    name: "snake"
+    host: "127.0.0.1"
+    port: ":3002"
+  result:
+    name: "result"
+    host: "127.0.0.1"
+    port: ":3003"
+
+log:
+  level: "debug"
+  infoFilename: "../log/info.log"
+  errFilename: "../log/error.log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+
+mysql:
+  host: "localhost"
+  port: 3306
+  user: "root"
+  password: "123456"
+  dbname: "kob"
+  max_idle_conns: 10
+  max_open_conns: 30

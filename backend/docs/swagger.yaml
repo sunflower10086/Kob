@@ -1,0 +1,16 @@
+basePath: /api
+host: 127.0.0.1:3000
+info:
+  contact:
+    email: lz18738377974@163.com
+    name: 刘钊
+    url: http://www.127.0.0.1:3000/api
+  description: 这是一个AI对战平台
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://www.127.0.0.1:3000/api
+  title: Kob
+  version: "1.0"
+paths: {}
+swagger: "2.0"

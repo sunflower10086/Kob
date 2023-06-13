@@ -20,7 +20,7 @@ func NewMyError(msg string) MyError {
 
 var (
 	Success  = NewMyError("success")
-	ParamErr = NewMyError("Wrong Parameter has been given")
+	ParamErr = NewMyError("传入的参数错误")
 )
 
 // WithMessage 改变errno中的msg

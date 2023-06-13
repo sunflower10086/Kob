@@ -1,0 +1,21 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "这是一个AI对战平台",
+        "title": "Kob",
+        "termsOfService": "http://www.127.0.0.1:3000/api",
+        "contact": {
+            "name": "刘钊",
+            "url": "http://www.127.0.0.1:3000/api",
+            "email": "lz18738377974@163.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0"
+    },
+    "host": "127.0.0.1:3000",
+    "basePath": "/api",
+    "paths": {}
+}

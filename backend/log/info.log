@@ -273,3 +273,124 @@
 2023-06-12 11:08:04	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
 2023-06-12 11:08:12	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
 2023-06-12 11:08:12	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-06-13 16:13:13	INFO	grpclog/component.go:36	[core][Channel #1] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": ":3001",
+      "ServerName": "",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": null,
+  "Attributes": null
+} (resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-06-13 16:13:13	INFO	grpclog/component.go:36	[core][Channel #1] Channel switches to new LB policy "pick_first"	{"system": "grpc", "grpc_log": true}
+2023-06-13 16:13:13	INFO	grpclog/component.go:36	[core][Server #2] Server created	{"system": "grpc", "grpc_log": true}
+2023-06-13 16:13:13	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #3] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-06-13 16:13:13	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-06-13 16:13:13	INFO	grpclog/component.go:36	[core][Server #2 ListenSocket #4] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-06-13 16:13:13	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #3] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-06-13 16:13:13	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #3] Subchannel picks a new address ":3001" to connect	{"system": "grpc", "grpc_log": true}
+2023-06-13 16:13:13	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #3] Subchannel Connectivity change to TRANSIENT_FAILURE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3001: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-06-13 16:13:13	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to TRANSIENT_FAILURE	{"system": "grpc", "grpc_log": true}
+2023-06-13 16:13:14	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #3] Subchannel Connectivity change to IDLE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3001: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-06-13 16:13:14	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-06-13 16:13:29	INFO	logger/logger.go:115	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-13 16:13:29	INFO	logger/logger.go:115	/swagger/swagger-ui.css	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui.css", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-13 16:13:29	INFO	logger/logger.go:115	/swagger/swagger-ui-bundle.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-13 16:13:29	INFO	logger/logger.go:115	/swagger/swagger-ui-standalone-preset.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-13 16:13:29	INFO	logger/logger.go:115	/swagger/swagger-ui-standalone-preset.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-standalone-preset.js", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-13 16:13:29	INFO	logger/logger.go:115	/swagger/swagger-ui-bundle.js	{"status": 200, "method": "GET", "path": "/swagger/swagger-ui-bundle.js", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-06-13 16:13:29	INFO	logger/logger.go:115	/swagger/doc.json	{"status": 200, "method": "GET", "path": "/swagger/doc.json", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-13 16:13:29	INFO	logger/logger.go:115	/swagger/favicon-32x32.png	{"status": 200, "method": "GET", "path": "/swagger/favicon-32x32.png", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-13 16:13:47	INFO	logger/logger.go:115	/swagger/doc.json	{"status": 200, "method": "GET", "path": "/swagger/doc.json", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-13 16:15:57	INFO	logger/logger.go:115	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-13 16:15:59	INFO	logger/logger.go:115	/swagger/index.html	{"status": 200, "method": "GET", "path": "/swagger/index.html", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-06-13 19:21:32	INFO	grpclog/component.go:36	[core][Server #5] Server created	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:21:32	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to TRANSIENT_FAILURE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3002: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:21:32	INFO	grpclog/component.go:36	[core][Server #5 ListenSocket #6] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:21:32	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to TRANSIENT_FAILURE	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:21:33	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to IDLE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3001: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:21:33	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:21:33	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to IDLE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3002: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:21:33	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:23:22	INFO	grpclog/component.go:36	[core][Server #5] Server created	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:23:22	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:23:22	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel picks a new address ":3001" to connect	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:23:22	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel picks a new address ":3002" to connect	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:23:22	INFO	grpclog/component.go:36	[core][Server #5 ListenSocket #6] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:23:22	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:23:22	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:23:22	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:23:22	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:23:38	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:23:38	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:33:39	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:33:39	INFO	grpclog/component.go:36	[core][Server #5] Server created	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:33:39	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel picks a new address ":3002" to connect	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:33:39	INFO	grpclog/component.go:36	[core][Server #5 ListenSocket #6] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:33:39	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to TRANSIENT_FAILURE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3001: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:33:39	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to TRANSIENT_FAILURE	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:33:39	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to TRANSIENT_FAILURE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3002: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:33:39	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to TRANSIENT_FAILURE	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:33:40	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to IDLE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3001: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:33:40	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:33:40	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to IDLE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3002: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:33:40	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:35:15	INFO	grpclog/component.go:36	[core][Server #5] Server created	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:35:15	INFO	grpclog/component.go:36	[core][Server #5 ListenSocket #6] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:35:15	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:35:15	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:35:15	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel picks a new address ":3001" to connect	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:35:15	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:35:15	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel picks a new address ":3002" to connect	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:35:15	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to TRANSIENT_FAILURE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3001: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:35:15	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to TRANSIENT_FAILURE	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:35:15	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to TRANSIENT_FAILURE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3002: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:35:15	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to TRANSIENT_FAILURE	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:35:16	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to IDLE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3002: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:35:16	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to IDLE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3001: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:35:16	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:35:16	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:36:58	INFO	grpclog/component.go:36	[core][Channel #3] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": ":3002",
+      "ServerName": "",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": null,
+  "Attributes": null
+} (resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:36:58	INFO	grpclog/component.go:36	[core][Channel #3] Channel switches to new LB policy "pick_first"	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:36:58	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #5] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:36:58	INFO	grpclog/component.go:36	[core][Server #4] Server created	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:36:58	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:36:58	INFO	grpclog/component.go:36	[core][Server #4 ListenSocket #6] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:36:58	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:36:58	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel picks a new address ":3001" to connect	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:36:58	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #5] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:36:58	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #5] Subchannel picks a new address ":3002" to connect	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:36:58	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to TRANSIENT_FAILURE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3001: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:36:58	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to TRANSIENT_FAILURE	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:36:58	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #5] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:36:58	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:36:59	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to IDLE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3001: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:36:59	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:37:05	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #5] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:37:05	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:37:40	INFO	grpclog/component.go:36	[core][Server #6] Server created	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:37:40	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:37:40	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:37:40	INFO	grpclog/component.go:36	[core][Server #6 ListenSocket #7] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:37:40	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:37:40	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:37:43	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-06-13 19:37:43	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}

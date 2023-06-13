@@ -1,7 +1,7 @@
 package handlers
 
 type GetUserInfoRequest struct {
-	UserId string `form:"user_id" query:"user_id" json:"user_id"`
+	UserId string `form:"user_id" query:"user_id" json:"user_id" binding:"required"`
 }
 
 type GetUserInfoResponse struct {
@@ -23,7 +23,7 @@ type LoginResponse struct {
 type RegisterRequest struct {
 	UserName          string `form:"username" json:"username" binding:"required"`
 	PassWord          string `form:"password" json:"password" binding:"required"`
-	ConfirmedPassword string `form:"confirmed_password" json:"confirmed_password" binding:"required"`
+	ConfirmedPassword string `form:"confirmed_password" json:"confirmed_password" binding:"required,eqfield=Password"`
 }
 
 type RegisterResponse struct {

@@ -7,6 +7,7 @@ import (
 	"backend/conf/settings"
 	"backend/internal/grpc/client"
 	"backend/internal/grpc/server"
+	"backend/internal/handlers"
 	"backend/internal/routes"
 	"backend/pkg/gin_run"
 	"fmt"
@@ -45,10 +46,28 @@ func init() {
 	}
 	defer redis.RDB.Close()
 
+	if err := handlers.InitTrans("zh"); err != nil {
+		fmt.Printf("init validator failed err: %v\n", err)
+	}
+
 	go client.Init()
 	go server.Init()
 }
 
+// @title Kob
+// @version 1.0
+// @description 这是一个AI对战平台
+// @termsOfService http://www.127.0.0.1:3000/api
+
+// @contact.name 刘钊
+// @contact.url http://www.127.0.0.1:3000/api
+// @contact.email lz18738377974@163.com
+
+// @license.name Apache 2.0
+// @license.url http://www.apache.org/licenses/LICENSE-2.0.html
+
+// @host 127.0.0.1:3000
+// @BasePath /api
 func main() {
 
 	// 5.注册路由

@@ -3,7 +3,6 @@ package match
 import (
 	"backend/conf/settings"
 	pb "backend/internal/grpc/client/match/pb"
-	"log"
 
 	"go.uber.org/zap"
 	"golang.org/x/net/context"
@@ -22,7 +21,7 @@ func Init(conf *settings.AppConfig) {
 
 	conn, err := grpc.Dial(conf.AllServer.MatchConfig.Port, opts...)
 	if err != nil {
-		log.Fatalf("net.Connect err: %v", err)
+		zap.L().Error("match server net.Connect err: ", zap.Error(err))
 	}
 
 	// 建立gRPC连接

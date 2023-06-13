@@ -3,7 +3,9 @@ package consumer
 import (
 	"backend/internal/grpc/client/match"
 	pb "backend/internal/grpc/client/match/pb"
+	"backend/internal/grpc/client/snake"
 	"backend/pkg/result"
+	shape "backend/pkg/share_space"
 	"strconv"
 	"strings"
 
@@ -75,13 +77,11 @@ func stopMatching(ctx *gin.Context) {
 	}
 }
 
+// 获得前端传来的移动信息(下一步的移动信息，把信息发送到公共区域)
 func move(client *Client, d int) {
-	// TODO: 设置下一步
-	////klog.Infof("direction: ", d)
-	//
 	////TODO: 把移动的方向发送给game_system
-	//game.Space.ClientDirection <- transform.Pair{
-	//	PlayerId:  client.UserId,
-	//	Direction: strconv.Itoa(d),
-	//}
+	snake.Space.ClientDirection <- shape.Pair{
+		PlayerId:  client.UserId,
+		Direction: strconv.Itoa(d),
+	}
 }

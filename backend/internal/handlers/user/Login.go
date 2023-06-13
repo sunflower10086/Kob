@@ -10,6 +10,17 @@ import (
 	"go.uber.org/zap"
 )
 
+// LoginHandler 登录接口
+// @Summary 登录接口
+// @Description 根据用户信息进行登录
+// @Tags 用户信息相关接口
+// @Accept application/json
+// @Produce application/json
+// @Param Authorization header string true "Bearer 用户令牌"
+// @Param object query handlers.LoginRequest false "查询参数"
+// @Security ApiKeyAuth
+// @Success 200 {object} result.Result
+// @Router /login [post]
 func LoginHandler(c *gin.Context) {
 	var loginParam handlers.LoginRequest
 
