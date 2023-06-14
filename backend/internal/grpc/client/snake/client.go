@@ -17,7 +17,7 @@ import (
 )
 
 var (
-	Client  pb.GameSystemClient
+	client  pb.GameSystemClient
 	SnakeMd *WithSnake
 	Space   *shape.Space
 )
@@ -32,29 +32,21 @@ func Init(conf *settings.AppConfig) {
 		zap.L().Error("snake server net.Connect err: ", zap.Error(err))
 	}
 
-	Client = pb.NewGameSystemClient(conn)
+	client = pb.NewGameSystemClient(conn)
 
 	Space = share.NewSpace()
 
 	SnakeMd = &WithSnake{
-		Msg:        make(chan shape.Pair),
-		GameClient: Client,
+		Msg: make(chan shape.Pair),
 	}
 
 	var forGameSystem util.CommGame
 
 	forGameSystem = SnakeMd
-	// 接收从game_system发来的消息
-	go func() {
-		err := forGameSystem.Receive()
-		if err != nil {
-			logger.SugarLogger.Debugf("Receive Message err: %v", err)
-			return
-		}
-	}()
 
 	// 向game_system发消息
 	go func() {
+		logger.SugarLogger.Debug("Send Message")
 		err := forGameSystem.Send()
 		if err != nil {
 			logger.SugarLogger.Debugf("Send Message err: %v", err)
@@ -64,8 +56,18 @@ func Init(conf *settings.AppConfig) {
 }
 
 func StartGame(ctx context.Context, req *pb.StartGameReq) (*pb.StartGameResp, error) {
-	resp, err := Client.StartGame(ctx, req)
+	resp, err := client.StartGame(ctx, req)
 	if err != nil {
+		return nil, err
+	}
+
+	return resp, nil
+}
+
+func SetNextStep(ctx context.Context, req *pb.SetNextStepReq) (*pb.SetNextStepResp, error) {
+	resp, err := client.SetNextStep(ctx, req)
+	if err != nil {
+		zap.L().Debug(err.Error())
 		return nil, err
 	}
 

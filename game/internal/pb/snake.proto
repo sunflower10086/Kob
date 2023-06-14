@@ -5,7 +5,7 @@ option go_package = ".;game_system";
 
 service game_system {
   rpc StartGame(StartGameReq) returns(StartGameResp) {};
-  rpc SetNextStep(stream SetNextStepReq) returns(stream SetNextStepResp) {};
+  rpc SetNextStep(SetNextStepReq) returns(SetNextStepResp) {};
 }
 
 message StartGameReq {
@@ -28,28 +28,4 @@ message SetNextStepResp {
   string event = 1;
   int32 aDirection = 2;
   int32 bDirection = 3;
-  GameMap gameMap = 4;
-  string loser = 5;
-}
-
-message GameMap {
-  int32 AId = 1;
-  int32 ASx = 2;
-  int32 ASy = 3;
-  int32 BId = 4;
-  int32 BSx = 5;
-  int32 BSy = 6;
-  repeated Edge GameMap = 7;
-  User playerA = 8;
-  User playerB = 9;
-}
-
-message Edge {
-  repeated int32 edge = 1;
-}
-
-message User {
-  string  photo = 1;
-  string username = 2;
-  int32 userID = 3;
 }

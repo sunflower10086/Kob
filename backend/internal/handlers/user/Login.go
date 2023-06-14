@@ -25,6 +25,7 @@ func LoginHandler(c *gin.Context) {
 	var loginParam handlers.LoginRequest
 
 	if err := c.ShouldBind(&loginParam); err != nil {
+		zap.L().Debug("param err:", zap.Error(err))
 		result.SendResult(c, result.Fail(myerr.ParamErr))
 		return
 	}

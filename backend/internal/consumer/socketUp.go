@@ -31,5 +31,5 @@ func ServeWs(ctx *gin.Context, hub *Hub, userId string, w http.ResponseWriter, r
 	go client.ReadPump(ctx)
 
 	// TODO: 启动一个goroutine，检测是否有消息，向前端发送消息
-	//go client.SendMsg()
+	go client.SendMsg()
 }

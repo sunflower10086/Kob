@@ -2,79 +2,61 @@ package game
 
 import (
 	"encoding/json"
-	"io"
-	pb "snake/internal/pb"
+	"snake/internal/grpc/client"
+	resultPb "snake/internal/grpc/client/pb"
+	snakePb "snake/internal/pb"
 	"snake/pkg/mw"
 	"strconv"
-	"time"
+	"sync"
 
 	"go.uber.org/zap"
 	"golang.org/x/net/context"
-	"golang.org/x/sync/errgroup"
 )
 
 type SnakeImpl struct {
-	pb.UnimplementedGameSystemServer
+	snakePb.UnimplementedGameSystemServer
 }
 
 var (
-	eg      errgroup.Group
-	Message = make(chan *pb.SetNextStepResp, 100)
-	Gamemap *GameMap
+	wg          sync.WaitGroup
+	MoveMessage = make(chan *snakePb.SetNextStepResp, 100)
+	Gamemap     *GameMap
 )
 
-func (SnakeImpl) StartGame(ctx context.Context, req *pb.StartGameReq) (res *pb.StartGameResp, err error) {
+func (SnakeImpl) StartGame(ctx context.Context, req *snakePb.StartGameReq) (res *snakePb.StartGameResp, err error) {
 
 	// TODO: 业务逻辑
 	mw.SugarLogger.Debugf("start game req: %v", req)
 	return StartGame(ctx, req.GetAId(), req.GetABotId(), req.GetBId(), req.GetBBotId())
 }
 
-func (SnakeImpl) SetNextStep(stream pb.GameSystem_SetNextStepServer) (err error) {
+func (SnakeImpl) SetNextStep(ctx context.Context, req *snakePb.SetNextStepReq) (*snakePb.SetNextStepResp, error) {
 	// TODO: 业务逻辑
 	zap.L().Debug("SetNextStep function used")
 
 	// 接收消息
-	eg.Go(func() error {
-		for {
-			req, err := stream.Recv()
-			if err != nil {
-				if err == io.EOF {
-					return nil
-				}
-				return err
-			}
-			mw.SugarLogger.Debugf("message received: %v\n", req)
-			direction, _ := strconv.Atoi(req.Direction)
+	direction, _ := strconv.Atoi(req.GetDirection())
+	mw.SugarLogger.Debug(req)
+	Move(req.GetPlayerId(), int32(direction))
 
-			Move(req.PlayerId, int32(direction))
-			time.Sleep(time.Second)
-		}
-	})
-
-	// 发送消息
-	eg.Go(func() error {
+	resp := make(chan *snakePb.SetNextStepResp)
+	go func() {
 		for {
 			select {
-			case msg := <-Message:
-				mw.SugarLogger.Debugf("msg Event: %s", msg.GetEvent())
-				err := stream.Send(msg)
-				if err != nil {
-					mw.SugarLogger.Debugf("err: %v", err)
-					return err
-				}
+			case resp <- <-MoveMessage:
+				return
 			}
 		}
-	})
+	}()
 
-	return eg.Wait()
+	mw.SugarLogger.Debug(resp)
+
+	return <-resp, nil
 }
 
 func Move(playerId string, direction int32) {
 	PlayerId, _ := strconv.Atoi(playerId)
 
-	mw.SugarLogger.Debug(Gamemap.GetPlayerA())
-	mw.SugarLogger.Debug(Gamemap.GetPlayerB())
 	switch PlayerId {
 	case Gamemap.GetPlayerA().Id:
 		if Gamemap.GetPlayerA().BotId == -1 { // 亲自出马
@@ -89,7 +71,7 @@ func Move(playerId string, direction int32) {
 
 func SendGameMap(data map[string]interface{}) {
 
-	var gameMap pb.GameMap
+	var gameMap resultPb.GameMap
 
 	marshal, _ := json.Marshal(data)
 	err := json.Unmarshal(marshal, &gameMap)
@@ -99,12 +81,13 @@ func SendGameMap(data map[string]interface{}) {
 	}
 	//klog.Infof("发送给前端的地图: ", &gameMap)
 
-	resp := pb.SetNextStepResp{
-		Event:      "发送地图",
-		ADirection: 0,
-		BDirection: 0,
-		GameMap:    &gameMap,
+	resp := resultPb.ResultReq{
+		EventType: 2,
+		GameMap:   &gameMap,
 	}
 
-	Message <- &resp
+	_, err = client.Result(context.Background(), &resp)
+	if err != nil {
+		mw.SugarLogger.Debug(err)
+	}
 }

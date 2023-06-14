@@ -7,11 +7,12 @@ service Result {
   rpc Result(ResultReq) returns(ResultResp) {}
 }
 
-// EventType 0表示匹配的结果，1表示游戏的结果
+// EventType 0表示匹配的结果，1表示游戏的结果，2表示游戏地图
 message ResultReq {
   int32 EventType = 1;
   matchResult MatchResult = 2;
   gameResult GameResult = 3;
+  gameMap GameMap =4;
 }
 
 message matchResult {
@@ -27,4 +28,26 @@ message gameResult {
 
 message ResultResp {
   string Message = 1;
+}
+
+message gameMap {
+  int32 AId = 1;
+  int32 ASx = 2;
+  int32 ASy = 3;
+  int32 BId = 4;
+  int32 BSx = 5;
+  int32 BSy = 6;
+  repeated Edge GameMap = 7;
+  User playerA = 8;
+  User playerB = 9;
+}
+
+message Edge {
+  repeated int32 edge = 1;
+}
+
+message User {
+  string  photo = 1;
+  string username = 2;
+  int32 userID = 3;
 }

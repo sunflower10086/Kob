@@ -1,16 +1,18 @@
 package game
 
 import (
-	"fmt"
 	"math/rand"
 	"snake/internal/game/util"
+	"snake/internal/grpc/client"
+	httpPb "snake/internal/grpc/client/pb"
 	"snake/internal/models"
-	pb "snake/internal/pb"
+	snakePb "snake/internal/pb"
 	"snake/pkg/mw"
 	"sync"
 	"time"
 
 	"go.uber.org/zap"
+	"golang.org/x/net/context"
 )
 
 var (
@@ -165,7 +167,7 @@ func (g *GameMap) nextStep() bool {
 	// 用代码去操作蛇的移动的时候会计算很多次  相当于加一个施法后摇，防止输入次数过多
 	// 前端设定每秒走5个格子如果输入太多步数就会被覆盖，所以在每次计算之前睡一个最小值  1s / 5 = 200ms
 	// 这样保证每次走一格最多只会有依次输入
-	time.Sleep(time.Millisecond * 200)
+	time.Sleep(time.Millisecond * 150)
 
 	// 接下来可能会有一个Bot自动运行的系统
 	// 所以还要有一个函数，去清求那个系统的API让bot自动运行
@@ -224,15 +226,11 @@ func (g *GameMap) checkValid(cellsA, cellsB []util.Cell) bool {
 // judge 检查两名玩家操作是否合法
 func (g *GameMap) judge() {
 
-	zap.L().Debug("judge")
-
 	cellsA := g.playerA.GetCells()
 	cellsB := g.playerB.GetCells()
 
 	validA := g.checkValid(cellsA, cellsB)
 	validB := g.checkValid(cellsB, cellsA)
-
-	mw.SugarLogger.Debug(validA, validB)
 
 	if !validB || !validA {
 		g.status = "finished"
@@ -266,20 +264,18 @@ func (g *GameMap) sendMove() {
 
 	zap.L().Debug("sendMove")
 
-	resp := &pb.SetNextStepResp{
+	resp := &snakePb.SetNextStepResp{
 		Event:      "move",
 		ADirection: g.nextStepA,
 		BDirection: g.nextStepB,
 	}
-
-	fmt.Println(g.nextStepA, g.nextStepB)
-
-	fmt.Println(resp.GetEvent(), resp.GetADirection(), resp.GetBDirection())
+	mw.SugarLogger.Debug(g.nextStepA, g.nextStepB)
 	mw.SugarLogger.Debug(resp)
 
 	g.nextStepA, g.nextStepB = -1, -1
 
-	Message <- resp
+	MoveMessage <- resp
+	mw.SugarLogger.Debug(MoveMessage)
 }
 
 // 向两位玩家公布结果
@@ -291,20 +287,22 @@ func (g *GameMap) sendResult() {
 	//saveToDataBase();
 	//sendAllMessage(resp.toJSONString());
 
-	result := &pb.SetNextStepResp{
-		Event: "result",
-		Loser: g.loser,
+	result := &httpPb.ResultReq{
+		EventType:  1,
+		GameResult: &httpPb.GameResult{Loser: g.loser},
 	}
 
 	mw.SugarLogger.Debug(result)
-	Message <- result
+	_, err := client.Result(context.Background(), result)
+	if err != nil {
+		return
+	}
 }
 
 func (g *GameMap) Start() {
 	for i := 0; i < 1000; i++ {
 		if g.nextStep() {
 			g.judge()
-			mw.SugarLogger.Debugf("status %s", g.status)
 			if g.status == "playing" {
 				g.sendMove()
 			} else {

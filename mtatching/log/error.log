@@ -1,2 +1,18 @@
 2023-06-10 16:16:22	ERROR	grpclog/component.go:46	[core][Server #1] grpc: server failed to encode response: rpc error: code = Internal desc = grpc: error while marshaling: proto: Marshal called with nil	{"system": "grpc", "grpc_log": true}
 2023-06-10 16:18:59	ERROR	grpclog/component.go:46	[core][Server #1] grpc: server failed to encode response: rpc error: code = Internal desc = grpc: error while marshaling: proto: Marshal called with nil	{"system": "grpc", "grpc_log": true}
+2023-06-14 08:39:05	WARN	grpclog/component.go:41	[core][Channel #1 SubChannel #3] grpc: addrConn.createTransport failed to connect to {
+  "Addr": ":3003",
+  "ServerName": "localhost:3003",
+  "Attributes": null,
+  "BalancerAttributes": null,
+  "Type": 0,
+  "Metadata": null
+}. Err: connection error: desc = "transport: Error while dialing: dial tcp :3003: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-06-14 08:52:31	WARN	grpclog/component.go:41	[core][Channel #1 SubChannel #4] grpc: addrConn.createTransport failed to connect to {
+  "Addr": ":3003",
+  "ServerName": "localhost:3003",
+  "Attributes": null,
+  "BalancerAttributes": null,
+  "Type": 0,
+  "Metadata": null
+}. Err: connection error: desc = "transport: Error while dialing: dial tcp :3003: connect: connection refused"	{"system": "grpc", "grpc_log": true}

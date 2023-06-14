@@ -5,7 +5,6 @@ import (
 	logicUser "backend/internal/logic/user"
 	"backend/pkg/myerr"
 	"backend/pkg/result"
-	"fmt"
 
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
@@ -18,8 +17,6 @@ func RegisterHandler(c *gin.Context) {
 		result.SendResult(c, result.Fail(myerr.ParamErr))
 		return
 	}
-
-	fmt.Println(registerParam)
 
 	// TODO: 写逻辑
 	resp, err := logicUser.RegisterService(

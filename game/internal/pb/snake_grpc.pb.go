@@ -8,7 +8,6 @@ package game_system
 
 import (
 	context "context"
-
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
@@ -29,7 +28,7 @@ const (
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type GameSystemClient interface {
 	StartGame(ctx context.Context, in *StartGameReq, opts ...grpc.CallOption) (*StartGameResp, error)
-	SetNextStep(ctx context.Context, opts ...grpc.CallOption) (GameSystem_SetNextStepClient, error)
+	SetNextStep(ctx context.Context, in *SetNextStepReq, opts ...grpc.CallOption) (*SetNextStepResp, error)
 }
 
 type gameSystemClient struct {
@@ -49,35 +48,13 @@ func (c *gameSystemClient) StartGame(ctx context.Context, in *StartGameReq, opts
 	return out, nil
 }
 
-func (c *gameSystemClient) SetNextStep(ctx context.Context, opts ...grpc.CallOption) (GameSystem_SetNextStepClient, error) {
-	stream, err := c.cc.NewStream(ctx, &GameSystem_ServiceDesc.Streams[0], GameSystem_SetNextStep_FullMethodName, opts...)
+func (c *gameSystemClient) SetNextStep(ctx context.Context, in *SetNextStepReq, opts ...grpc.CallOption) (*SetNextStepResp, error) {
+	out := new(SetNextStepResp)
+	err := c.cc.Invoke(ctx, GameSystem_SetNextStep_FullMethodName, in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
-	x := &gameSystemSetNextStepClient{stream}
-	return x, nil
-}
-
-type GameSystem_SetNextStepClient interface {
-	Send(*SetNextStepReq) error
-	Recv() (*SetNextStepResp, error)
-	grpc.ClientStream
-}
-
-type gameSystemSetNextStepClient struct {
-	grpc.ClientStream
-}
-
-func (x *gameSystemSetNextStepClient) Send(m *SetNextStepReq) error {
-	return x.ClientStream.SendMsg(m)
-}
-
-func (x *gameSystemSetNextStepClient) Recv() (*SetNextStepResp, error) {
-	m := new(SetNextStepResp)
-	if err := x.ClientStream.RecvMsg(m); err != nil {
-		return nil, err
-	}
-	return m, nil
+	return out, nil
 }
 
 // GameSystemServer is the server API for GameSystem service.
@@ -85,7 +62,7 @@ func (x *gameSystemSetNextStepClient) Recv() (*SetNextStepResp, error) {
 // for forward compatibility
 type GameSystemServer interface {
 	StartGame(context.Context, *StartGameReq) (*StartGameResp, error)
-	SetNextStep(GameSystem_SetNextStepServer) error
+	SetNextStep(context.Context, *SetNextStepReq) (*SetNextStepResp, error)
 	mustEmbedUnimplementedGameSystemServer()
 }
 
@@ -96,8 +73,8 @@ type UnimplementedGameSystemServer struct {
 func (UnimplementedGameSystemServer) StartGame(context.Context, *StartGameReq) (*StartGameResp, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method StartGame not implemented")
 }
-func (UnimplementedGameSystemServer) SetNextStep(GameSystem_SetNextStepServer) error {
-	return status.Errorf(codes.Unimplemented, "method SetNextStep not implemented")
+func (UnimplementedGameSystemServer) SetNextStep(context.Context, *SetNextStepReq) (*SetNextStepResp, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method SetNextStep not implemented")
 }
 func (UnimplementedGameSystemServer) mustEmbedUnimplementedGameSystemServer() {}
 
@@ -130,30 +107,22 @@ func _GameSystem_StartGame_Handler(srv interface{}, ctx context.Context, dec fun
 	return interceptor(ctx, in, info, handler)
 }
 
-func _GameSystem_SetNextStep_Handler(srv interface{}, stream grpc.ServerStream) error {
-	return srv.(GameSystemServer).SetNextStep(&gameSystemSetNextStepServer{stream})
-}
-
-type GameSystem_SetNextStepServer interface {
-	Send(*SetNextStepResp) error
-	Recv() (*SetNextStepReq, error)
-	grpc.ServerStream
-}
-
-type gameSystemSetNextStepServer struct {
-	grpc.ServerStream
-}
-
-func (x *gameSystemSetNextStepServer) Send(m *SetNextStepResp) error {
-	return x.ServerStream.SendMsg(m)
-}
-
-func (x *gameSystemSetNextStepServer) Recv() (*SetNextStepReq, error) {
-	m := new(SetNextStepReq)
-	if err := x.ServerStream.RecvMsg(m); err != nil {
+func _GameSystem_SetNextStep_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(SetNextStepReq)
+	if err := dec(in); err != nil {
 		return nil, err
 	}
-	return m, nil
+	if interceptor == nil {
+		return srv.(GameSystemServer).SetNextStep(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: GameSystem_SetNextStep_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(GameSystemServer).SetNextStep(ctx, req.(*SetNextStepReq))
+	}
+	return interceptor(ctx, in, info, handler)
 }
 
 // GameSystem_ServiceDesc is the grpc.ServiceDesc for GameSystem service.
@@ -167,14 +136,11 @@ var GameSystem_ServiceDesc = grpc.ServiceDesc{
 			MethodName: "StartGame",
 			Handler:    _GameSystem_StartGame_Handler,
 		},
-	},
-	Streams: []grpc.StreamDesc{
 		{
-			StreamName:    "SetNextStep",
-			Handler:       _GameSystem_SetNextStep_Handler,
-			ServerStreams: true,
-			ClientStreams: true,
+			MethodName: "SetNextStep",
+			Handler:    _GameSystem_SetNextStep_Handler,
 		},
 	},
+	Streams:  []grpc.StreamDesc{},
 	Metadata: "snake.proto",
 }

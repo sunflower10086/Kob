@@ -6,6 +6,7 @@ import (
 	"snake/conf/mysql"
 	"snake/conf/settings"
 	"snake/internal/game"
+	"snake/internal/grpc/client"
 	"snake/pkg/mw"
 
 	pb "snake/internal/pb"
@@ -32,6 +33,7 @@ func init() {
 	}
 	fmt.Println("mysql init success ... ")
 
+	client.InitResult()
 }
 
 func main() {

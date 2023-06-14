@@ -5,6 +5,8 @@ import (
 	"backend/internal/grpc/client/snake"
 	snakePb "backend/internal/grpc/client/snake/pb"
 	resultPb "backend/internal/grpc/server/result/pb"
+	shape "backend/pkg/share_space"
+	"strconv"
 
 	"go.uber.org/zap"
 	"golang.org/x/net/context"
@@ -13,6 +15,7 @@ import (
 const (
 	startGameType int32 = iota
 	gameResultType
+	gameMapType
 )
 
 type ResultServerImpl struct {
@@ -20,12 +23,13 @@ type ResultServerImpl struct {
 }
 
 func (r *ResultServerImpl) Result(ctx context.Context, req *resultPb.ResultReq) (*resultPb.ResultResp, error) {
-	logger.SugarLogger.Debugf("Result: %v", req)
 	switch req.GetEventType() {
 	case startGameType:
 		startGame(ctx, req.GetMatchResult())
 	case gameResultType:
 		gameResult(req.GetGameResult())
+	case gameMapType:
+		getMap(req.GetGameMap())
 	}
 	return &resultPb.ResultResp{Message: "success"}, nil
 }
@@ -48,4 +52,49 @@ func startGame(ctx context.Context, matchResult *resultPb.MatchResult) {
 func gameResult(result *resultPb.GameResult) {
 	// 到时候要传入公共空间，现在先暂时不做处理
 	logger.SugarLogger.Debug(result)
+	resp := shape.Result{
+		Event: "result",
+		Loser: result.GetLoser(),
+	}
+	zap.L().Debug(resp.Loser)
+	snake.Space.Result <- resp
+}
+
+func getMap(gameMap *resultPb.GameMap) {
+	// TODO: 必须把resp转换为SnakeGame
+	// 把后端传来的游戏信息做一下格式转换
+	Map := make([][]int32, len(gameMap.GetGameMap()))
+	for i, edge := range gameMap.GetGameMap() {
+		item := make([]int32, len(edge.Edge))
+		for j, point := range edge.Edge {
+			item[j] = point
+		}
+		Map[i] = append(Map[i], item...)
+	}
+
+	playerA := shape.Player{
+		Photo:    gameMap.GetPlayerA().GetPhoto(),
+		Username: gameMap.GetPlayerA().GetUsername(),
+		UserID:   gameMap.GetPlayerA().GetUserID(),
+	}
+
+	playerB := shape.Player{
+		Photo:    gameMap.GetPlayerB().GetPhoto(),
+		Username: gameMap.GetPlayerB().GetUsername(),
+		UserID:   gameMap.GetPlayerB().GetUserID(),
+	}
+
+	respMap := shape.NewSnakeGame(
+		strconv.Itoa(int(gameMap.GetAId())),
+		strconv.Itoa(int(gameMap.GetASx())),
+		strconv.Itoa(int(gameMap.GetASy())),
+		strconv.Itoa(int(gameMap.GetBId())),
+		strconv.Itoa(int(gameMap.GetBSx())),
+		strconv.Itoa(int(gameMap.GetBSy())),
+		Map,
+		playerA,
+		playerB,
+	)
+
+	snake.Space.Game <- respMap
 }

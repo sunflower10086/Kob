@@ -4,12 +4,13 @@ import (
 	"context"
 	"snake/conf/mysql"
 	"snake/internal/game/util"
+	resultPb "snake/internal/grpc/client/pb"
 	"snake/internal/models"
-	pb "snake/internal/pb"
+	snakePb "snake/internal/pb"
 	"snake/pkg/mw"
 )
 
-func StartGame(ctx context.Context, aId, aBotId, bId, bBotID int32) (*pb.StartGameResp, error) {
+func StartGame(ctx context.Context, aId, aBotId, bId, bBotID int32) (*snakePb.StartGameResp, error) {
 	mw.SugarLogger.Debug("StartGame function used")
 
 	var User, Bot = mysql.Q.User, mysql.Q.Bot
@@ -40,7 +41,7 @@ func StartGame(ctx context.Context, aId, aBotId, bId, bBotID int32) (*pb.StartGa
 	data["BSx"] = int32(1)
 	data["BSy"] = int32(14 - 2)
 
-	var dataMap [13]pb.Edge
+	var dataMap [13]resultPb.Edge
 	for i, rows := range Gamemap.GetGameMap() {
 		dataMap[i].Edge = rows
 	}
@@ -60,7 +61,7 @@ func StartGame(ctx context.Context, aId, aBotId, bId, bBotID int32) (*pb.StartGa
 
 	SendGameMap(data)
 
-	var resp pb.StartGameResp
+	var resp snakePb.StartGameResp
 	resp.Message = "start game success"
 
 	return &resp, nil

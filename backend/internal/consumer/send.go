@@ -5,6 +5,7 @@ import (
 	"backend/internal/grpc/client/snake"
 	shape "backend/pkg/share_space"
 	"encoding/json"
+	"fmt"
 
 	"go.uber.org/zap"
 )
@@ -26,16 +27,16 @@ func (c *Client) SendMsg() {
 		case data := <-snake.Space.Game:
 			sendMap(data)
 		case data := <-snake.Space.ServiceDirection:
-			logger.SugarLogger.Debug(data)
+			logger.SugarLogger.Debugf("for web step %v", data)
 			sendDirection(data)
 		case data := <-snake.Space.Result:
+			fmt.Println(data)
 			sendResult(data)
 		}
 	}
 }
 
 func sendMap(data *shape.SnakeGame) {
-
 	AId, BId := data.AId, data.BId
 
 	respGame := SnakeGame{
