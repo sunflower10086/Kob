@@ -7,7 +7,6 @@ import (
 	snakePb "snake/internal/pb"
 	"snake/pkg/mw"
 	"strconv"
-	"sync"
 
 	"go.uber.org/zap"
 	"golang.org/x/net/context"
@@ -18,9 +17,7 @@ type SnakeImpl struct {
 }
 
 var (
-	wg          sync.WaitGroup
-	MoveMessage = make(chan *snakePb.SetNextStepResp, 100)
-	Gamemap     *GameMap
+	Gamemap *GameMap
 )
 
 func (SnakeImpl) StartGame(ctx context.Context, req *snakePb.StartGameReq) (res *snakePb.StartGameResp, err error) {
@@ -43,7 +40,7 @@ func (SnakeImpl) SetNextStep(ctx context.Context, req *snakePb.SetNextStepReq) (
 	go func() {
 		for {
 			select {
-			case resp <- <-MoveMessage:
+			case resp <- <-Gamemap.MoveMessage:
 				return
 			}
 		}
@@ -79,7 +76,6 @@ func SendGameMap(data map[string]interface{}) {
 		mw.SugarLogger.Debugf("转化错误：", err)
 		return
 	}
-	//klog.Infof("发送给前端的地图: ", &gameMap)
 
 	resp := resultPb.ResultReq{
 		EventType: 2,

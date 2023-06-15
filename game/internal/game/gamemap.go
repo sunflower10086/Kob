@@ -36,6 +36,7 @@ type GameMap struct {
 	nextStepB      int32
 	status         string
 	loser          string
+	MoveMessage    chan *snakePb.SetNextStepResp
 }
 
 func NewGameMap(rows, cols, innerWallCount, idA int, botA *models.Bot, idB int, botB *models.Bot) *GameMap {
@@ -71,6 +72,7 @@ func NewGameMap(rows, cols, innerWallCount, idA int, botA *models.Bot, idB int, 
 		nextStepB:      -1,
 		status:         "playing",
 		loser:          "",
+		MoveMessage:    make(chan *snakePb.SetNextStepResp, 100),
 	}
 
 	return gameMap
@@ -274,8 +276,8 @@ func (g *GameMap) sendMove() {
 
 	g.nextStepA, g.nextStepB = -1, -1
 
-	MoveMessage <- resp
-	mw.SugarLogger.Debug(MoveMessage)
+	g.MoveMessage <- resp
+	//mw.SugarLogger.Debug(MoveMessage)
 }
 
 // 向两位玩家公布结果
