@@ -34,7 +34,7 @@ func AddUser(ctx context.Context, userId, botId int32) (*pb.Response, error) {
 
 	// 返回匹配成功的userId与他们的botId
 	var resp pb.Response
-	resp.Message = "add user success " + strconv.Itoa(int(userId))
+	resp.Message = "add user success " + strconv.Itoa(int(userId)) + " " + strconv.Itoa(int(botId))
 
 	zap.L().Debug(resp.Message)
 	return &resp, nil

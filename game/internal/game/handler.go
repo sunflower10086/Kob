@@ -2,8 +2,8 @@ package game
 
 import (
 	"encoding/json"
-	"snake/internal/grpc/client"
-	resultPb "snake/internal/grpc/client/pb"
+	"snake/internal/grpc/client/result"
+	resultPb "snake/internal/grpc/client/result/pb"
 	snakePb "snake/internal/pb"
 	"snake/pkg/mw"
 	"strconv"
@@ -46,8 +46,6 @@ func (SnakeImpl) SetNextStep(ctx context.Context, req *snakePb.SetNextStepReq) (
 		}
 	}()
 
-	mw.SugarLogger.Debug(resp)
-
 	return <-resp, nil
 }
 
@@ -82,7 +80,7 @@ func SendGameMap(data map[string]interface{}) {
 		GameMap:   &gameMap,
 	}
 
-	_, err = client.Result(context.Background(), &resp)
+	_, err = result.Result(context.Background(), &resp)
 	if err != nil {
 		mw.SugarLogger.Debug(err)
 	}

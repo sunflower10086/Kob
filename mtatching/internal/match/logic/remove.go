@@ -3,7 +3,6 @@ package logic
 import (
 	"matching/internal/match/logic/matchutil"
 	pb "matching/internal/pb/matchingServer"
-	"matching/pkg/mw"
 	"strconv"
 
 	"go.uber.org/zap"
@@ -25,7 +24,7 @@ func Remove(ctx context.Context, userId int32) (*pb.Response, error) {
 
 	matchutil.Players = newPlayer
 
-	mw.SugarLogger.Debugf("Players: %v", matchutil.Players)
+	//mw.SugarLogger.Debugf("Players: %v", matchutil.Players)
 
 	var resp pb.Response
 	resp.Message = "remove user" + strconv.Itoa(int(userId))

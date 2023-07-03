@@ -2200,3 +2200,568 @@
 2023-07-03 11:36:16	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
 2023-07-03 11:36:16	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
 2023-07-03 11:36:16	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 16:49:02	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 2, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:49:02	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:49:42	INFO	logger/logger.go:115	/api/user/bot/add/	{"status": 200, "method": "POST", "path": "/api/user/bot/add/", "cost": 9, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:49:42	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:49:46	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:49:46	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:49:47	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:49:47	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:49:48	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:49:48	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:49:49	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:49:49	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:49:49	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:49:49	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:49:49	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:49:49	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:49:49	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:49:49	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:49:50	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:49:50	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:49:50	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:49:50	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:49:50	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:49:50	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:50:08	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:50:08	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:51:10	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:51:10	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:51:31	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:51:31	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:52:02	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:52:02	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:52:02	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:52:12	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:52:13	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:52:13	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:52:20	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:52:20	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:53:49	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:53:49	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:53:52	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:53:52	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:53:53	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:54:00	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:54:00	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:54:00	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:54:53	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:54:54	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 3, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 16:55:00	INFO	consumer/client.go:75	receive message {"event":"start-matching"}
+2023-07-03 16:55:00	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 16:55:00	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel picks a new address ":3001" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 16:55:00	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 16:55:00	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 16:55:00	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 16:55:01	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 16:55:03	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 16:55:03	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel picks a new address ":3002" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 16:55:03	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 16:55:03	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 16:55:03	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 16:55:12	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:55:12	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:55:12	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:55:13	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:55:13	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:55:13	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 16:55:31	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 16:55:33	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 16:55:36	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 16:55:37	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 16:55:38	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 16:55:39	INFO	consumer/client.go:75	receive message {"event":"move","direction":0}
+2023-07-03 16:55:40	INFO	consumer/client.go:75	receive message {"event":"move","direction":0}
+2023-07-03 16:55:40	INFO	consumer/hub.go:53	broadcast {"event":"result","loser":"B"}
+2023-07-03 16:55:42	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:55:43	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 16:55:45	INFO	consumer/client.go:75	receive message {"event":"start-matching"}
+2023-07-03 16:55:46	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 16:55:51	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 16:55:52	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 16:55:54	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 16:55:56	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 16:55:59	INFO	consumer/client.go:75	receive message {"event":"move","direction":0}
+2023-07-03 16:56:00	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 16:56:00	INFO	consumer/hub.go:53	broadcast {"event":"move","PlayerId":"","Direction":"","a_direction":"0","b_direction":"2"}
+2023-07-03 16:56:00	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 16:56:02	INFO	consumer/client.go:75	receive message {"event":"move","direction":0}
+2023-07-03 16:56:02	INFO	consumer/hub.go:53	broadcast {"event":"move","PlayerId":"","Direction":"","a_direction":"0","b_direction":"2"}
+2023-07-03 16:56:03	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 16:56:04	INFO	consumer/client.go:75	receive message {"event":"move","direction":0}
+2023-07-03 16:56:04	INFO	consumer/hub.go:53	broadcast {"event":"move","PlayerId":"","Direction":"","a_direction":"0","b_direction":"2"}
+2023-07-03 16:56:05	INFO	consumer/client.go:75	receive message {"event":"move","direction":0}
+2023-07-03 16:56:06	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 16:56:06	INFO	consumer/hub.go:53	broadcast {"event":"move","PlayerId":"","Direction":"","a_direction":"0","b_direction":"2"}
+2023-07-03 16:56:07	INFO	consumer/client.go:75	receive message {"event":"move","direction":0}
+2023-07-03 16:56:08	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 16:56:08	INFO	consumer/hub.go:53	broadcast {"event":"move","PlayerId":"","Direction":"","a_direction":"0","b_direction":"2"}
+2023-07-03 16:56:09	INFO	consumer/client.go:75	receive message {"event":"move","direction":1}
+2023-07-03 16:56:10	INFO	consumer/client.go:75	receive message {"event":"move","direction":3}
+2023-07-03 16:56:10	INFO	consumer/hub.go:53	broadcast {"event":"move","PlayerId":"","Direction":"","a_direction":"1","b_direction":"3"}
+2023-07-03 16:56:11	INFO	consumer/client.go:75	receive message {"event":"move","direction":1}
+2023-07-03 16:56:12	INFO	consumer/client.go:75	receive message {"event":"move","direction":3}
+2023-07-03 16:56:12	INFO	consumer/hub.go:53	broadcast {"event":"move","PlayerId":"","Direction":"","a_direction":"1","b_direction":"3"}
+2023-07-03 16:56:13	INFO	consumer/client.go:75	receive message {"event":"move","direction":1}
+2023-07-03 16:56:14	INFO	consumer/client.go:75	receive message {"event":"move","direction":3}
+2023-07-03 16:56:14	INFO	consumer/hub.go:53	broadcast {"event":"move","PlayerId":"","Direction":"","a_direction":"1","b_direction":"3"}
+2023-07-03 16:56:15	INFO	consumer/client.go:75	receive message {"event":"move","direction":1}
+2023-07-03 16:56:16	INFO	consumer/client.go:75	receive message {"event":"move","direction":3}
+2023-07-03 16:56:16	INFO	consumer/hub.go:53	broadcast {"event":"move","PlayerId":"","Direction":"","a_direction":"1","b_direction":"3"}
+2023-07-03 16:56:17	INFO	consumer/client.go:75	receive message {"event":"move","direction":3}
+2023-07-03 16:56:18	INFO	consumer/client.go:75	receive message {"event":"move","direction":3}
+2023-07-03 16:56:18	INFO	consumer/hub.go:53	broadcast {"event":"move","PlayerId":"","Direction":"","a_direction":"3","b_direction":"3"}
+2023-07-03 16:56:23	INFO	consumer/client.go:75	receive message {"event":"move","direction":0}
+2023-07-03 16:56:24	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 16:56:24	INFO	consumer/hub.go:53	broadcast {"event":"result","loser":"A"}
+2023-07-03 16:56:25	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 16:56:25	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:56:44	INFO	consumer/client.go:75	receive message {"event":"start-matching"}
+2023-07-03 16:56:45	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 16:56:59	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 16:57:00	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:04:51	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:04:51	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:04:59	INFO	consumer/client.go:75	receive message {"event":"start-matching"}
+2023-07-03 17:04:59	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:04:59	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel picks a new address ":3001" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:04:59	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:04:59	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:04:59	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:05:00	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 17:05:04	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:05:05	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:05:45	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:05:45	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:05:45	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:08:13	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:08:13	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:08:13	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 17:08:13	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 2, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:08:13	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 2, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:08:13	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:08:32	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:08:32	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 3, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 17:08:32	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:08:32	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:08:32	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 2, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:08:32	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:08:42	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:08:43	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 17:09:14	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:09:15	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:09:17	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:09:28	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:09:31	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:09:32	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:09:35	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:09:37	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:09:38	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:09:41	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:09:43	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:09:43	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:09:43	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:09:45	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 17:09:48	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:09:50	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:09:52	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:09:54	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:09:54	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:09:54	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:09:56	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:09:57	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:10:18	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:10:18	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 17:10:23	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:10:23	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:10:23	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:10:25	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:10:27	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:11:17	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:11:17	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 17:11:19	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 17:11:20	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:11:22	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:11:22	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:11:22	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:11:25	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 17:11:25	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:11:26	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 17:11:26	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:11:33	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 17:11:34	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:11:36	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:11:37	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:11:40	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:11:41	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:11:41	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:11:41	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:12:02	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:12:02	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 17:12:05	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:12:05	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:12:05	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:12:06	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 17:12:08	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:12:10	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:12:14	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:12:14	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:12:14	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:12:16	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:12:18	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:12:46	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 17:12:47	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:12:49	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:12:50	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:15:04	INFO	grpclog/component.go:36	[core][Server #5] Server created	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:15:04	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:15:04	INFO	grpclog/component.go:36	[core][Server #5 ListenSocket #6] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:15:04	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:15:04	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel picks a new address ":3001" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:15:04	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:15:04	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel picks a new address ":3002" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:15:04	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:15:04	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:15:04	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:15:04	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:15:07	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:15:07	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:15:07	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 2, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:15:08	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 17:15:10	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:15:18	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:15:21	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:15:26	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:15:34	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:15:46	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:15:46	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:15:51	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:15:52	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:15:52	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:15:52	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel picks a new address ":3001" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:15:52	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:15:52	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:15:52	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:16:16	INFO	grpclog/component.go:36	[core][Channel #3] parsed dial target is: {Scheme:passthrough Authority: URL:{Scheme:passthrough Opaque: User: Host: Path:/:3002 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:16:16	INFO	grpclog/component.go:36	[core][Channel #3] Channel authority set to "localhost:3002"	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:16:16	INFO	grpclog/component.go:36	[core][Server #4] Server created	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:16:16	INFO	grpclog/component.go:36	[core][Channel #3] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": ":3002",
+      "ServerName": "",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": null,
+  "Attributes": null
+} (resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:16:16	INFO	grpclog/component.go:36	[core][Channel #3] Channel switches to new LB policy "pick_first"	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:16:16	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #6] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:16:16	INFO	grpclog/component.go:36	[core][Server #4 ListenSocket #5] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:16:16	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:16:16	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel picks a new address ":3001" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:16:16	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:16:16	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #6] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:16:16	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #6] Subchannel picks a new address ":3002" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:16:16	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:16:16	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:16:16	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #6] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:16:16	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:16:18	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 2, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:16:18	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 2, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:16:18	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:16:19	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 17:16:22	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:16:23	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 17:16:33	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:16:34	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:16:35	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:16:36	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:16:36	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:16:36	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:16:36	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:16:37	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:16:37	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:16:37	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:16:37	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:16:37	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:16:37	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:16:38	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:16:38	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:16:38	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:16:38	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:16:40	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:16:40	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:16:40	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:16:42	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:16:44	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:17:03	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel picks a new address ":3001" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:03	INFO	grpclog/component.go:36	[core][Server #5] Server created	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:03	INFO	grpclog/component.go:36	[core][Server #5 ListenSocket #7] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:03	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:03	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:03	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:03	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:04	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:17:04	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:17:04	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:17:06	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:17:08	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Channel #4] Channel created	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Channel #4] original dial target is: ":3002"	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Channel #4] dial target ":3002" parse failed: parse ":3002": missing protocol scheme	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Channel #4] fallback to scheme "passthrough"	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Channel #4] parsed dial target is: {Scheme:passthrough Authority: URL:{Scheme:passthrough Opaque: User: Host: Path:/:3002 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Channel #4] Channel authority set to "localhost:3002"	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Server #3] Server created	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel picks a new address ":3001" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Channel #4] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": ":3002",
+      "ServerName": "",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": null,
+  "Attributes": null
+} (resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Channel #4] Channel switches to new LB policy "pick_first"	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Server #3 ListenSocket #5] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel picks a new address ":3002" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:17:59	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:18:05	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:18:05	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:18:05	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 2, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:18:07	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":30}
+2023-07-03 17:18:09	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:19:16	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 2, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:19:16	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 3, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 17:20:12	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 2, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:20:12	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 17:20:12	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 2, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:20:12	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 17:20:19	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 17:20:27	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:20:29	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"30"}
+2023-07-03 17:20:32	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:20:38	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"30"}
+2023-07-03 17:20:39	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #1] Channel switches to new LB policy "pick_first"	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #3] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #4] Channel created	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #4] original dial target is: ":3002"	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #4] dial target ":3002" parse failed: parse ":3002": missing protocol scheme	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #4] fallback to scheme "passthrough"	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Server #2] Server created	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #3] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #4] parsed dial target is: {Scheme:passthrough Authority: URL:{Scheme:passthrough Opaque: User: Host: Path:/:3002 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #4] Channel authority set to "localhost:3002"	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Server #2 ListenSocket #5] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #3] Subchannel picks a new address ":3001" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #4] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": ":3002",
+      "ServerName": "",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": null,
+  "Attributes": null
+} (resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #4] Channel switches to new LB policy "pick_first"	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel picks a new address ":3002" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #3] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:38:58	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:40:01	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:40:01	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 2, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:40:01	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:40:02	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 17:40:04	INFO	consumer/client.go:75	receive message {"event":"stop-matching"}
+2023-07-03 17:40:07	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"30"}
+2023-07-03 17:40:14	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:40:14	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 3, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:40:14	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 3, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 17:40:15	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 17:40:17	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:40:17	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:40:21	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 17:40:21	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:40:21	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel picks a new address ":3002" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:40:21	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:40:21	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to TRANSIENT_FAILURE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3002: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:40:21	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to TRANSIENT_FAILURE	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:40:22	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to IDLE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3002: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:40:22	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:40:24	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 17:40:24	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:40:24	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel picks a new address ":3002" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:40:24	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:40:24	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to TRANSIENT_FAILURE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3002: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:40:24	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to TRANSIENT_FAILURE	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:40:25	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to IDLE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3002: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:40:25	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:47:52	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:47:52	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:47:52	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:47:53	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:47:53	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:47:53	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 2, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 17:47:56	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"30"}
+2023-07-03 17:47:56	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 17:47:57	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:47:57	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel picks a new address ":3002" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:47:57	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:47:57	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:47:57	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:48:00	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 17:48:00	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 17:48:01	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 17:48:02	INFO	consumer/client.go:75	receive message {"event":"move","direction":0}
+2023-07-03 17:48:02	INFO	consumer/client.go:75	receive message {"event":"move","direction":0}
+2023-07-03 17:48:04	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 17:48:04	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 17:48:04	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 17:52:48	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:52:48	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:52:48	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:52:49	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:52:49	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:52:49	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 17:52:52	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"30"}
+2023-07-03 17:52:53	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 18:08:25	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:08:25	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:08:31	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:08:31	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 18:08:31	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:08:32	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:08:33	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:08:33	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 18:08:35	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"30"}
+2023-07-03 18:08:36	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 18:08:36	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:08:36	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel picks a new address ":3002" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:08:36	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:08:36	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:08:36	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:08:36	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:08:36	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:12:00	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:12:00	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 18:12:00	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:12:01	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:12:01	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:12:01	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 18:12:03	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"30"}
+2023-07-03 18:12:04	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 18:12:06	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:12:06	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel picks a new address ":3002" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:12:06	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:12:06	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:12:06	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:12:12	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 18:12:15	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 18:14:25	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:14:25	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:14:32	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 2, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:14:32	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 18:14:32	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:14:33	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:14:33	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:14:33	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 18:14:35	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 18:14:36	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 18:14:38	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:14:38	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel picks a new address ":3002" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:14:38	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:14:38	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:14:38	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:14:41	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 18:14:42	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 18:14:43	INFO	consumer/client.go:75	receive message {"event":"move","direction":0}
+2023-07-03 18:14:43	INFO	consumer/hub.go:53	broadcast {"event":"move","PlayerId":"","Direction":"","a_direction":"0","b_direction":"2"}
+2023-07-03 18:14:44	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 18:14:45	INFO	consumer/client.go:75	receive message {"event":"move","direction":0}
+2023-07-03 18:14:46	INFO	consumer/hub.go:53	broadcast {"event":"move","PlayerId":"","Direction":"","a_direction":"0","b_direction":"2"}
+2023-07-03 18:14:46	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 18:14:47	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 18:14:47	INFO	consumer/client.go:75	receive message {"event":"move","direction":0}
+2023-07-03 18:14:47	INFO	consumer/hub.go:53	broadcast {"event":"move","PlayerId":"","Direction":"","a_direction":"0","b_direction":"2"}
+2023-07-03 18:14:48	INFO	consumer/client.go:75	receive message {"event":"move","direction":0}
+2023-07-03 18:14:49	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 18:14:50	INFO	consumer/hub.go:53	broadcast {"event":"move","PlayerId":"","Direction":"","a_direction":"0","b_direction":"2"}
+2023-07-03 18:14:51	INFO	consumer/client.go:75	receive message {"event":"move","direction":0}
+2023-07-03 18:14:51	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 18:14:52	INFO	consumer/hub.go:53	broadcast {"event":"move","PlayerId":"","Direction":"","a_direction":"0","b_direction":"2"}
+2023-07-03 18:18:35	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:18:35	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:18:41	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:18:41	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 18:18:41	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:18:42	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:18:42	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:18:42	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 18:18:43	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 18:18:44	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 18:18:44	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:18:44	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel picks a new address ":3002" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:18:44	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:18:44	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:18:44	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:18:48	INFO	consumer/client.go:75	receive message {"event":"move","direction":3}
+2023-07-03 18:18:50	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 18:18:50	INFO	consumer/hub.go:53	broadcast {"event":"result","loser":"A"}
+2023-07-03 18:18:51	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 18:18:51	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 2, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 18:18:53	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"30"}
+2023-07-03 18:18:54	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 18:18:56	INFO	consumer/client.go:75	receive message {"event":"move","direction":0}
+2023-07-03 18:20:34	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:20:34	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:29:14	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 2, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:29:14	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOCwiZXhwIjoxNjg4NDQxNzQ2LCJpYXQiOjE2ODgzNTUzNDYsImlzcyI6ImtvYiJ9.cnSrAgYqjyHIwYNJc5HuwTUVCnwIZpUai__bvOm3y4o", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:29:14	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 2, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 18:29:16	INFO	logger/logger.go:115	/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo	{"status": 200, "method": "GET", "path": "/ws/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZXhwIjoxNjg4NDQxNzY4LCJpYXQiOjE2ODgzNTUzNjgsImlzcyI6ImtvYiJ9.lg4yRIR1UOKzZyIjmn-dFQ2NWsexjIxR8aRsMNsjVSo", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:29:16	INFO	logger/logger.go:115	/api/user/account/info/	{"status": 200, "method": "GET", "path": "/api/user/account/info/", "cost": 1, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:29:16	INFO	logger/logger.go:115	/api/user/bot/getlist/	{"status": 200, "method": "GET", "path": "/api/user/bot/getlist/", "cost": 1, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 18:29:19	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"30"}
+2023-07-03 18:29:20	INFO	consumer/client.go:75	receive message {"event":"start-matching","bot_id":"-1"}
+2023-07-03 18:29:21	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:29:21	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel picks a new address ":3002" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:29:21	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:29:21	INFO	grpclog/component.go:36	[core][Channel #4 SubChannel #6] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:29:21	INFO	grpclog/component.go:36	[core][Channel #4] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:29:22	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 18:29:24	INFO	consumer/client.go:75	receive message {"event":"move","direction":0}
+2023-07-03 18:29:26	INFO	consumer/client.go:75	receive message {"event":"move","direction":2}
+2023-07-03 18:29:27	INFO	consumer/client.go:75	receive message {"event":"move","direction":0}
+2023-07-03 18:29:27	INFO	consumer/client.go:75	receive message {"event":"move","direction":0}
+2023-07-03 18:29:27	INFO	consumer/client.go:75	receive message {"event":"move","direction":0}

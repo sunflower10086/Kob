@@ -29,6 +29,7 @@ func Init(conf *settings.AppConfig) {
 }
 
 func AddUser(ctx context.Context, user *pb.User) (*pb.Response, error) {
+
 	resp, err := matchSysClient.AddUser(ctx, user)
 	if err != nil {
 		return nil, err

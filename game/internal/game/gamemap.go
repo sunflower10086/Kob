@@ -3,11 +3,15 @@ package game
 import (
 	"math/rand"
 	"snake/internal/game/util"
-	"snake/internal/grpc/client"
-	httpPb "snake/internal/grpc/client/pb"
+	code "snake/internal/grpc/client/coderuning"
+	codePb "snake/internal/grpc/client/coderuning/pb"
+	"snake/internal/grpc/client/result"
+	resultPb "snake/internal/grpc/client/result/pb"
 	"snake/internal/models"
 	snakePb "snake/internal/pb"
 	"snake/pkg/mw"
+	"strconv"
+	"strings"
 	"sync"
 	"time"
 
@@ -101,6 +105,17 @@ func (g *GameMap) GetGameMap() [][]int32 {
 	return g.g
 }
 
+func (g *GameMap) GetGameMapString() string {
+	resp := strings.Builder{}
+
+	for i := 0; i < g.rows; i++ {
+		for j := 0; j < g.cols; j++ {
+			resp.WriteByte(byte(g.g[i][j]))
+		}
+	}
+	return resp.String()
+}
+
 func (g *GameMap) CreateMap() {
 	for i := 0; i < 1000; i++ {
 		if draw(g) {
@@ -173,8 +188,8 @@ func (g *GameMap) nextStep() bool {
 
 	// 接下来可能会有一个Bot自动运行的系统
 	// 所以还要有一个函数，去清求那个系统的API让bot自动运行
-	// sendBotCode(playerA)
-	// sendBotCode(playerB)
+	g.sendBotCode(g.playerA)
+	g.sendBotCode(g.playerB)
 
 	for i := 0; i < 50; i++ {
 		time.Sleep(time.Millisecond * 200)
@@ -194,16 +209,48 @@ func (g *GameMap) nextStep() bool {
 	return false
 }
 
+func (g *GameMap) getInput(player util.Player) string {
+	var me, you util.Player
+	if g.playerA.Id == player.Id { // 说明自己是A
+		me = g.playerA
+		you = g.playerB
+	} else {
+		me = g.playerB
+		you = g.playerA
+	}
+
+	return g.GetGameMapString() + "#" +
+		strconv.Itoa(me.Sx) + "#" +
+		strconv.Itoa(me.Sy) + "#(" +
+		me.GetStepsString() + ")#" +
+		strconv.Itoa(you.Sx) + "#" +
+		strconv.Itoa(you.Sy) + "#(" +
+		you.GetStepsString() + ")#"
+}
+
+func (g *GameMap) sendBotCode(player util.Player) {
+	if player.BotId == -1 { // 说明是亲自出马
+		return
+	}
+
+	mw.SugarLogger.Debug("send bot code", player)
+	// 与codeRunning进行通信
+	ctx := context.Background()
+	_, err := code.AddBot(ctx, &codePb.AddBotReq{
+		UserId:  int32(player.Id),
+		BotCode: player.BotCode,
+		Input:   g.getInput(player),
+	})
+	if err != nil {
+		zap.L().Error(err.Error())
+		return
+	}
+}
+
 // checkValid 判断最后一步传进来的这一步是否有效
 func (g *GameMap) checkValid(cellsA, cellsB []util.Cell) bool {
 	n := len(cellsA)
 	cell := cellsA[n-1]
-
-	//zap.L()().Debug(g.g)
-	//
-	//zap.L()().Debug(cell)
-	////
-	//zap.L()().Debug(g.g[cell.X][cell.Y])
 
 	if g.g[cell.X][cell.Y] == 1 {
 		return false // 如果最后一位等于墙则判输
@@ -271,7 +318,7 @@ func (g *GameMap) sendMove() {
 		ADirection: g.nextStepA,
 		BDirection: g.nextStepB,
 	}
-	mw.SugarLogger.Debug(g.nextStepA, g.nextStepB)
+	//mw.SugarLogger.Debug(g.nextStepA, g.nextStepB)
 	mw.SugarLogger.Debug(resp)
 
 	g.nextStepA, g.nextStepB = -1, -1
@@ -289,13 +336,13 @@ func (g *GameMap) sendResult() {
 	//saveToDataBase();
 	//sendAllMessage(resp.toJSONString());
 
-	result := &httpPb.ResultReq{
+	resp := &resultPb.ResultReq{
 		EventType:  1,
-		GameResult: &httpPb.GameResult{Loser: g.loser},
+		GameResult: &resultPb.GameResult{Loser: g.loser},
 	}
 
-	mw.SugarLogger.Debug(result)
-	_, err := client.Result(context.Background(), result)
+	mw.SugarLogger.Debug(resp)
+	_, err := result.Result(context.Background(), resp)
 	if err != nil {
 		return
 	}

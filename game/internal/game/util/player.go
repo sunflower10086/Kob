@@ -1,5 +1,7 @@
 package util
 
+import "strings"
+
 type Player struct {
 	Id       int
 	BotId    int
@@ -17,6 +19,16 @@ func checkTailIncreasing(step int) bool {
 	} else {
 		return step%3 == 1
 	}
+}
+
+func (p *Player) GetStepsString() string {
+	resp := strings.Builder{}
+
+	for i := 0; i < len(p.Steps); i++ {
+		resp.WriteByte(byte(p.Steps[i]))
+	}
+
+	return resp.String()
 }
 
 func (p *Player) GetCells() []Cell {

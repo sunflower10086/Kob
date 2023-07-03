@@ -1,10 +1,10 @@
-package client
+package result
 
 import (
 	"context"
 	"log"
 	"snake/conf/settings"
-	pb "snake/internal/grpc/client/pb"
+	"snake/internal/grpc/client/result/pb"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
@@ -12,7 +12,7 @@ import (
 
 var resultClient pb.ResultClient
 
-func InitResult() {
+func Init() {
 	var opts []grpc.DialOption
 
 	opts = append(opts, grpc.WithTransportCredentials(insecure.NewCredentials()))

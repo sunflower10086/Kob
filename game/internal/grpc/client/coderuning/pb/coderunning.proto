@@ -1,0 +1,18 @@
+syntax="proto3";
+
+package coderuning.pb;
+option go_package = ".;coderuning";
+
+service code_run {
+  rpc AddBot(AddBotReq) returns (AddBotResp) {}
+}
+
+message AddBotReq {
+  int32 UserId = 1;
+  string BotCode = 2;
+  string Input = 3;
+}
+
+message AddBotResp {
+  string message = 1;
+}

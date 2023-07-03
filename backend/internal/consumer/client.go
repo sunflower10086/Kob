@@ -71,7 +71,7 @@ func (c *Client) ReadPump(ctx *gin.Context) {
 			break
 		}
 
-		message = bytes.TrimSpace(bytes.Replace(message, newline, space, -1)) // 收到信息了，就要去匹配
+		message = bytes.TrimSpace(bytes.Replace(message, newline, space, -1))
 		logger.SugarLogger.Infof("receive message %s", string(message))
 
 		Router(ctx, c, string(message))

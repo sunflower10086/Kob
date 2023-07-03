@@ -433,3 +433,157 @@
 2023-07-03 11:36:10	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
 2023-07-03 11:36:16	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
 2023-07-03 11:36:16	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 16:49:02	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:49:02	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:49:42	ERROR	logger/logger.go:105	/api/user/bot/add/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/add/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:49:42	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:49:46	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:49:47	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:50:08	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:50:08	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:51:10	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:51:10	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:51:31	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:51:31	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:52:02	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:52:02	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:52:11	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:52:13	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:52:20	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:52:20	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:53:49	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:53:49	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:54:00	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:54:00	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:54:53	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:54:54	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 16:55:03	ERROR	result/handler.go:46	startGame err:	{"error": "rpc error: code = Unknown desc = panic triggered: runtime error: invalid memory address or nil pointer dereference"}
+2023-07-03 16:55:12	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:55:12	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:55:13	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 16:55:13	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 16:55:42	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:55:43	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 16:55:47	ERROR	result/handler.go:46	startGame err:	{"error": "rpc error: code = Unknown desc = panic triggered: runtime error: invalid memory address or nil pointer dereference"}
+2023-07-03 16:56:25	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 16:56:25	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 16:56:47	ERROR	result/handler.go:46	startGame err:	{"error": "rpc error: code = Unknown desc = panic triggered: runtime error: invalid memory address or nil pointer dereference"}
+2023-07-03 17:05:01	ERROR	result/handler.go:46	startGame err:	{"error": "rpc error: code = Unknown desc = panic triggered: runtime error: invalid memory address or nil pointer dereference"}
+2023-07-03 17:05:45	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:05:45	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:08:13	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:08:13	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 17:08:13	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:08:13	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:08:32	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:08:32	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 17:08:32	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:08:32	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:08:42	ERROR	consumer/router.go:31	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:09:15	ERROR	consumer/router.go:31	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:09:31	ERROR	consumer/router.go:31	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:09:35	ERROR	consumer/router.go:31	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:09:38	ERROR	consumer/router.go:31	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:09:43	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:09:43	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:09:50	ERROR	consumer/router.go:31	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:09:54	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:09:54	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:09:56	ERROR	consumer/router.go:31	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:10:18	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:10:18	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 17:10:23	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:10:25	ERROR	consumer/router.go:31	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:11:17	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:11:17	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 17:11:22	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:11:22	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:11:36	ERROR	consumer/router.go:31	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:11:40	ERROR	consumer/router.go:31	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:11:41	ERROR	consumer/router.go:31	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:12:02	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:12:02	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 17:12:05	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:12:10	ERROR	consumer/router.go:31	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:12:14	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:12:14	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:12:16	ERROR	consumer/router.go:31	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:12:49	ERROR	consumer/router.go:31	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:15:07	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:15:07	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:15:18	ERROR	consumer/router.go:33	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:15:26	ERROR	consumer/router.go:33	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:15:51	ERROR	consumer/router.go:33	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:16:18	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:16:18	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:16:34	ERROR	consumer/router.go:32	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:16:36	ERROR	consumer/router.go:32	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:16:36	ERROR	consumer/router.go:32	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:16:37	ERROR	consumer/router.go:32	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:16:37	ERROR	consumer/router.go:32	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:16:37	ERROR	consumer/router.go:32	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:16:38	ERROR	consumer/router.go:32	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:16:38	ERROR	consumer/router.go:32	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:16:40	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:16:40	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:16:42	ERROR	consumer/router.go:32	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:17:04	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:17:04	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:17:06	ERROR	consumer/router.go:33	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:18:05	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:18:05	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:18:07	ERROR	consumer/router.go:32	json: cannot unmarshal number into Go struct field Req.BotId of type string
+2023-07-03 17:19:16	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:19:16	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 17:20:12	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:20:12	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 17:40:01	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:40:01	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:40:14	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:40:14	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 17:40:21	WARN	grpclog/component.go:41	[core][Channel #4 SubChannel #6] grpc: addrConn.createTransport failed to connect to {
+  "Addr": ":3002",
+  "ServerName": "localhost:3002",
+  "Attributes": null,
+  "BalancerAttributes": null,
+  "Type": 0,
+  "Metadata": null
+}. Err: connection error: desc = "transport: Error while dialing: dial tcp :3002: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:40:24	WARN	grpclog/component.go:41	[core][Channel #4 SubChannel #6] grpc: addrConn.createTransport failed to connect to {
+  "Addr": ":3002",
+  "ServerName": "localhost:3002",
+  "Attributes": null,
+  "BalancerAttributes": null,
+  "Type": 0,
+  "Metadata": null
+}. Err: connection error: desc = "transport: Error while dialing: dial tcp :3002: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-07-03 17:47:52	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:47:52	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:47:53	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:47:53	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 17:52:48	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:52:48	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 17:52:49	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 17:52:49	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 18:08:31	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:08:31	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 18:08:32	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:08:32	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 18:12:00	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:12:00	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 18:12:01	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:12:01	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 18:14:32	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:14:32	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 18:14:33	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:14:33	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 18:18:41	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:18:41	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 18:18:42	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:18:42	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 18:18:51	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 18:18:51	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 18:29:14	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:29:14	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 18:29:16	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 18:29:16	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}

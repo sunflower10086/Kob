@@ -25,7 +25,6 @@ var Clt *Client
 func Router(ctx *gin.Context, client *Client, message string) {
 	Clt = client
 	var data Req
-
 	err := json.Unmarshal([]byte(message), &data)
 	if err != nil {
 		zap.L().Error(err.Error())

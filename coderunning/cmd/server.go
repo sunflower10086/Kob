@@ -23,8 +23,8 @@ func init() {
 }
 
 func main() {
-	snakeConf := settings.Conf.AllServer.SnakeConfig
-	Addr := fmt.Sprintf("%s%s", snakeConf.Host, snakeConf.Port)
+	botRunningConf := settings.Conf.AllServer.BotRunningConfig
+	Addr := fmt.Sprintf("%s%s", botRunningConf.Host, botRunningConf.Port)
 
 	listener, err := net.Listen("tcp", Addr)
 	if err != nil {

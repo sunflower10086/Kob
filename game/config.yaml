@@ -7,6 +7,10 @@ server:
     name: "result"
     host: "127.0.0.1"
     port: ":3003"
+  botrun:
+    name: "botrun"
+    host: "127.0.0.1"
+    port: ":3004"
 
 log:
   level: "debug"

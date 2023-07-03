@@ -4,7 +4,7 @@ import (
 	"context"
 	"snake/conf/mysql"
 	"snake/internal/game/util"
-	resultPb "snake/internal/grpc/client/pb"
+	resultPb "snake/internal/grpc/client/result/pb"
 	"snake/internal/models"
 	snakePb "snake/internal/pb"
 	"snake/pkg/mw"
