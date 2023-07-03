@@ -246,3 +246,7 @@
 2023-06-14 11:00:10	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
 2023-06-14 11:02:29	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
 2023-06-14 11:02:29	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:30	INFO	grpclog/component.go:36	[core][Server #3] Server created	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:30	INFO	grpclog/component.go:36	[core][Server #3 ListenSocket #4] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:30	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:30	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}

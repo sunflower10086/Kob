@@ -15,6 +15,10 @@ message ResultReq {
   gameMap GameMap =4;
 }
 
+message ResultResp {
+  string Message = 1;
+}
+
 message matchResult {
   int32 AId = 1;
   int32 ABotId = 2;
@@ -24,10 +28,6 @@ message matchResult {
 
 message gameResult {
   string Loser = 1;
-}
-
-message ResultResp {
-  string Message = 1;
 }
 
 message gameMap {

@@ -409,3 +409,27 @@
 2023-06-14 11:00:28	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
 2023-06-14 11:00:38	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
 2023-06-14 11:00:39	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 11:34:54	WARN	grpclog/component.go:41	[core][Channel #3 SubChannel #4] grpc: addrConn.createTransport failed to connect to {
+  "Addr": ":3002",
+  "ServerName": "localhost:3002",
+  "Attributes": null,
+  "BalancerAttributes": null,
+  "Type": 0,
+  "Metadata": null
+}. Err: connection error: desc = "transport: Error while dialing: dial tcp :3002: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:34:54	WARN	grpclog/component.go:41	[core][Channel #1 SubChannel #2] grpc: addrConn.createTransport failed to connect to {
+  "Addr": ":3001",
+  "ServerName": "localhost:3001",
+  "Attributes": null,
+  "BalancerAttributes": null,
+  "Type": 0,
+  "Metadata": null
+}. Err: connection error: desc = "transport: Error while dialing: dial tcp :3001: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:46	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 11:35:48	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-03 11:36:00	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 11:36:00	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 11:36:08	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 11:36:10	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-03 11:36:16	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-03 11:36:16	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}

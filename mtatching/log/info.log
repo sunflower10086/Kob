@@ -501,3 +501,32 @@
 2023-06-14 11:00:31	INFO	matchutil/pool.go:59	matching success playerA:{19 -1 1500 0}, playerB:{18 -1 1500 0}
 2023-06-14 11:02:29	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
 2023-06-14 11:02:29	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:25	INFO	grpclog/component.go:36	[core][Server #1] Server created	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:25	INFO	grpclog/component.go:36	[core][Channel #2] Channel created	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:25	INFO	grpclog/component.go:36	[core][Channel #2] original dial target is: ":3003"	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:25	INFO	grpclog/component.go:36	[core][Channel #2] dial target ":3003" parse failed: parse ":3003": missing protocol scheme	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:25	INFO	grpclog/component.go:36	[core][Channel #2] fallback to scheme "passthrough"	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:25	INFO	grpclog/component.go:36	[core][Server #1 ListenSocket #3] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:25	INFO	grpclog/component.go:36	[core][Channel #2] parsed dial target is: {Scheme:passthrough Authority: URL:{Scheme:passthrough Opaque: User: Host: Path:/:3003 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:25	INFO	grpclog/component.go:36	[core][Channel #2] Channel authority set to "localhost:3003"	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:25	INFO	grpclog/component.go:36	[core][Channel #2] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": ":3003",
+      "ServerName": "",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": null,
+  "Attributes": null
+} (resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:25	INFO	grpclog/component.go:36	[core][Channel #2] Channel switches to new LB policy "pick_first"	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:25	INFO	grpclog/component.go:36	[core][Channel #2 SubChannel #4] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:25	INFO	grpclog/component.go:36	[core][Channel #2] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:25	INFO	grpclog/component.go:36	[core][Channel #2 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:25	INFO	grpclog/component.go:36	[core][Channel #2 SubChannel #4] Subchannel picks a new address ":3003" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:25	INFO	grpclog/component.go:36	[core][Channel #2 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 11:35:25	INFO	grpclog/component.go:36	[core][Channel #2] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}

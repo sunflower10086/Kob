@@ -11,6 +11,7 @@ import (
 
 	pb "snake/internal/pb"
 
+	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	grpc_zap "github.com/grpc-ecosystem/go-grpc-middleware/logging/zap"
 	grpc_recovery "github.com/grpc-ecosystem/go-grpc-middleware/recovery"
 	grpc_ctxtags "github.com/grpc-ecosystem/go-grpc-middleware/tags"
@@ -46,14 +47,14 @@ func main() {
 	}
 
 	var opts []grpc.ServerOption
-	opts = append(opts, grpc.ChainStreamInterceptor(
-		grpc_ctxtags.StreamServerInterceptor(),
-		grpc_opentracing.StreamServerInterceptor(),
+	opts = append(opts, grpc.UnaryInterceptor(grpc_middleware.ChainUnaryServer(
+		grpc_ctxtags.UnaryServerInterceptor(),
+		grpc_opentracing.UnaryServerInterceptor(),
 		//grpc_prometheus.UnaryServerInterceptor,
-		grpc_zap.StreamServerInterceptor(mw.ZapInterceptor(settings.Conf)),
+		grpc_zap.UnaryServerInterceptor(mw.ZapInterceptor(settings.Conf)),
 		//grpc_auth.UnaryServerInterceptor(auth.AuthInterceptor),
-		grpc_recovery.StreamServerInterceptor(mw.RecoveryInterceptor()),
-	))
+		grpc_recovery.UnaryServerInterceptor(mw.RecoveryInterceptor()),
+	)))
 
 	grpcServer := grpc.NewServer(opts...)
 	pb.RegisterGameSystemServer(grpcServer, game.SnakeImpl{})
