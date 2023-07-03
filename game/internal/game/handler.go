@@ -33,7 +33,8 @@ func (SnakeImpl) SetNextStep(ctx context.Context, req *snakePb.SetNextStepReq) (
 
 	// 接收消息
 	direction, _ := strconv.Atoi(req.GetDirection())
-	mw.SugarLogger.Debug(req)
+	mw.SugarLogger.Debug(req.GetPlayerId())
+	mw.SugarLogger.Debug(req.GetDirection())
 	Move(req.GetPlayerId(), int32(direction))
 
 	resp := make(chan *snakePb.SetNextStepResp)

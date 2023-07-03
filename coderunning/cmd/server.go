@@ -4,6 +4,7 @@ import (
 	"coderunning/conf/settings"
 	"coderunning/internal/coderuning"
 	"coderunning/internal/coderuning/util"
+	"coderunning/internal/grppc/client/game"
 	"context"
 	"fmt"
 	"log"
@@ -20,6 +21,8 @@ func init() {
 		fmt.Printf("init settings failed err: %v\n", err)
 		panic(err)
 	}
+
+	game.Init(settings.Conf)
 }
 
 func main() {

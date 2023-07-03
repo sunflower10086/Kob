@@ -1,0 +1,34 @@
+syntax="proto3";
+
+package game.pb;
+option go_package = ".;game_system";
+
+service game_system {
+  rpc StartGame(StartGameReq) returns(StartGameResp) {};
+  // 他做两件事，
+  // 1. 匹配成功之后，创建地图，把创建成功的地图返回来
+  // 2. 传递下一步应该是什么
+  rpc SetNextStep(SetNextStepReq) returns(SetNextStepResp) {};
+}
+
+message StartGameReq {
+  int32 aId = 1;
+  int32 aBotId = 2;
+  int32 bId = 3;
+  int32 bBotId = 4;
+}
+
+message StartGameResp {
+  string message = 1;
+}
+
+message SetNextStepReq {
+  string direction = 1;
+  string PlayerId = 2;
+}
+
+message SetNextStepResp {
+  string event = 1;
+  int32 aDirection = 2;
+  int32 bDirection = 3;
+}

@@ -341,3 +341,132 @@
 2023-07-03 18:29:05	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
 2023-07-03 18:29:05	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
 2023-07-03 18:29:21	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-03T18:29:21+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "game.pb.game_system", "grpc.method": "StartGame", "peer.address": "127.0.0.1:58116", "grpc.code": "OK", "grpc.time_ms": 9.238}
+2023-07-03 18:53:37	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:53:37	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:53:48	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-03T18:53:48+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "game.pb.game_system", "grpc.method": "StartGame", "peer.address": "127.0.0.1:58116", "grpc.code": "OK", "grpc.time_ms": 5.196}
+2023-07-03 18:53:48	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:53:48	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel picks a new address ":3004" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:53:48	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:53:48	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:53:48	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:53:49	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:53:49	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:54:32	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-03T18:54:32+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "game.pb.game_system", "grpc.method": "StartGame", "peer.address": "127.0.0.1:58116", "grpc.code": "OK", "grpc.time_ms": 4.185}
+2023-07-03 18:54:32	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:54:32	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel picks a new address ":3004" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:54:32	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:54:32	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:54:32	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:57:40	INFO	grpclog/component.go:36	[core][Server #6] Server created	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:57:40	INFO	grpclog/component.go:36	[core][Server #6 ListenSocket #8] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:57:40	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:57:40	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:57:40	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:57:40	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:57:48	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-03T18:57:48+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "game.pb.game_system", "grpc.method": "StartGame", "peer.address": "127.0.0.1:58154", "grpc.code": "OK", "grpc.time_ms": 7.321}
+2023-07-03 18:58:56	INFO	grpclog/component.go:36	[core][Server #6] Server created	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:58:56	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:58:56	INFO	grpclog/component.go:36	[core][Server #6 ListenSocket #8] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:58:56	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:58:56	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:58:56	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:59:04	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-03T18:59:04+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "game.pb.game_system", "grpc.method": "StartGame", "peer.address": "127.0.0.1:58168", "grpc.code": "OK", "grpc.time_ms": 10.526}
+2023-07-03 18:59:57	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:59:57	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:59:57	INFO	grpclog/component.go:36	[core][Server #7] Server created	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:59:57	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:59:57	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 18:59:57	INFO	grpclog/component.go:36	[core][Server #7 ListenSocket #8] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:00:02	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-03T19:00:02+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "game.pb.game_system", "grpc.method": "StartGame", "peer.address": "127.0.0.1:58182", "grpc.code": "OK", "grpc.time_ms": 8.024}
+2023-07-03 19:02:34	INFO	grpclog/component.go:36	[core][Server #6] Server created	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:02:34	INFO	grpclog/component.go:36	[core][Server #6 ListenSocket #8] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:02:34	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #5] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:02:34	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:02:42	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-03T19:02:42+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "game.pb.game_system", "grpc.method": "StartGame", "peer.address": "127.0.0.1:58196", "grpc.code": "OK", "grpc.time_ms": 7.055}
+2023-07-03 19:03:04	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:03:04	INFO	grpclog/component.go:36	[core][Server #6] Server created	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:03:04	INFO	grpclog/component.go:36	[core][Server #6 ListenSocket #8] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:03:04	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:03:04	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:03:04	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:03:14	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-03T19:03:14+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "game.pb.game_system", "grpc.method": "StartGame", "peer.address": "127.0.0.1:58212", "grpc.code": "OK", "grpc.time_ms": 6.721}
+2023-07-03 19:10:42	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:10:42	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:10:47	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:10:47	INFO	grpclog/component.go:36	[core][Server #7] Server created	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:10:47	INFO	grpclog/component.go:36	[core][Server #7 ListenSocket #8] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:10:56	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-03T19:10:56+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "game.pb.game_system", "grpc.method": "StartGame", "peer.address": "127.0.0.1:58238", "grpc.code": "OK", "grpc.time_ms": 5.235}
+2023-07-03 19:11:25	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:11:25	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:11:38	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-03T19:11:38+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "game.pb.game_system", "grpc.method": "StartGame", "peer.address": "127.0.0.1:58238", "grpc.code": "OK", "grpc.time_ms": 2.837}
+2023-07-03 19:11:38	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:11:38	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel picks a new address ":3004" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:11:38	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:11:38	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:11:38	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:12:06	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:12:06	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:12:14	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-03T19:12:14+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "game.pb.game_system", "grpc.method": "StartGame", "peer.address": "127.0.0.1:58238", "grpc.code": "OK", "grpc.time_ms": 2.887}
+2023-07-03 19:12:14	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:12:14	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel picks a new address ":3004" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:12:14	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:12:14	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:12:14	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:12:43	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:12:43	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:12:54	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-03T19:12:54+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "game.pb.game_system", "grpc.method": "StartGame", "peer.address": "127.0.0.1:58238", "grpc.code": "OK", "grpc.time_ms": 3.123}
+2023-07-03 19:12:54	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:12:54	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel picks a new address ":3004" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:12:54	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:12:54	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:12:54	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:13:10	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:13:10	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:13:18	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-03T19:13:18+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "game.pb.game_system", "grpc.method": "StartGame", "peer.address": "127.0.0.1:58238", "grpc.code": "OK", "grpc.time_ms": 2.914}
+2023-07-03 19:13:18	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:13:18	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel picks a new address ":3004" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:13:18	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:13:18	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:13:18	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:13:43	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:13:43	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:13:52	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-03T19:13:52+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "game.pb.game_system", "grpc.method": "StartGame", "peer.address": "127.0.0.1:58238", "grpc.code": "OK", "grpc.time_ms": 2.659}
+2023-07-03 19:13:53	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:13:53	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel picks a new address ":3004" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:13:53	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:13:53	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:13:53	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:14:28	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:14:28	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:14:34	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-03T19:14:34+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "game.pb.game_system", "grpc.method": "StartGame", "peer.address": "127.0.0.1:58238", "grpc.code": "OK", "grpc.time_ms": 3.058}
+2023-07-03 19:14:35	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:14:35	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel picks a new address ":3004" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:14:35	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:14:35	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:14:35	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:15:12	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:15:12	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:15:38	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-03T19:15:38+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "game.pb.game_system", "grpc.method": "StartGame", "peer.address": "127.0.0.1:58238", "grpc.code": "OK", "grpc.time_ms": 2.679}
+2023-07-03 19:15:39	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:15:39	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel picks a new address ":3004" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:15:39	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:15:39	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:15:39	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:21:19	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-03T19:21:19+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "game.pb.game_system", "grpc.method": "StartGame", "peer.address": "127.0.0.1:58238", "grpc.code": "OK", "grpc.time_ms": 2.849}
+2023-07-03 19:21:45	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-03T19:21:45+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "game.pb.game_system", "grpc.method": "StartGame", "peer.address": "127.0.0.1:58238", "grpc.code": "OK", "grpc.time_ms": 3.059}
+2023-07-03 19:24:44	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:24:44	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:25:05	INFO	grpclog/component.go:36	[core][Server #5] Server created	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:25:05	INFO	grpclog/component.go:36	[core][Server #5 ListenSocket #6] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:25:05	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #2] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:25:05	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:25:06	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to IDLE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3004: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:25:06	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:25:58	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:25:58	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel picks a new address ":3004" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:25:58	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:25:58	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-03T19:25:57+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "game.pb.game_system", "grpc.method": "StartGame", "peer.address": "127.0.0.1:58328", "grpc.code": "OK", "grpc.time_ms": 547.363}
+2023-07-03 19:25:58	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:25:58	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:26:47	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-03 19:26:47	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}

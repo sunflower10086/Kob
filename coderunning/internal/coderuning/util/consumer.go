@@ -1,12 +1,15 @@
 package util
 
 import (
+	"coderunning/internal/grppc/client/game"
+	pb "coderunning/internal/grppc/client/game/pb"
 	"coderunning/internal/models"
 	"coderunning/pkg/constants"
 	"context"
 	"fmt"
 	"io"
 	"os"
+	"strconv"
 	"time"
 
 	"github.com/docker/docker/api/types"
@@ -79,11 +82,19 @@ func consume(ctx context.Context, bot models.Bot) error {
 	}
 
 	step := string(resp[:n])
-	// TODO: 调用game的SetNextStep
-
 	// 取出一个任务
 	<-TaskNum
+	// TODO: 调用game的SetNextStep
 	fmt.Println(step)
+	req := &pb.SetNextStepReq{
+		Direction: step,
+		PlayerId:  strconv.Itoa(int(bot.UserId)),
+	}
+	_, err = game.SetNextStep(ctx, req)
+	if err != nil {
+		fmt.Println(err.Error())
+		return err
+	}
 
 	err = cli.ContainerRemove(ctx, containerId, types.ContainerRemoveOptions{})
 	if err != nil {

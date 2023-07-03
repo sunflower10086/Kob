@@ -10,7 +10,7 @@ type AppConfig struct {
 
 type AllServer struct {
 	BotRunningConfig *Server `mapstructure:"botrun"`
-	//ResultConfig *Server `mapstructure:"result"`
+	SnakeConfig      *Server `mapstructure:"snake"`
 }
 
 type Server struct {
