@@ -6,6 +6,7 @@ import (
 	"backend/internal/grpc/client/snake/util"
 	shape "backend/pkg/share_space"
 	"context"
+	"fmt"
 
 	pb "backend/internal/grpc/client/snake/pb"
 
@@ -68,6 +69,7 @@ func SetNextStep(ctx context.Context, req *pb.SetNextStepReq) (*pb.SetNextStepRe
 	resp, err := client.SetNextStep(ctx, req)
 	if err != nil {
 		zap.L().Debug(err.Error())
+		fmt.Println(err.Error())
 		return nil, err
 	}
 

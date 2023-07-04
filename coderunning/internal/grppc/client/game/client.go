@@ -4,6 +4,7 @@ import (
 	"coderunning/conf/settings"
 	pb "coderunning/internal/grppc/client/game/pb"
 	"context"
+	"log"
 
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
@@ -19,7 +20,7 @@ func Init(conf *settings.AppConfig) {
 
 	conn, err := grpc.Dial(conf.AllServer.SnakeConfig.Port, opts...)
 	if err != nil {
-		zap.L().Error("snake server net.Connect err: ", zap.Error(err))
+		log.Printf("snake server net.Connect err: %s\n", err.Error())
 	}
 
 	client = pb.NewGameSystemClient(conn)

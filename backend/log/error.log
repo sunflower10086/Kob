@@ -675,3 +675,161 @@
 2023-07-03 19:25:25	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
 2023-07-03 19:25:30	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 4, "query": "", "ip": "::1", "errors": ""}
 2023-07-03 19:25:32	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 09:46:02	WARN	grpclog/component.go:41	[core][Channel #1 SubChannel #2] grpc: addrConn.createTransport failed to connect to {
+  "Addr": ":3001",
+  "ServerName": "localhost:3001",
+  "Attributes": null,
+  "BalancerAttributes": null,
+  "Type": 0,
+  "Metadata": null
+}. Err: connection error: desc = "transport: Error while dialing: dial tcp :3001: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-07-04 09:46:02	WARN	grpclog/component.go:41	[core][Channel #3 SubChannel #4] grpc: addrConn.createTransport failed to connect to {
+  "Addr": ":3002",
+  "ServerName": "localhost:3002",
+  "Attributes": null,
+  "BalancerAttributes": null,
+  "Type": 0,
+  "Metadata": null
+}. Err: connection error: desc = "transport: Error while dialing: dial tcp :3002: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-07-04 09:46:30	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 09:46:41	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 09:46:43	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 09:46:44	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 09:46:44	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 09:48:23	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 09:48:23	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 09:48:25	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 09:48:25	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 09:49:22	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 09:49:22	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 09:49:23	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 09:49:23	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 09:51:26	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 09:51:26	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 09:51:27	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 09:51:27	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 09:54:16	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 09:54:16	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 09:54:17	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 09:54:17	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 09:57:26	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 09:57:26	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 09:58:37	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 09:58:37	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 09:59:03	ERROR	logger/logger.go:105	/api/user/bot/update/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/update/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 09:59:03	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:00:34	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 10:00:36	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:00:39	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:01:47	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:01:48	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:01:57	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:01:58	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:02:42	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:02:42	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:02:52	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:02:53	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:03:33	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:03:34	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:05:12	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:05:13	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:06:31	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:06:31	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:07:05	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:07:06	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:07:20	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:07:21	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:07:24	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 10:07:30	ERROR	logger/logger.go:105	/api/user/bot/update/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/update/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 10:07:30	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:07:32	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 10:11:51	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:11:51	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:13:11	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:13:12	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:13:30	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:13:31	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:14:41	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:14:41	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:15:28	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:15:29	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:32:47	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:32:47	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:33:02	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:33:02	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:37:38	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:37:39	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:38:28	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:38:29	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:42:05	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 10:42:05	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:42:06	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 10:42:06	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:42:47	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:42:47	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:42:59	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:43:00	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:43:09	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:43:10	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:43:21	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 10:43:21	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:43:22	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 10:43:22	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:43:47	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:43:48	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:45:22	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:45:23	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:46:26	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 10:46:26	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:46:27	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 10:46:27	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:53:14	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 10:53:14	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:53:15	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 10:53:15	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:53:25	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:53:26	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:56:42	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:56:42	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:56:59	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:57:00	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:58:01	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:58:03	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:58:11	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:58:12	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 10:59:02	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 10:59:02	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 11:01:43	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 11:01:43	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 11:02:48	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 11:02:48	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 11:02:49	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 11:02:49	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 11:05:58	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 11:05:59	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 11:06:09	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 11:06:09	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 11:06:10	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 11:06:10	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 11:07:33	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 11:07:33	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 11:07:33	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 11:07:33	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 11:08:22	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 11:08:22	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 11:08:23	ERROR	logger/logger.go:105	/api/user/account/info/	{"status": 404, "method": "OPTIONS", "path": "/api/user/account/info/", "cost": 0, "query": "", "ip": "::1", "errors": ""}
+2023-07-04 11:08:23	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 11:09:52	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 11:09:52	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 11:10:33	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 11:10:35	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 11:11:40	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 11:11:40	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 11:12:11	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 11:12:12	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 11:17:23	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 11:17:24	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 11:17:37	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 11:17:37	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}
+2023-07-04 11:18:10	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=19", "ip": "::1", "errors": ""}
+2023-07-04 11:18:11	ERROR	logger/logger.go:105	/api/user/bot/getlist/	{"status": 404, "method": "OPTIONS", "path": "/api/user/bot/getlist/", "cost": 0, "query": "user_id=18", "ip": "::1", "errors": ""}

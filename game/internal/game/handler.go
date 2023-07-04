@@ -2,13 +2,13 @@ package game
 
 import (
 	"encoding/json"
+	"fmt"
 	"snake/internal/grpc/client/result"
 	resultPb "snake/internal/grpc/client/result/pb"
 	snakePb "snake/internal/pb"
 	"snake/pkg/mw"
 	"strconv"
 
-	"go.uber.org/zap"
 	"golang.org/x/net/context"
 )
 
@@ -29,19 +29,29 @@ func (SnakeImpl) StartGame(ctx context.Context, req *snakePb.StartGameReq) (res 
 
 func (SnakeImpl) SetNextStep(ctx context.Context, req *snakePb.SetNextStepReq) (*snakePb.SetNextStepResp, error) {
 	// TODO: 业务逻辑
-	zap.L().Debug("SetNextStep function used")
-
 	// 接收消息
-	direction, _ := strconv.Atoi(req.GetDirection())
-	mw.SugarLogger.Debug(req.GetPlayerId())
-	mw.SugarLogger.Debug(req.GetDirection())
-	Move(req.GetPlayerId(), int32(direction))
+	direction, _ := strconv.ParseInt(req.GetDirection(), 10, 32)
+	if req.IsCode {
+		fmt.Println(direction)
+		PlayerId, _ := strconv.Atoi(req.PlayerId)
+		switch PlayerId {
+		case Gamemap.GetPlayerA().Id:
+			Gamemap.SetNestStepA(int32(direction))
+		case Gamemap.GetPlayerB().Id:
+			Gamemap.SetNestStepB(int32(direction))
+		}
+	}
 
-	resp := make(chan *snakePb.SetNextStepResp)
+	Move(req.GetPlayerId(), int32(direction), req.IsCode)
+
+	resp := make(chan *snakePb.SetNextStepResp, 2)
 	go func() {
 		for {
 			select {
-			case resp <- <-Gamemap.MoveMessage:
+			case message := <-Gamemap.MoveMessage:
+				fmt.Println(req.PlayerId, req.IsCode)
+				fmt.Println("send message is", message)
+				resp <- message
 				return
 			}
 		}
@@ -50,7 +60,7 @@ func (SnakeImpl) SetNextStep(ctx context.Context, req *snakePb.SetNextStepReq) (
 	return <-resp, nil
 }
 
-func Move(playerId string, direction int32) {
+func Move(playerId string, direction int32, isBot bool) {
 	PlayerId, _ := strconv.Atoi(playerId)
 
 	switch PlayerId {
@@ -58,8 +68,14 @@ func Move(playerId string, direction int32) {
 		if Gamemap.GetPlayerA().BotId == -1 { // 亲自出马
 			Gamemap.SetNestStepA(direction)
 		}
+		if isBot {
+			Gamemap.SetNestStepA(direction)
+		}
 	case Gamemap.GetPlayerB().Id:
 		if Gamemap.GetPlayerB().BotId == -1 { // 亲自出马
+			Gamemap.SetNestStepB(direction)
+		}
+		if isBot {
 			Gamemap.SetNestStepB(direction)
 		}
 	}

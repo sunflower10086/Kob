@@ -73,7 +73,7 @@ func consume(ctx context.Context, bot models.Bot) error {
 
 	//stdcopy.StdCopy(os.Stdout, os.Stderr, out)
 
-	resp := make([]byte, 1024)
+	resp := make([]byte, 10)
 	n, err := out.Read(resp)
 	if err != nil {
 		if err != io.EOF {
@@ -81,18 +81,13 @@ func consume(ctx context.Context, bot models.Bot) error {
 		}
 	}
 
-	step := string(resp[:n])
 	// 取出一个任务
-	<-TaskNum
-	// TODO: 调用game的SetNextStep
-	fmt.Println(step)
-	req := &pb.SetNextStepReq{
-		Direction: step,
-		PlayerId:  strconv.Itoa(int(bot.UserId)),
+	if len(TaskNum) > 0 {
+		<-TaskNum
 	}
-	_, err = game.SetNextStep(ctx, req)
-	if err != nil {
-		fmt.Println(err.Error())
+	// TODO: 调用game的SetNextStep
+	if err = setNextStep(ctx, string(resp[:n]), strconv.Itoa(int(bot.UserId))); err != nil {
+		fmt.Println("setNextStep", err)
 		return err
 	}
 
@@ -101,7 +96,23 @@ func consume(ctx context.Context, bot models.Bot) error {
 		return err
 	}
 	fmt.Printf("删除容器%s成功\n", containerId)
+	fmt.Println()
 
+	return nil
+}
+
+func setNextStep(ctx context.Context, direction, playerId string) error {
+	fmt.Println("set next step used")
+	resp, err := game.SetNextStep(ctx, &pb.SetNextStepReq{
+		Direction: direction,
+		PlayerId:  playerId,
+		IsCode:    true,
+	})
+	if err != nil {
+		return err
+	}
+
+	fmt.Println("set next step response:", resp)
 	return nil
 }
 

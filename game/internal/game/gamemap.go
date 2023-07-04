@@ -184,7 +184,7 @@ func (g *GameMap) nextStep() bool {
 	// 用代码去操作蛇的移动的时候会计算很多次  相当于加一个施法后摇，防止输入次数过多
 	// 前端设定每秒走5个格子如果输入太多步数就会被覆盖，所以在每次计算之前睡一个最小值  1s / 5 = 200ms
 	// 这样保证每次走一格最多只会有依次输入
-	time.Sleep(time.Millisecond * 150)
+	time.Sleep(time.Millisecond * 200)
 
 	// 接下来可能会有一个Bot自动运行的系统
 	// 所以还要有一个函数，去清求那个系统的API让bot自动运行
@@ -192,12 +192,12 @@ func (g *GameMap) nextStep() bool {
 	g.sendBotCode(g.playerB)
 
 	for i := 0; i < 50; i++ {
-		time.Sleep(time.Millisecond * 200)
+		time.Sleep(time.Millisecond * 100)
 		lock.Lock()
 
 		if g.nextStepA != -1 && g.nextStepB != -1 {
-			//zap.L()().Debug(g.nextStepA)
-			//zap.L()().Debug(g.nextStepB)
+			//zap.L().Debug("A:" + string(g.nextStepA))
+			//zap.L().Debug("B:" + string(g.nextStepB))
 			g.playerA.Steps = append(g.playerA.Steps, g.nextStepA)
 			g.playerB.Steps = append(g.playerB.Steps, g.nextStepB)
 			lock.Unlock()
@@ -233,7 +233,6 @@ func (g *GameMap) sendBotCode(player util.Player) {
 		return
 	}
 
-	mw.SugarLogger.Debug("send bot code", player)
 	// 与codeRunning进行通信
 	ctx := context.Background()
 	_, err := code.AddBot(ctx, &codePb.AddBotReq{
@@ -275,6 +274,7 @@ func (g *GameMap) checkValid(cellsA, cellsB []util.Cell) bool {
 // judge 检查两名玩家操作是否合法
 func (g *GameMap) judge() {
 
+	zap.L().Debug("judge")
 	cellsA := g.playerA.GetCells()
 	cellsB := g.playerB.GetCells()
 
@@ -304,6 +304,7 @@ func setLoser(g *GameMap) {
 	} else {
 		g.loser = "B"
 	}
+	g.sendResult()
 }
 
 // 把结果发送给api层
@@ -315,27 +316,18 @@ func (g *GameMap) sendMove() {
 
 	resp := &snakePb.SetNextStepResp{
 		Event:      "move",
-		ADirection: g.nextStepA,
-		BDirection: g.nextStepB,
+		ADirection: strconv.Itoa(int(g.nextStepA)),
+		BDirection: strconv.Itoa(int(g.nextStepB)),
 	}
-	//mw.SugarLogger.Debug(g.nextStepA, g.nextStepB)
-	mw.SugarLogger.Debug(resp)
 
 	g.nextStepA, g.nextStepB = -1, -1
 
 	g.MoveMessage <- resp
-	//mw.SugarLogger.Debug(MoveMessage)
+	g.MoveMessage <- resp
 }
 
 // 向两位玩家公布结果
 func (g *GameMap) sendResult() {
-	//WebSocketServer.removeBot();
-	//JSONObject resp = new JSONObject();
-	//resp.put("event", "result");
-	//resp.put("loser", loser);
-	//saveToDataBase();
-	//sendAllMessage(resp.toJSONString());
-
 	resp := &resultPb.ResultReq{
 		EventType:  1,
 		GameResult: &resultPb.GameResult{Loser: g.loser},

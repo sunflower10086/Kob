@@ -25,10 +25,11 @@ message StartGameResp {
 message SetNextStepReq {
   string direction = 1;
   string PlayerId = 2;
+  bool IsCode =   3;
 }
 
 message SetNextStepResp {
   string event = 1;
-  int32 aDirection = 2;
-  int32 bDirection = 3;
+  string aDirection = 2;
+  string bDirection = 3;
 }

@@ -3,7 +3,6 @@ package snake
 import (
 	pb "backend/internal/grpc/client/snake/pb"
 	shape "backend/pkg/share_space"
-	"strconv"
 	"strings"
 
 	"golang.org/x/net/context"
@@ -60,8 +59,8 @@ func getMove(resp *pb.SetNextStepResp) {
 
 	pair := shape.Pair{
 		Event:      "move",
-		ADirection: strconv.Itoa(int(resp.GetADirection())),
-		BDirection: strconv.Itoa(int(resp.GetBDirection())),
+		ADirection: resp.GetADirection(),
+		BDirection: resp.GetBDirection(),
 	}
 
 	Space.ServiceDirection <- pair
