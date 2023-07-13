@@ -1,4 +1,12 @@
-package handlers
+package user
+
+import "github.com/gin-gonic/gin"
+
+type Service interface {
+	GetInfoService(ctx *gin.Context, req *GetUserInfoRequest) (*GetUserInfoResponse, error)
+	LoginService(ctx *gin.Context, req *LoginRequest) (*LoginResponse, error)
+	RegisterService(ctx *gin.Context, req *RegisterRequest) (*RegisterResponse, error)
+}
 
 type GetUserInfoRequest struct {
 	UserId string `form:"user_id" query:"user_id" json:"user_id"`

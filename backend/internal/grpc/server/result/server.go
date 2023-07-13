@@ -3,9 +3,8 @@ package result
 import (
 	"backend/conf/settings"
 	pb "backend/internal/grpc/server/result/pb"
-	"backend/pkg/mw/grpc_log"
+	"backend/pkg/mw"
 	"fmt"
-	"matching/pkg/mw"
 	"net"
 
 	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
@@ -19,7 +18,7 @@ import (
 
 func Init() {
 	resultConf := settings.Conf.AllServer.ResultConfig
-	Addr := fmt.Sprintf("%s%s", resultConf.Host, resultConf.Port)
+	Addr := fmt.Sprintf("%s:%s", resultConf.Host, resultConf.Port)
 
 	listener, err := net.Listen("tcp", Addr)
 	if err != nil {
@@ -32,7 +31,7 @@ func Init() {
 		grpc_ctxtags.StreamServerInterceptor(),
 		grpc_opentracing.StreamServerInterceptor(),
 		//grpc_prometheus.UnaryServerInterceptor,
-		grpc_zap.StreamServerInterceptor(grpc_log.ZapInterceptor(settings.Conf)),
+		grpc_zap.StreamServerInterceptor(mw.ZapInterceptor(settings.Conf)),
 		//grpc_auth.UnaryServerInterceptor(auth.AuthInterceptor),
 		grpc_recovery.StreamServerInterceptor(mw.RecoveryInterceptor()),
 	)))

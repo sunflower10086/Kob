@@ -3,8 +3,9 @@ package util
 import (
 	"errors"
 	"fmt"
-	"github.com/gin-gonic/gin"
 	"strconv"
+
+	"github.com/gin-gonic/gin"
 )
 
 func GetUserIdCookie(ctx *gin.Context) (int, error) {

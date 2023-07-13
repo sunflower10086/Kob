@@ -954,3 +954,5 @@
 2023-07-04 11:18:00	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-04T11:18:00+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "AddUser", "peer.address": "127.0.0.1:54868", "grpc.code": "OK", "grpc.time_ms": 1.069}
 2023-07-04 11:18:01	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-04T11:18:01+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "AddUser", "peer.address": "127.0.0.1:54868", "grpc.code": "OK", "grpc.time_ms": 0.989}
 2023-07-04 11:18:02	INFO	matchutil/pool.go:59	matching success playerA:{18 30 1500 0}, playerB:{19 -1 1500 0}
+2023-07-04 11:26:28	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-04 11:26:28	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}

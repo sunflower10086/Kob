@@ -1,10 +1,20 @@
-package handlers
+package bot
+
+import "github.com/gin-gonic/gin"
+
+type Service interface {
+	AddBot(*gin.Context, *AddBotReq) (*AddBotResp, error)
+	GetListBot(*gin.Context, *GetListBotReq) (*GetListBotResp, error)
+	UpdateBot(*gin.Context, *UpdateBotReq) (*UpdateBotResp, error)
+	DeleteBot(*gin.Context, *DeleteBotReq) (*DeleteBotResp, error)
+}
 
 // addBot
 type AddBotReq struct {
 	Title       string `json:"title" binding:"required" form:"title"`
 	Code        string `json:"code" binding:"required" form:"code"`
 	Description string `json:"description" binding:"required" form:"description"`
+	UserId      int
 }
 
 type AddBotResp struct {
@@ -31,16 +41,18 @@ type ResultBot struct {
 }
 
 // removeBot
-type RemoveBotReq struct {
-	BotId string `json:"bot_id" binding:"required" form:"bot_id"`
+type DeleteBotReq struct {
+	UserId int
+	BotId  string `json:"bot_id" binding:"required" form:"bot_id"`
 }
 
-type RemoveBotResp struct {
+type DeleteBotResp struct {
 	Message string `json:"message"`
 }
 
 // updateBot
 type UpdateBotReq struct {
+	UserId      string
 	BotId       string `form:"bot_id" binding:"required" json:"bot_id"`
 	Title       string `json:"title" binding:"required" form:"title"`
 	Code        string `json:"code" binding:"required" form:"code"`

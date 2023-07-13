@@ -1,4 +1,4 @@
-package grpc_log
+package mw
 
 import (
 	"backend/conf/settings"
