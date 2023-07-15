@@ -15,13 +15,14 @@ var (
 )
 
 func Init(conf *settings.AppConfig) error {
-	dsn := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=utf8mb4&parseTime=True&loc=Local",
+	dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=utf8mb4&parseTime=True&loc=Local",
 		conf.MysqlConf.User,
 		conf.MysqlConf.Password,
 		conf.MysqlConf.Host,
 		conf.MysqlConf.Port,
 		conf.MysqlConf.Dbname,
 	)
+	fmt.Printf(dsn)
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
 		return err

@@ -1,4 +1,4 @@
-package main
+package cmd
 
 import (
 	"fmt"
@@ -11,34 +11,53 @@ import (
 	"matching/pkg/mw"
 	"net"
 
-	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	grpc_zap "github.com/grpc-ecosystem/go-grpc-middleware/logging/zap"
 	grpc_recovery "github.com/grpc-ecosystem/go-grpc-middleware/recovery"
 	grpc_ctxtags "github.com/grpc-ecosystem/go-grpc-middleware/tags"
 	grpc_opentracing "github.com/grpc-ecosystem/go-grpc-middleware/tracing/opentracing"
+	"github.com/spf13/cobra"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 )
 
-func init() {
-	// 1.加载配置
-	if err := settings.Init(); err != nil {
-		fmt.Printf("init settings failed err: %v\n", err)
-		panic(err)
-	}
-	// 下面可以直接注册logger中间间，不需要额外注册
+var (
+	configFile string
+)
 
-	// 2.初始化mysql
-	if err := mysql.Init(settings.Conf); err != nil {
-		fmt.Printf("init mysql failed err: %v\n", err)
-		panic(err)
-	}
-	fmt.Println("mysql init success ... ")
+var StartCmd = &cobra.Command{
+	Use:     "start",
+	Long:    "code running 微服务",
+	Short:   "code running 微服务",
+	Example: "code running 微服务 commands",
+	RunE: func(cmd *cobra.Command, args []string) error {
+		// 1.加载配置
+		if err := settings.Init(); err != nil {
+			fmt.Printf("init settings failed err: %v\n", err)
+			return err
+		}
+		// 下面可以直接注册logger中间间，不需要额外注册
 
-	go client.InitResult()
+		// 2.初始化mysql
+		if err := mysql.Init(settings.Conf); err != nil {
+			fmt.Printf("init mysql failed err: %v\n", err)
+			return err
+		}
+		fmt.Println("mysql init success ... ")
+
+		go client.InitResult()
+
+		matchGrpcStart()
+		return nil
+	},
 }
 
-func main() {
+func init() {
+
+	StartCmd.PersistentFlags().StringVarP(&configFile, "config", "f", "./etc/config.yaml", "demo config file")
+	RootCmd.AddCommand(StartCmd)
+}
+
+func matchGrpcStart() {
 	matchConf := settings.Conf.AllServer.MatchConfig
 	Address := fmt.Sprintf("%s%s", matchConf.Host, matchConf.Port)
 
@@ -50,14 +69,14 @@ func main() {
 
 	// 添加中间件
 	var opts []grpc.ServerOption
-	opts = append(opts, grpc.UnaryInterceptor(grpc_middleware.ChainUnaryServer(
+	opts = append(opts, grpc.ChainUnaryInterceptor(
 		grpc_ctxtags.UnaryServerInterceptor(),
 		grpc_opentracing.UnaryServerInterceptor(),
 		//grpc_prometheus.UnaryServerInterceptor,
 		grpc_zap.UnaryServerInterceptor(mw.ZapInterceptor(settings.Conf)),
 		//grpc_auth.UnaryServerInterceptor(auth.AuthInterceptor),
 		grpc_recovery.UnaryServerInterceptor(mw.RecoveryInterceptor()),
-	)))
+	))
 
 	// 新建gRPC服务器实例
 	grpcServer := grpc.NewServer(opts...)

@@ -956,3 +956,56 @@
 2023-07-04 11:18:02	INFO	matchutil/pool.go:59	matching success playerA:{18 30 1500 0}, playerB:{19 -1 1500 0}
 2023-07-04 11:26:28	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
 2023-07-04 11:26:28	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-15 09:37:38	INFO	grpclog/component.go:36	[core][Channel #1] fallback to scheme "passthrough"	{"system": "grpc", "grpc_log": true}
+2023-07-15 09:37:38	INFO	grpclog/component.go:36	[core][Channel #1] parsed dial target is: {Scheme:passthrough Authority: URL:{Scheme:passthrough Opaque: User: Host: Path:/:3003 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}	{"system": "grpc", "grpc_log": true}
+2023-07-15 09:37:38	INFO	grpclog/component.go:36	[core][Channel #1] Channel authority set to "localhost:3003"	{"system": "grpc", "grpc_log": true}
+2023-07-15 09:37:38	INFO	grpclog/component.go:36	[core][Server #2] Server created	{"system": "grpc", "grpc_log": true}
+2023-07-15 09:37:38	INFO	grpclog/component.go:36	[core][Channel #1] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": ":3003",
+      "ServerName": "",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": null,
+  "Attributes": null
+} (resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-07-15 09:37:38	INFO	grpclog/component.go:36	[core][Server #2 ListenSocket #3] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-07-15 09:37:38	INFO	grpclog/component.go:36	[core][Channel #1] Channel switches to new LB policy "pick_first"	{"system": "grpc", "grpc_log": true}
+2023-07-15 09:37:38	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-07-15 09:37:38	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-15 09:37:38	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-15 09:37:38	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel picks a new address ":3003" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-15 09:37:38	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel Connectivity change to TRANSIENT_FAILURE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3003: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-07-15 09:37:38	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to TRANSIENT_FAILURE	{"system": "grpc", "grpc_log": true}
+2023-07-15 09:37:39	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel Connectivity change to IDLE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3003: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-07-15 09:37:39	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-15 11:16:37	INFO	grpclog/component.go:36	[core][Server #2] Server created	{"system": "grpc", "grpc_log": true}
+2023-07-15 11:16:37	INFO	grpclog/component.go:36	[core][Server #2 ListenSocket #3] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-07-15 11:16:37	INFO	grpclog/component.go:36	[core][Channel #1] parsed dial target is: {Scheme:passthrough Authority: URL:{Scheme:passthrough Opaque: User: Host: Path:/:3003 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}	{"system": "grpc", "grpc_log": true}
+2023-07-15 11:16:37	INFO	grpclog/component.go:36	[core][Channel #1] Channel authority set to "localhost:3003"	{"system": "grpc", "grpc_log": true}
+2023-07-15 11:16:37	INFO	grpclog/component.go:36	[core][Channel #1] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": ":3003",
+      "ServerName": "",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": null,
+  "Attributes": null
+} (resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-07-15 11:16:37	INFO	grpclog/component.go:36	[core][Channel #1] Channel switches to new LB policy "pick_first"	{"system": "grpc", "grpc_log": true}
+2023-07-15 11:16:37	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-07-15 11:16:37	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-15 11:16:37	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-15 11:16:37	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel picks a new address ":3003" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-15 11:16:37	INFO	grpclog/component.go:36	[core][Channel #1 SubChannel #4] Subchannel Connectivity change to TRANSIENT_FAILURE, last error: connection error: desc = "transport: Error while dialing: dial tcp :3003: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-07-15 11:16:37	INFO	grpclog/component.go:36	[core][Channel #1] Channel Connectivity change to TRANSIENT_FAILURE	{"system": "grpc", "grpc_log": true}

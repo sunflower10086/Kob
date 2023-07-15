@@ -5,6 +5,7 @@ go 1.19
 require (
 	github.com/docker/docker v24.0.2+incompatible
 	github.com/fsnotify/fsnotify v1.6.0
+	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.16.0
 	go.uber.org/zap v1.24.0
 	google.golang.org/grpc v1.56.0
@@ -19,6 +20,7 @@ require (
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
+	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/moby/term v0.5.0 // indirect
