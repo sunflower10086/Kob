@@ -15,7 +15,7 @@ func Remove(ctx context.Context, userId int32) (*pb.Response, error) {
 	lock.Lock()
 	defer lock.Unlock()
 
-	newPlayer := make([]matchutil.Player, 0)
+	newPlayer := make([]*matchutil.Player, 0)
 	for i := 0; i < len(matchutil.Players); i++ {
 		if matchutil.Players[i].UserId != userId {
 			newPlayer = append(newPlayer, matchutil.Players[i])

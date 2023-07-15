@@ -40,6 +40,8 @@ type GameMap struct {
 	nextStepB      int32
 	status         string
 	loser          string
+	loserId        string
+	winnerId       string
 	MoveMessage    chan *snakePb.SetNextStepResp
 }
 
@@ -196,8 +198,6 @@ func (g *GameMap) nextStep() bool {
 		lock.Lock()
 
 		if g.nextStepA != -1 && g.nextStepB != -1 {
-			//zap.L().Debug("A:" + string(g.nextStepA))
-			//zap.L().Debug("B:" + string(g.nextStepB))
 			g.playerA.Steps = append(g.playerA.Steps, g.nextStepA)
 			g.playerB.Steps = append(g.playerB.Steps, g.nextStepB)
 			lock.Unlock()
@@ -287,8 +287,12 @@ func (g *GameMap) judge() {
 			g.loser = "all"
 		} else if !validA {
 			g.loser = "A"
+			g.loserId = strconv.Itoa(g.playerA.Id)
+			g.winnerId = strconv.Itoa(g.playerB.Id)
 		} else {
 			g.loser = "B"
+			g.loserId = strconv.Itoa(g.playerB.Id)
+			g.winnerId = strconv.Itoa(g.playerA.Id)
 		}
 	}
 
@@ -301,8 +305,12 @@ func setLoser(g *GameMap) {
 		g.loser = "all"
 	} else if g.nextStepA == -1 {
 		g.loser = "A"
+		g.loserId = strconv.Itoa(g.playerA.Id)
+		g.winnerId = strconv.Itoa(g.playerB.Id)
 	} else {
 		g.loser = "B"
+		g.loserId = strconv.Itoa(g.playerB.Id)
+		g.winnerId = strconv.Itoa(g.playerA.Id)
 	}
 	g.sendResult()
 }
@@ -329,8 +337,12 @@ func (g *GameMap) sendMove() {
 // 向两位玩家公布结果
 func (g *GameMap) sendResult() {
 	resp := &resultPb.ResultReq{
-		EventType:  1,
-		GameResult: &resultPb.GameResult{Loser: g.loser},
+		EventType: 1,
+		GameResult: &resultPb.GameResult{
+			Loser:    g.loser,
+			LoserId:  g.loserId,
+			WinnerId: g.winnerId,
+		},
 	}
 
 	mw.SugarLogger.Debug(resp)

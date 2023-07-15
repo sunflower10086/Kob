@@ -20,7 +20,7 @@ func Init() {
 	resultConf := settings.Conf.AllServer.ResultConfig
 	Addr := fmt.Sprintf("%s:%s", resultConf.Host, resultConf.Port)
 
-	listener, err := net.Listen("tcp", Addr)
+	listener, err := net.Listen("tcp", resultConf.GetAddr())
 	if err != nil {
 		mw.SugarLogger.Errorf("net.Listen err: %v", err)
 	}

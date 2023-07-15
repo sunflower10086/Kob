@@ -33,7 +33,7 @@ func NewHTTPService() *HTTPService {
 		L:       log.New(os.Stderr, "[Host] ", log.Ldate|log.Ltime|log.Lshortfile),
 		Conf:    httpConf,
 		engin:   g,
-		Addr:    fmt.Sprintf("%s:%s", httpConf.AllServer.HttpConfig.Host, httpConf.AllServer.HttpConfig.Port),
+		Addr:    httpConf.AllServer.HttpConfig.GetAddr(),
 	}
 }
 

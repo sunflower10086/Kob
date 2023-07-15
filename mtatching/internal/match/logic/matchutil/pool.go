@@ -17,12 +17,12 @@ type Player struct {
 }
 
 var (
-	Players = make([]Player, 0)
+	Players = make([]*Player, 0)
 )
 
 func MatchingPool() {
 	for {
-		time.Sleep(2 * time.Second)
+		time.Sleep(1 * time.Second)
 		increaseWaitingTime()
 		matchPlayers()
 	}
@@ -63,7 +63,7 @@ func matchPlayers() {
 		}
 	}
 
-	newPlayer := make([]Player, 0)
+	newPlayer := make([]*Player, 0)
 	for i := 0; i < len(Players); i++ {
 		if !used[i] {
 			newPlayer = append(newPlayer, Players[i])
@@ -72,13 +72,13 @@ func matchPlayers() {
 	Players = newPlayer
 }
 
-func checkMatched(a, b Player) bool {
+func checkMatched(a, b *Player) bool {
 	ratingDelta := Abs(a.Rating - b.Rating)
 	waitTime := Min(a.WaitTime, b.WaitTime)
 	return ratingDelta <= waitTime*10
 }
 
-func sendResult(a, b Player) {
+func sendResult(a, b *Player) {
 	// TODO : 把结果返回给backend层
 	// EventType 0表示匹配的结果，1表示游戏的结果
 	req := pb.ResultReq{

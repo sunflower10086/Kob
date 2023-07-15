@@ -28,6 +28,8 @@ message matchResult {
 
 message gameResult {
   string Loser = 1;
+  string LoserId = 2;
+  string WinnerId = 3;
 }
 
 message gameMap {

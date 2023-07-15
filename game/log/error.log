@@ -60,3 +60,19 @@
   "Type": 0,
   "Metadata": null
 }. Err: connection error: desc = "transport: Error while dialing: dial tcp :3004: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-07-15 16:15:53	WARN	grpclog/component.go:41	[core][Channel #3 SubChannel #4] grpc: addrConn.createTransport failed to connect to {
+  "Addr": ":3004",
+  "ServerName": "localhost:3004",
+  "Attributes": null,
+  "BalancerAttributes": null,
+  "Type": 0,
+  "Metadata": null
+}. Err: connection error: desc = "transport: Error while dialing: dial tcp :3004: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-07-15 16:19:55	WARN	grpclog/component.go:41	[core][Channel #3 SubChannel #4] grpc: addrConn.createTransport failed to connect to {
+  "Addr": ":3004",
+  "ServerName": "localhost:3004",
+  "Attributes": null,
+  "BalancerAttributes": null,
+  "Type": 0,
+  "Metadata": null
+}. Err: connection error: desc = "transport: Error while dialing: dial tcp :3004: connect: connection refused"	{"system": "grpc", "grpc_log": true}

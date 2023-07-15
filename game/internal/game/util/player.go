@@ -43,7 +43,7 @@ func (p *Player) GetCells() []Cell {
 	for i, step := range p.Steps {
 		x, y = x+dx[step], y+dy[step]
 		res = append(res, Cell{x, y})
-		if checkTailIncreasing(i) {
+		if !checkTailIncreasing(i) {
 			res = res[1:]
 		}
 	}

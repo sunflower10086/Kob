@@ -2,7 +2,6 @@ package game
 
 import (
 	"encoding/json"
-	"fmt"
 	"snake/internal/grpc/client/result"
 	resultPb "snake/internal/grpc/client/result/pb"
 	snakePb "snake/internal/pb"
@@ -23,7 +22,6 @@ var (
 func (SnakeImpl) StartGame(ctx context.Context, req *snakePb.StartGameReq) (res *snakePb.StartGameResp, err error) {
 
 	// TODO: 业务逻辑
-	mw.SugarLogger.Debugf("start game req: %v", req)
 	return StartGame(ctx, req.GetAId(), req.GetABotId(), req.GetBId(), req.GetBBotId())
 }
 
@@ -32,7 +30,6 @@ func (SnakeImpl) SetNextStep(ctx context.Context, req *snakePb.SetNextStepReq) (
 	// 接收消息
 	direction, _ := strconv.ParseInt(req.GetDirection(), 10, 32)
 	if req.IsCode {
-		fmt.Println(direction)
 		PlayerId, _ := strconv.Atoi(req.PlayerId)
 		switch PlayerId {
 		case Gamemap.GetPlayerA().Id:
@@ -49,8 +46,6 @@ func (SnakeImpl) SetNextStep(ctx context.Context, req *snakePb.SetNextStepReq) (
 		for {
 			select {
 			case message := <-Gamemap.MoveMessage:
-				fmt.Println(req.PlayerId, req.IsCode)
-				fmt.Println("send message is", message)
 				resp <- message
 				return
 			}
@@ -81,6 +76,7 @@ func Move(playerId string, direction int32, isBot bool) {
 	}
 }
 
+// SendGameMap 发送地图
 func SendGameMap(data map[string]interface{}) {
 
 	var gameMap resultPb.GameMap

@@ -51,7 +51,7 @@ var StartCmd = &cobra.Command{
 		// 3.初始化mysql
 		if err := mysql.Init(settings.Conf); err != nil {
 			fmt.Printf("init mysql failed err: %v\n", err)
-			panic(err)
+			return err
 		}
 
 		// 4.初始化redis

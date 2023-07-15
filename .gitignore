@@ -2,6 +2,6 @@
 
 go.*
 
-log
+*/log
 
 */etc

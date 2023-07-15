@@ -28,7 +28,7 @@ func Init(conf *settings.AppConfig) {
 
 	opts = append(opts, grpc.WithTransportCredentials(insecure.NewCredentials()))
 
-	conn, err := grpc.Dial(conf.AllServer.SnakeConfig.Port, opts...)
+	conn, err := grpc.Dial(conf.AllServer.SnakeConfig.GetAddr(), opts...)
 	if err != nil {
 		zap.L().Error("snake server net.Connect err: ", zap.Error(err))
 	}

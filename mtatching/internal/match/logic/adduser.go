@@ -30,7 +30,7 @@ func AddUser(ctx context.Context, userId, botId int32) (*pb.Response, error) {
 	lock.Lock()
 	defer lock.Unlock()
 
-	matchutil.Players = append(matchutil.Players, matchutil.Player{UserId: userId, BotId: botId, Rating: *user.Rating, WaitTime: 0})
+	matchutil.Players = append(matchutil.Players, &matchutil.Player{UserId: userId, BotId: botId, Rating: *user.Rating, WaitTime: 0})
 
 	// 返回匹配成功的userId与他们的botId
 	var resp pb.Response

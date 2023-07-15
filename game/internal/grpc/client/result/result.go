@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 	"snake/conf/settings"
-	"snake/internal/grpc/client/result/pb"
+	pb "snake/internal/grpc/client/result/pb"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"

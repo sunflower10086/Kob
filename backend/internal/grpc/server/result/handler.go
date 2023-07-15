@@ -2,6 +2,7 @@ package result
 
 import (
 	"backend/conf/logger"
+	"backend/internal/dao"
 	"backend/internal/grpc/client/snake"
 	snakePb "backend/internal/grpc/client/snake/pb"
 	resultPb "backend/internal/grpc/server/result/pb"
@@ -27,9 +28,9 @@ func (r *ResultServerImpl) Result(ctx context.Context, req *resultPb.ResultReq) 
 	case startGameType:
 		startGame(ctx, req.GetMatchResult())
 	case gameResultType:
-		gameResult(req.GetGameResult())
+		gameResult(ctx, req.GetGameResult())
 	case gameMapType:
-		getMap(req.GetGameMap())
+		getMap(ctx, req.GetGameMap())
 	}
 	return &resultPb.ResultResp{Message: "success"}, nil
 }
@@ -49,18 +50,23 @@ func startGame(ctx context.Context, matchResult *resultPb.MatchResult) {
 	zap.L().Debug(game.Message)
 }
 
-func gameResult(result *resultPb.GameResult) {
+func gameResult(ctx context.Context, result *resultPb.GameResult) {
 	// 到时候要传入公共空间，现在先暂时不做处理
 	logger.SugarLogger.Debug(result)
 	resp := shape.Result{
 		Event: "result",
 		Loser: result.GetLoser(),
 	}
+	if err := dao.SaveResult(ctx, result.LoserId, result.WinnerId); err != nil {
+		zap.L().Debug(err.Error())
+
+		return
+	}
 	zap.L().Debug(resp.Loser)
 	snake.Space.Result <- resp
 }
 
-func getMap(gameMap *resultPb.GameMap) {
+func getMap(ctx context.Context, gameMap *resultPb.GameMap) {
 	// TODO: 必须把resp转换为SnakeGame
 	// 把后端传来的游戏信息做一下格式转换
 	Map := make([][]int32, len(gameMap.GetGameMap()))

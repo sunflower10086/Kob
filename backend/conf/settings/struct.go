@@ -1,5 +1,7 @@
 package settings
 
+import "fmt"
+
 type AppConfig struct {
 	AllServer *AllServer `mapstructure:"server"`
 
@@ -21,6 +23,10 @@ type Server struct {
 	Mode string `mapstructure:"mode"`
 	Host string `mapstructure:"host"`
 	Port string `mapstructure:"port"`
+}
+
+func (s *Server) GetAddr() string {
+	return fmt.Sprintf("%s:%s", s.Host, s.Port)
 }
 
 type LogConfig struct {

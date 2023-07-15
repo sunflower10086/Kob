@@ -19,7 +19,7 @@ func Init(conf *settings.AppConfig) {
 	// 明文传输，不做认证
 	opts = append(opts, grpc.WithTransportCredentials(insecure.NewCredentials()))
 
-	conn, err := grpc.Dial(conf.AllServer.MatchConfig.Port, opts...)
+	conn, err := grpc.Dial(conf.AllServer.MatchConfig.GetAddr(), opts...)
 	if err != nil {
 		zap.L().Error("match server net.Connect err: ", zap.Error(err))
 	}

@@ -38,6 +38,7 @@ func consume(ctx context.Context, bot models.Bot) error {
 		Image:       "276895edf967",
 		Cmd:         []string{"go", "run", "/go/src/" + fileName},
 		StopTimeout: &timeout,
+		Tty:         true,
 	}
 
 	hostConfig := &container.HostConfig{
@@ -71,22 +72,20 @@ func consume(ctx context.Context, bot models.Bot) error {
 		return err
 	}
 
-	//stdcopy.StdCopy(os.Stdout, os.Stderr, out)
+	buffer := make([]byte, 1)
 
-	resp := make([]byte, 10)
-	n, err := out.Read(resp)
-	if err != nil {
-		if err != io.EOF {
-			return err
-		}
+	n, err := out.Read(buffer)
+	if err != nil && err != io.EOF {
+		return err
 	}
+	step := fmt.Sprintf("%s", string(buffer[:n]))
 
-	// 取出一个任务
+	// 这个任务完成, 减去这个任务
 	if len(TaskNum) > 0 {
 		<-TaskNum
 	}
 	// TODO: 调用game的SetNextStep
-	if err = setNextStep(ctx, string(resp[:n]), strconv.Itoa(int(bot.UserId))); err != nil {
+	if err = setNextStep(ctx, step, strconv.Itoa(int(bot.UserId))); err != nil {
 		fmt.Println("setNextStep", err)
 		return err
 	}
@@ -118,9 +117,8 @@ func setNextStep(ctx context.Context, direction, playerId string) error {
 
 func createCodeFile(bot models.Bot) string {
 	fileName := fmt.Sprintf("%d.go", len(TaskNum))
-	file, _ := os.Create("/home/lzuser/kob/coderunning/util/" + fileName)
+	file, _ := os.Create(constants.WorkDir + fileName)
 	defer file.Close()
-	//fmt.Println(file.Name())
 
 	file.WriteString(bot.BotCode)
 
