@@ -6,7 +6,6 @@ package query
 
 import (
 	"context"
-	"snake/internal/models"
 
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
@@ -16,6 +15,8 @@ import (
 	"gorm.io/gen/field"
 
 	"gorm.io/plugin/dbresolver"
+
+	"snake/internal/models"
 )
 
 func newBot(db *gorm.DB, opts ...gen.DOOption) bot {

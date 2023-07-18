@@ -34,13 +34,13 @@ var StartCmd = &cobra.Command{
 		// 1.加载配置
 		if err := settings.Init(); err != nil {
 			fmt.Printf("init settings failed err: %v\n", err)
-			panic(err)
+			return err
 		}
 
 		// 2.初始化日志
 		if err := logger.Init(settings.Conf); err != nil {
 			fmt.Printf("init logger failed err: %v\n", err)
-			panic(err)
+			return err
 		}
 		defer func() {
 			zap.L().Sync()
@@ -57,7 +57,7 @@ var StartCmd = &cobra.Command{
 		// 4.初始化redis
 		if err := redis.Init(settings.Conf); err != nil {
 			fmt.Printf("init redis failed err: %v\n", err)
-			panic(err)
+			return err
 		}
 		defer redis.RDB.Close()
 

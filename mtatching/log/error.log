@@ -32,3 +32,11 @@
   "Type": 0,
   "Metadata": null
 }. Err: connection error: desc = "transport: Error while dialing: dial tcp :3003: connect: connection refused"	{"system": "grpc", "grpc_log": true}
+2023-07-15 15:09:45	WARN	grpclog/component.go:41	[core][Channel #1 SubChannel #2] grpc: addrConn.createTransport failed to connect to {
+  "Addr": ":3003",
+  "ServerName": "localhost:3003",
+  "Attributes": null,
+  "BalancerAttributes": null,
+  "Type": 0,
+  "Metadata": null
+}. Err: connection error: desc = "transport: Error while dialing: dial tcp :3003: connect: connection refused"	{"system": "grpc", "grpc_log": true}

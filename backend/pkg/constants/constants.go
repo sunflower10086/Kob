@@ -18,3 +18,6 @@ var (
 	InfoPath  = "../log/info.log"
 	ErrorPath = "../log/error.log"
 )
+
+var RecordPageSize = 10
+var RankPageSize = 10

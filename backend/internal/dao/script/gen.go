@@ -1,15 +1,33 @@
 package main
 
 import (
-	"backend/conf/mysql"
-	"backend/conf/settings"
 	"backend/internal/models"
+	"time"
+
+	"gorm.io/driver/mysql"
+	"gorm.io/gorm"
 
 	"gorm.io/gen"
 )
 
+var db *gorm.DB
+
 func init() {
-	mysql.Init(settings.Conf)
+	dsn := "root:123456@tcp(localhost:3306)/kob?charset=utf8mb4&parseTime=True&loc=Local"
+	db, _ = gorm.Open(mysql.Open(dsn), &gorm.Config{})
+
+	sqlDB, _ := db.DB()
+	// SetMaxIdleConns 用于设置连接池中空闲连接的最大数量。
+	sqlDB.SetMaxIdleConns(10)
+
+	// SetMaxOpenConns 设置打开数据库连接的最大数量。
+	sqlDB.SetMaxOpenConns(50)
+
+	// SetConnMaxLifetime 设置了连接可复用的最大时间。
+	sqlDB.SetConnMaxLifetime(time.Hour)
+	//if err != nil {
+	//	panic(err)
+	//}
 }
 
 func main() {
@@ -28,13 +46,13 @@ func main() {
 		FieldWithIndexTag: true,
 	})
 
-	g.UseDB(mysql.DB) // reuse your gorm dal
+	g.UseDB(db) // reuse your gorm dal
 
 	// Generate basic type-safe DAO API for struct `model.User` following conventions
 	//g.GenerateModelAs(constants.UserTableName, "User")
 	g.GenerateAllTable()
 
-	g.ApplyBasic(models.User{}, models.Bot{})
+	g.ApplyBasic(models.User{}, models.Bot{}, models.Record{})
 	// Generate Type Safe API with Dynamic SQL defined on Querier interface for `model.User` and `model.Company`
 	//g.ApplyInterface(func(Querier) {}, model.User{})
 

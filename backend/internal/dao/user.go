@@ -3,8 +3,9 @@ package dao
 import (
 	"backend/conf/mysql"
 	"backend/internal/dao/query"
+	"backend/internal/models"
+	"backend/pkg/constants"
 	"context"
-	"fmt"
 	"strconv"
 )
 
@@ -13,7 +14,6 @@ func SaveResult(ctx context.Context, loserId, winnerId string) error {
 	intLoserId, _ := strconv.Atoi(loserId)
 	intWinnerId, _ := strconv.Atoi(winnerId)
 
-	fmt.Println("sacer")
 	err := mysql.Q.Transaction(func(tx *query.Query) error {
 		userTx := tx.User
 		// 更新输家
@@ -33,4 +33,14 @@ func SaveResult(ctx context.Context, loserId, winnerId string) error {
 		return err
 	}
 	return nil
+}
+
+func GetRankByLimit(ctx context.Context, page int) ([]*models.User, error) {
+	userDao := mysql.Q.User
+	users, err := userDao.WithContext(ctx).Order(userDao.Rating.Desc()).Limit(constants.RankPageSize).Offset((page - 1) * constants.RankPageSize).Find()
+	if err != nil {
+		return nil, err
+	}
+
+	return users, nil
 }

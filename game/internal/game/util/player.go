@@ -1,6 +1,9 @@
 package util
 
-import "strings"
+import (
+	"fmt"
+	"strings"
+)
 
 type Player struct {
 	Id       int
@@ -25,7 +28,11 @@ func (p *Player) GetStepsString() string {
 	resp := strings.Builder{}
 
 	for i := 0; i < len(p.Steps); i++ {
-		resp.WriteByte(byte(p.Steps[i]))
+
+		_, err := resp.WriteString(fmt.Sprintf("%d", p.Steps[i]))
+		if err != nil {
+			fmt.Println(err)
+		}
 	}
 
 	return resp.String()

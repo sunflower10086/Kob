@@ -17,26 +17,29 @@ import (
 
 func Use(db *gorm.DB, opts ...gen.DOOption) *Query {
 	return &Query{
-		db:   db,
-		Bot:  newBot(db, opts...),
-		User: newUser(db, opts...),
+		db:     db,
+		Bot:    newBot(db, opts...),
+		Record: newRecord(db, opts...),
+		User:   newUser(db, opts...),
 	}
 }
 
 type Query struct {
 	db *gorm.DB
 
-	Bot  bot
-	User user
+	Bot    bot
+	Record record
+	User   user
 }
 
 func (q *Query) Available() bool { return q.db != nil }
 
 func (q *Query) clone(db *gorm.DB) *Query {
 	return &Query{
-		db:   db,
-		Bot:  q.Bot.clone(db),
-		User: q.User.clone(db),
+		db:     db,
+		Bot:    q.Bot.clone(db),
+		Record: q.Record.clone(db),
+		User:   q.User.clone(db),
 	}
 }
 
@@ -50,21 +53,24 @@ func (q *Query) WriteDB() *Query {
 
 func (q *Query) ReplaceDB(db *gorm.DB) *Query {
 	return &Query{
-		db:   db,
-		Bot:  q.Bot.replaceDB(db),
-		User: q.User.replaceDB(db),
+		db:     db,
+		Bot:    q.Bot.replaceDB(db),
+		Record: q.Record.replaceDB(db),
+		User:   q.User.replaceDB(db),
 	}
 }
 
 type queryCtx struct {
-	Bot  IBotDo
-	User IUserDo
+	Bot    IBotDo
+	Record IRecordDo
+	User   IUserDo
 }
 
 func (q *Query) WithContext(ctx context.Context) *queryCtx {
 	return &queryCtx{
-		Bot:  q.Bot.WithContext(ctx),
-		User: q.User.WithContext(ctx),
+		Bot:    q.Bot.WithContext(ctx),
+		Record: q.Record.WithContext(ctx),
+		User:   q.User.WithContext(ctx),
 	}
 }
 

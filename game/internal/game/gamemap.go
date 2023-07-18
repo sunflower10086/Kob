@@ -1,7 +1,9 @@
 package game
 
 import (
+	"fmt"
 	"math/rand"
+	"snake/conf/mysql"
 	"snake/internal/game/util"
 	code "snake/internal/grpc/client/coderuning"
 	codePb "snake/internal/grpc/client/coderuning/pb"
@@ -112,7 +114,7 @@ func (g *GameMap) GetGameMapString() string {
 
 	for i := 0; i < g.rows; i++ {
 		for j := 0; j < g.cols; j++ {
-			resp.WriteByte(byte(g.g[i][j]))
+			resp.WriteString(fmt.Sprintf("%d", g.g[i][j]))
 		}
 	}
 	return resp.String()
@@ -345,11 +347,37 @@ func (g *GameMap) sendResult() {
 		},
 	}
 
+	g.saveGameRecord()
 	mw.SugarLogger.Debug(resp)
 	_, err := result.Result(context.Background(), resp)
 	if err != nil {
 		return
 	}
+}
+
+func (g *GameMap) saveGameRecord() {
+	record := models.Record{
+		AID:        int32(g.GetPlayerA().Id),
+		ASx:        int32(g.GetPlayerA().Sx),
+		ASy:        int32(g.GetPlayerA().Sy),
+		BID:        int32(g.GetPlayerB().Id),
+		BSx:        int32(g.GetPlayerB().Sx),
+		BSy:        int32(g.GetPlayerB().Sy),
+		ASteps:     g.playerA.GetStepsString(),
+		BSteps:     g.playerB.GetStepsString(),
+		Map:        g.GetGameMapString(),
+		Loser:      g.loser,
+		Createtime: time.Now(),
+	}
+
+	fmt.Println("saveGameRecord")
+	fmt.Println(g.playerA.GetStepsString())
+	fmt.Println(g.playerB.GetStepsString())
+	fmt.Println(g.GetGameMapString())
+
+	recordDao := mysql.Q.Record
+
+	recordDao.WithContext(context.Background()).Create(&record)
 }
 
 func (g *GameMap) Start() {
