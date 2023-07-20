@@ -18,6 +18,7 @@ import (
 	_ "backend/internal/all"
 
 	"github.com/spf13/cobra"
+	"github.com/sunflower10086/Cococola/etcd"
 	"go.uber.org/zap"
 )
 
@@ -67,6 +68,18 @@ var StartCmd = &cobra.Command{
 		ioc.InitImpl()
 
 		master := newMaster()
+
+		svc, err := etcd.NewServiceRegister(
+			[]string{settings.Conf.EtcdConf.Endpoint},
+			"/web/"+settings.Conf.AllServer.HttpConfig.Name,
+			settings.Conf.AllServer.HttpConfig.GetAddr(),
+			3,
+		)
+		if err != nil {
+			return err
+		}
+
+		go svc.ListenLeaseRespChan()
 
 		// 相当于监听一下 kill -2 和 kill -9
 		quit := make(chan os.Signal)

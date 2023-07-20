@@ -14,7 +14,7 @@ type GetRankListReq struct {
 
 type GetRankListResp struct {
 	Users     *[]RankUser `json:"users,omitempty"`
-	UserCount int         `json:"user_count,omitempty"`
+	UserCount int64       `json:"user_count,omitempty"`
 }
 
 type RankUser struct {

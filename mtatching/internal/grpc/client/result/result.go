@@ -1,31 +1,30 @@
-package client
+package result
 
 import (
 	"context"
 	"log"
-	"matching/conf/settings"
-	pb "matching/internal/grpc/client/pb"
+	"matching/internal/grpc/client/result/pb"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )
 
-var resultClient pb.ResultClient
+var resultClient result.ResultClient
 
-func InitResult() {
+func Init(endpoint string) {
 	var opts []grpc.DialOption
 
 	opts = append(opts, grpc.WithTransportCredentials(insecure.NewCredentials()))
 
-	conn, err := grpc.Dial(settings.Conf.AllServer.ResultConfig.Port, opts...)
+	conn, err := grpc.Dial(endpoint, opts...)
 	if err != nil {
 		log.Fatalf("net.Connect err: %v", err)
 	}
 
-	resultClient = pb.NewResultClient(conn)
+	resultClient = result.NewResultClient(conn)
 }
 
-func Result(ctx context.Context, result *pb.ResultReq) (*pb.ResultResp, error) {
+func Result(ctx context.Context, result *result.ResultReq) (*result.ResultResp, error) {
 	log.Println(result)
 	resp, err := resultClient.Result(ctx, result)
 	if err != nil {

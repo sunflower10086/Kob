@@ -3,7 +3,6 @@ package result
 import (
 	"context"
 	"log"
-	"snake/conf/settings"
 	pb "snake/internal/grpc/client/result/pb"
 
 	"google.golang.org/grpc"
@@ -12,12 +11,12 @@ import (
 
 var resultClient pb.ResultClient
 
-func Init() {
+func Init(endpoint string) {
 	var opts []grpc.DialOption
 
 	opts = append(opts, grpc.WithTransportCredentials(insecure.NewCredentials()))
 
-	conn, err := grpc.Dial(settings.Conf.AllServer.ResultConfig.Port, opts...)
+	conn, err := grpc.Dial(endpoint, opts...)
 	if err != nil {
 		log.Fatalf("net.Connect err: %v", err)
 	}

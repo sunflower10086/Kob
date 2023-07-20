@@ -23,6 +23,7 @@ type SnakeGame struct {
 // SendMsg 从通道公共空间中取出来
 func (c *Client) SendMsg() {
 	for {
+
 		select {
 		case data := <-snake.Space.Game:
 			sendMap(data)

@@ -15,7 +15,7 @@ type GetListReq struct {
 
 type GetListResp struct {
 	Records      *[]Record `json:"records"`
-	RecordsCount int       `json:"records_count"`
+	RecordsCount int64     `json:"records_count"`
 }
 
 type Record struct {

@@ -2,7 +2,6 @@ package snake
 
 import (
 	"backend/conf/logger"
-	"backend/conf/settings"
 	"backend/internal/grpc/client/snake/util"
 	shape "backend/pkg/share_space"
 	"context"
@@ -23,12 +22,12 @@ var (
 	Space   *shape.Space
 )
 
-func Init(conf *settings.AppConfig) {
+func Init(endpoint string) {
 	var opts []grpc.DialOption
 
 	opts = append(opts, grpc.WithTransportCredentials(insecure.NewCredentials()))
 
-	conn, err := grpc.Dial(conf.AllServer.SnakeConfig.GetAddr(), opts...)
+	conn, err := grpc.Dial(endpoint, opts...)
 	if err != nil {
 		zap.L().Error("snake server net.Connect err: ", zap.Error(err))
 	}
@@ -36,6 +35,8 @@ func Init(conf *settings.AppConfig) {
 	client = pb.NewGameSystemClient(conn)
 
 	Space = share.NewSpace()
+	fmt.Println("client snake space", Space)
+	fmt.Println("client snake spacedasjkllllllllllllllllllllllllllllllllllljdoqiwdjwaqioadjawoidjawlkdjaslk")
 
 	SnakeMd = &WithSnake{
 		Msg: make(chan shape.Pair),

@@ -35,12 +35,24 @@ func SaveResult(ctx context.Context, loserId, winnerId string) error {
 	return nil
 }
 
-func GetRankByLimit(ctx context.Context, page int) ([]*models.User, error) {
-	userDao := mysql.Q.User
-	users, err := userDao.WithContext(ctx).Order(userDao.Rating.Desc()).Limit(constants.RankPageSize).Offset((page - 1) * constants.RankPageSize).Find()
+func GetRankByLimit(ctx context.Context, page int) (users []*models.User, count int64, err error) {
+
+	err = mysql.Q.Transaction(func(tx *query.Query) error {
+		userTx := tx.User
+		count, err = userTx.WithContext(ctx).Count()
+		if err != nil {
+			return err
+		}
+
+		users, err = userTx.WithContext(ctx).Order(userTx.Rating.Desc()).Limit(constants.RankPageSize).Offset((page - 1) * constants.RankPageSize).Find()
+		if err != nil {
+			return err
+		}
+		return nil
+	})
 	if err != nil {
-		return nil, err
+		return nil, -1, err
 	}
 
-	return users, nil
+	return users, count, nil
 }

@@ -33,7 +33,7 @@ func (r *RecordServiceImpl) Name() string {
 }
 
 func (r *RecordServiceImpl) GetList(ctx context.Context, page int) (*record.GetListResp, error) {
-	records, err := dao.GetRecordByLimit(ctx, page)
+	records, count, err := dao.GetRecordByLimit(ctx, page)
 	if err != nil {
 		return nil, err
 	}
@@ -64,7 +64,7 @@ func (r *RecordServiceImpl) GetList(ctx context.Context, page int) (*record.GetL
 	}
 
 	resp.Records = &items
-	resp.RecordsCount = len((items))
+	resp.RecordsCount = count
 
 	return &resp, nil
 }

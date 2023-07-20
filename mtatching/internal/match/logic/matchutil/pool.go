@@ -3,8 +3,8 @@ package matchutil
 import (
 	"context"
 	"log"
-	"matching/internal/grpc/client"
-	pb "matching/internal/grpc/client/pb"
+	"matching/internal/grpc/client/result"
+	pb "matching/internal/grpc/client/result/pb"
 	"matching/pkg/mw"
 	"time"
 )
@@ -91,7 +91,7 @@ func sendResult(a, b *Player) {
 		},
 	}
 	ctx := context.Background()
-	result, err := client.Result(ctx, &req)
+	result, err := result.Result(ctx, &req)
 	if err != nil {
 		log.Println(err)
 	}

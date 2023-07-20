@@ -12,6 +12,7 @@ import (
 	grpc_recovery "github.com/grpc-ecosystem/go-grpc-middleware/recovery"
 	grpc_ctxtags "github.com/grpc-ecosystem/go-grpc-middleware/tags"
 	grpc_opentracing "github.com/grpc-ecosystem/go-grpc-middleware/tracing/opentracing"
+	"github.com/sunflower10086/Cococola/etcd"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 )
@@ -20,7 +21,8 @@ func Init() {
 	resultConf := settings.Conf.AllServer.ResultConfig
 	Addr := fmt.Sprintf("%s:%s", resultConf.Host, resultConf.Port)
 
-	listener, err := net.Listen("tcp", resultConf.GetAddr())
+	fmt.Println(Addr)
+	listener, err := net.Listen("tcp", Addr)
 	if err != nil {
 		mw.SugarLogger.Errorf("net.Listen err: %v", err)
 	}
@@ -40,6 +42,19 @@ func Init() {
 	grpcServer := grpc.NewServer(opts...)
 	// 在gRPC服务器注册我们的服务
 	pb.RegisterResultServer(grpcServer, &ResultServerImpl{})
+
+	// 在etcd中注册服务
+	svc, err := etcd.NewServiceRegister(
+		[]string{settings.Conf.EtcdConf.Endpoint},
+		"/gRPC/"+resultConf.Name,
+		resultConf.GetAddr(),
+		3,
+	)
+	if err != nil {
+		mw.SugarLogger.Errorf("etcd Register err: %v", err)
+		return
+	}
+	go svc.ListenLeaseRespChan()
 
 	zap.L().Debug(Addr + " net.Listing...")
 

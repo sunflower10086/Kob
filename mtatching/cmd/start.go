@@ -16,6 +16,7 @@ import (
 	grpc_ctxtags "github.com/grpc-ecosystem/go-grpc-middleware/tags"
 	grpc_opentracing "github.com/grpc-ecosystem/go-grpc-middleware/tracing/opentracing"
 	"github.com/spf13/cobra"
+	"github.com/sunflower10086/Cococola/etcd"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 )
@@ -44,7 +45,7 @@ var StartCmd = &cobra.Command{
 		}
 		fmt.Println("mysql init success ... ")
 
-		go client.InitResult()
+		go client.Init()
 
 		matchGrpcStart()
 		return nil
@@ -59,7 +60,7 @@ func init() {
 
 func matchGrpcStart() {
 	matchConf := settings.Conf.AllServer.MatchConfig
-	Address := fmt.Sprintf("%s%s", matchConf.Host, matchConf.Port)
+	Address := matchConf.GetAddr()
 
 	listener, err := net.Listen("tcp", Address)
 
@@ -85,6 +86,16 @@ func matchGrpcStart() {
 
 	zap.L().Debug(Address + " net.Listing...")
 	go matchutil.MatchingPool()
+
+	svc, err := etcd.NewServiceRegister([]string{settings.Conf.EtcdConf.Endpoint},
+		"/gRPC/"+matchConf.Name,
+		matchConf.GetAddr(),
+		3,
+	)
+	if err != nil {
+		return
+	}
+	go svc.ListenLeaseRespChan()
 
 	//用服务器 Serve() 方法以及我们的端口信息区实现阻塞等待，直到进程被杀死或者 Stop() 被调用
 	err = grpcServer.Serve(listener)

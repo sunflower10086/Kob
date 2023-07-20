@@ -1,7 +1,6 @@
 package game
 
 import (
-	"coderunning/conf/settings"
 	pb "coderunning/internal/grppc/client/game/pb"
 	"context"
 	"log"
@@ -13,12 +12,12 @@ import (
 
 var client pb.GameSystemClient
 
-func Init(conf *settings.AppConfig) {
+func Init(endpoint string) {
 	var opts []grpc.DialOption
 
 	opts = append(opts, grpc.WithTransportCredentials(insecure.NewCredentials()))
 
-	conn, err := grpc.Dial(conf.AllServer.SnakeConfig.Port, opts...)
+	conn, err := grpc.Dial(endpoint, opts...)
 	if err != nil {
 		log.Printf("snake server net.Connect err: %s\n", err.Error())
 	}

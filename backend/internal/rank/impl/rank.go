@@ -30,7 +30,7 @@ func (r *RankServiceImpl) Name() string {
 }
 
 func (r *RankServiceImpl) GetRankList(ctx context.Context, page int) (*rank.GetRankListResp, error) {
-	users, err := dao.GetRankByLimit(ctx, page)
+	users, count, err := dao.GetRankByLimit(ctx, page)
 	if err != nil {
 		return nil, err
 	}
@@ -51,6 +51,6 @@ func (r *RankServiceImpl) GetRankList(ctx context.Context, page int) (*rank.GetR
 	}
 
 	resp.Users = &items
-	resp.UserCount = len(items)
+	resp.UserCount = count
 	return &resp, nil
 }

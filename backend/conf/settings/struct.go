@@ -8,14 +8,15 @@ type AppConfig struct {
 	LogConf   *LogConfig   `mapstructure:"log"`
 	MysqlConf *MysqlConfig `mapstructure:"mysql"`
 	RedisConf *RedisConfig `mapstructure:"redis"`
+	EtcdConf  *etcdConfig  `mapstructure:"etcd"`
 }
 
 type AllServer struct {
-	HttpConfig   *Server `mapstructure:"http"`
-	MatchConfig  *Server `mapstructure:"match"`
-	SnakeConfig  *Server `mapstructure:"gameSnake"`
-	ResultConfig *Server `mapstructure:"result"`
-	BotRunConfig *Server `mapstructure:"botrun"`
+	HttpConfig       *Server      `mapstructure:"http"`
+	MatchConfig      *OtherServer `mapstructure:"match"`
+	SnakeConfig      *OtherServer `mapstructure:"snake"`
+	ResultConfig     *Server      `mapstructure:"result"`
+	BotRunningConfig *OtherServer `mapstructure:"botrun"`
 }
 
 type Server struct {
@@ -23,6 +24,9 @@ type Server struct {
 	Mode string `mapstructure:"mode"`
 	Host string `mapstructure:"host"`
 	Port string `mapstructure:"port"`
+}
+type OtherServer struct {
+	Name string `mapstructure:"name"`
 }
 
 func (s *Server) GetAddr() string {
@@ -53,4 +57,8 @@ type RedisConfig struct {
 	Port     int    `mapstructure:"port"`
 	Password string `mapstructure:"password"`
 	Db       int    `mapstructure:"db"`
+}
+
+type etcdConfig struct {
+	Endpoint string `mapstructure:"endpoint"`
 }

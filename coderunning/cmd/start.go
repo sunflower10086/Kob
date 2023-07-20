@@ -4,7 +4,7 @@ import (
 	"coderunning/conf/settings"
 	"coderunning/internal/coderuning"
 	"coderunning/internal/coderuning/util"
-	"coderunning/internal/grppc/client/game"
+	"coderunning/internal/grppc/client"
 	pb "coderunning/internal/pb"
 	"context"
 	"fmt"
@@ -13,6 +13,8 @@ import (
 
 	"github.com/spf13/cobra"
 	"google.golang.org/grpc"
+
+	"github.com/sunflower10086/Cococola/etcd"
 )
 
 var (
@@ -31,7 +33,7 @@ var StartCmd = &cobra.Command{
 			panic(err)
 		}
 
-		game.Init(settings.Conf)
+		client.Init()
 
 		botRunningConf := settings.Conf.AllServer.BotRunningConfig
 		Addr := fmt.Sprintf("%s%s", botRunningConf.Host, botRunningConf.Port)
@@ -49,6 +51,19 @@ var StartCmd = &cobra.Command{
 		fmt.Printf(Addr + " net.Listing...\n")
 		ctx := context.Background()
 		go util.Run(ctx)
+
+		// 在etcd中注册服务
+		ser, err := etcd.NewServiceRegister(
+			[]string{settings.Conf.EtcdConf.Endpoint},
+			"/gRPC/"+botRunningConf.Name,
+			botRunningConf.GetAddr(),
+			3,
+		)
+		if err != nil {
+			log.Fatalln(err)
+		}
+
+		go ser.ListenLeaseRespChan()
 
 		err = grpcServer.Serve(listener)
 		if err != nil {

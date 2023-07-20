@@ -6,8 +6,7 @@ import (
 	"snake/conf/mysql"
 	"snake/conf/settings"
 	"snake/internal/game"
-	botrunning "snake/internal/grpc/client/coderuning"
-	"snake/internal/grpc/client/result"
+	"snake/internal/grpc/client"
 	pb "snake/internal/pb"
 	"snake/pkg/mw"
 
@@ -17,6 +16,7 @@ import (
 	grpc_ctxtags "github.com/grpc-ecosystem/go-grpc-middleware/tags"
 	grpc_opentracing "github.com/grpc-ecosystem/go-grpc-middleware/tracing/opentracing"
 	"github.com/spf13/cobra"
+	"github.com/sunflower10086/Cococola/etcd"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 )
@@ -44,8 +44,7 @@ var StartCmd = &cobra.Command{
 		}
 		fmt.Println("mysql init success ... ")
 
-		result.Init()
-		botrunning.Init()
+		go client.Init()
 
 		gameGrpcStart()
 		return nil
@@ -60,7 +59,7 @@ func init() {
 
 func gameGrpcStart() {
 	snakeConf := settings.Conf.AllServer.SnakeConfig
-	Addr := fmt.Sprintf("%s%s", snakeConf.Host, snakeConf.Port)
+	Addr := snakeConf.GetAddr()
 
 	listener, err := net.Listen("tcp", Addr)
 	if err != nil {
@@ -81,6 +80,16 @@ func gameGrpcStart() {
 	pb.RegisterGameSystemServer(grpcServer, game.SnakeImpl{})
 
 	zap.L().Debug(Addr + " net.Listing...")
+
+	svc, err := etcd.NewServiceRegister([]string{settings.Conf.EtcdConf.Endpoint},
+		"/gRPC/"+snakeConf.Name,
+		snakeConf.GetAddr(),
+		3,
+	)
+	if err != nil {
+		return
+	}
+	go svc.ListenLeaseRespChan()
 
 	err = grpcServer.Serve(listener)
 	if err != nil {

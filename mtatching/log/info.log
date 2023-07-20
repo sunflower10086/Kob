@@ -1358,3 +1358,376 @@
 2023-07-17 18:31:06	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-17T18:31:06+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "AddUser", "peer.address": "127.0.0.1:34380", "grpc.code": "OK", "grpc.time_ms": 1.551}
 2023-07-17 18:31:07	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-17T18:31:07+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "AddUser", "peer.address": "127.0.0.1:34380", "grpc.code": "OK", "grpc.time_ms": 1.422}
 2023-07-17 18:31:09	INFO	matchutil/pool.go:59	matching success playerA:&{18 30 1494 4}, playerB:&{19 -1 1519 3}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Server #1] Server created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #2] Channel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #2] original dial target is: "etcd-endpoints://0xc0000a4000/localhost:2379"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #2] parsed dial target is: {Scheme:etcd-endpoints Authority:0xc0000a4000 URL:{Scheme:etcd-endpoints Opaque: User: Host:0xc0000a4000 Path:/localhost:2379 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #2] Channel authority set to "localhost:2379"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #3] Channel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #3] original dial target is: "etcd-endpoints://0xc0004601c0/localhost:2379"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #2] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": "localhost:2379",
+      "ServerName": "localhost",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": {
+    "Config": {
+      "Config": null,
+      "LB": "round_robin",
+      "Methods": {}
+    },
+    "Err": null
+  },
+  "Attributes": null
+} (service config updated; resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #3] parsed dial target is: {Scheme:etcd-endpoints Authority:0xc0004601c0 URL:{Scheme:etcd-endpoints Opaque: User: Host:0xc0004601c0 Path:/localhost:2379 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #3] Channel authority set to "localhost:2379"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #2] Channel switches to new LB policy "round_robin"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #3] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": "localhost:2379",
+      "ServerName": "localhost",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": {
+    "Config": {
+      "Config": null,
+      "LB": "round_robin",
+      "Methods": {}
+    },
+    "Err": null
+  },
+  "Attributes": null
+} (service config updated; resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #2 SubChannel #4] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #3] Channel switches to new LB policy "round_robin"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #5] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[roundrobin]roundrobinPicker: Build called with info: {map[]}	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #2 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #2 SubChannel #4] Subchannel picks a new address "localhost:2379" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[roundrobin]roundrobinPicker: Build called with info: {map[]}	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #2] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #5] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #5] Subchannel picks a new address "localhost:2379" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #5] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[roundrobin]roundrobinPicker: Build called with info: {map[SubConn(id:5):{{Addr: "localhost:2379", ServerName: "localhost", }}]}	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #2 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[roundrobin]roundrobinPicker: Build called with info: {map[SubConn(id:4):{{Addr: "localhost:2379", ServerName: "localhost", }}]}	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Channel #2] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:52:54	INFO	grpclog/component.go:36	[core][Server #1 ListenSocket #8] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Server #1] Server created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #2] Channel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #3] Channel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #2] original dial target is: "etcd-endpoints://0xc0004a6000/localhost:2379"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #3] original dial target is: "etcd-endpoints://0xc0004a61c0/localhost:2379"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #3] parsed dial target is: {Scheme:etcd-endpoints Authority:0xc0004a61c0 URL:{Scheme:etcd-endpoints Opaque: User: Host:0xc0004a61c0 Path:/localhost:2379 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #3] Channel authority set to "localhost:2379"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #2] parsed dial target is: {Scheme:etcd-endpoints Authority:0xc0004a6000 URL:{Scheme:etcd-endpoints Opaque: User: Host:0xc0004a6000 Path:/localhost:2379 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #2] Channel authority set to "localhost:2379"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #3] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": "localhost:2379",
+      "ServerName": "localhost",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": {
+    "Config": {
+      "Config": null,
+      "LB": "round_robin",
+      "Methods": {}
+    },
+    "Err": null
+  },
+  "Attributes": null
+} (service config updated; resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #3] Channel switches to new LB policy "round_robin"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #2] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": "localhost:2379",
+      "ServerName": "localhost",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": {
+    "Config": {
+      "Config": null,
+      "LB": "round_robin",
+      "Methods": {}
+    },
+    "Err": null
+  },
+  "Attributes": null
+} (service config updated; resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[roundrobin]roundrobinPicker: Build called with info: {map[]}	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #2] Channel switches to new LB policy "round_robin"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #2 SubChannel #5] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[roundrobin]roundrobinPicker: Build called with info: {map[]}	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #2] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel picks a new address "localhost:2379" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #2 SubChannel #5] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #2 SubChannel #5] Subchannel picks a new address "localhost:2379" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #2 SubChannel #5] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[roundrobin]roundrobinPicker: Build called with info: {map[SubConn(id:5):{{Addr: "localhost:2379", ServerName: "localhost", }}]}	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[roundrobin]roundrobinPicker: Build called with info: {map[SubConn(id:4):{{Addr: "localhost:2379", ServerName: "localhost", }}]}	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #2] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #8] Channel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #8] original dial target is: "127.0.0.1:3003"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #8] dial target "127.0.0.1:3003" parse failed: parse "127.0.0.1:3003": first path segment in URL cannot contain colon	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #8] fallback to scheme "passthrough"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #8] parsed dial target is: {Scheme:passthrough Authority: URL:{Scheme:passthrough Opaque: User: Host: Path:/127.0.0.1:3003 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #8] Channel authority set to "127.0.0.1:3003"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #8] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": "127.0.0.1:3003",
+      "ServerName": "",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": null,
+  "Attributes": null
+} (resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #8] Channel switches to new LB policy "pick_first"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #8 SubChannel #9] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #8] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #8 SubChannel #9] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #8 SubChannel #9] Subchannel picks a new address "127.0.0.1:3003" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #8 SubChannel #9] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Channel #8] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:56:50	INFO	grpclog/component.go:36	[core][Server #1 ListenSocket #11] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Server #1] Server created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #2] Channel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #2] original dial target is: "etcd-endpoints://0xc0004aa000/localhost:2379"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #2] parsed dial target is: {Scheme:etcd-endpoints Authority:0xc0004aa000 URL:{Scheme:etcd-endpoints Opaque: User: Host:0xc0004aa000 Path:/localhost:2379 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #2] Channel authority set to "localhost:2379"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #3] Channel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #3] original dial target is: "etcd-endpoints://0xc000544000/localhost:2379"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #3] parsed dial target is: {Scheme:etcd-endpoints Authority:0xc000544000 URL:{Scheme:etcd-endpoints Opaque: User: Host:0xc000544000 Path:/localhost:2379 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #2] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": "localhost:2379",
+      "ServerName": "localhost",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": {
+    "Config": {
+      "Config": null,
+      "LB": "round_robin",
+      "Methods": {}
+    },
+    "Err": null
+  },
+  "Attributes": null
+} (service config updated; resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #3] Channel authority set to "localhost:2379"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #2] Channel switches to new LB policy "round_robin"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #3] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": "localhost:2379",
+      "ServerName": "localhost",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": {
+    "Config": {
+      "Config": null,
+      "LB": "round_robin",
+      "Methods": {}
+    },
+    "Err": null
+  },
+  "Attributes": null
+} (service config updated; resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #2 SubChannel #4] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[roundrobin]roundrobinPicker: Build called with info: {map[]}	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #2] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #3] Channel switches to new LB policy "round_robin"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #5] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #2 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #2 SubChannel #4] Subchannel picks a new address "localhost:2379" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[roundrobin]roundrobinPicker: Build called with info: {map[]}	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #5] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #5] Subchannel picks a new address "localhost:2379" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #5] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #2 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[roundrobin]roundrobinPicker: Build called with info: {map[SubConn(id:5):{{Addr: "localhost:2379", ServerName: "localhost", }}]}	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[roundrobin]roundrobinPicker: Build called with info: {map[SubConn(id:4):{{Addr: "localhost:2379", ServerName: "localhost", }}]}	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #2] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #8] Channel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #8] original dial target is: "127.0.0.1:3003"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #8] dial target "127.0.0.1:3003" parse failed: parse "127.0.0.1:3003": first path segment in URL cannot contain colon	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #8] fallback to scheme "passthrough"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #8] parsed dial target is: {Scheme:passthrough Authority: URL:{Scheme:passthrough Opaque: User: Host: Path:/127.0.0.1:3003 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #8] Channel authority set to "127.0.0.1:3003"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #8] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": "127.0.0.1:3003",
+      "ServerName": "",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": null,
+  "Attributes": null
+} (resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #8] Channel switches to new LB policy "pick_first"	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #8 SubChannel #9] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #8] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #8 SubChannel #9] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #8 SubChannel #9] Subchannel picks a new address "127.0.0.1:3003" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #8 SubChannel #9] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Channel #8] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:57:56	INFO	grpclog/component.go:36	[core][Server #1 ListenSocket #11] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:58:34	INFO	grpclog/component.go:36	[core][Channel #8 SubChannel #9] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-20 11:58:34	INFO	grpclog/component.go:36	[core][Channel #8] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Server #1] Server created	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #2] Channel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #2] original dial target is: "etcd-endpoints://0xc000122000/localhost:2379"	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #3] Channel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #3] original dial target is: "etcd-endpoints://0xc0000c8000/localhost:2379"	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #3] parsed dial target is: {Scheme:etcd-endpoints Authority:0xc0000c8000 URL:{Scheme:etcd-endpoints Opaque: User: Host:0xc0000c8000 Path:/localhost:2379 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #3] Channel authority set to "localhost:2379"	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #2] parsed dial target is: {Scheme:etcd-endpoints Authority:0xc000122000 URL:{Scheme:etcd-endpoints Opaque: User: Host:0xc000122000 Path:/localhost:2379 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #2] Channel authority set to "localhost:2379"	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #3] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": "localhost:2379",
+      "ServerName": "localhost",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": {
+    "Config": {
+      "Config": null,
+      "LB": "round_robin",
+      "Methods": {}
+    },
+    "Err": null
+  },
+  "Attributes": null
+} (service config updated; resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #2] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": "localhost:2379",
+      "ServerName": "localhost",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": {
+    "Config": {
+      "Config": null,
+      "LB": "round_robin",
+      "Methods": {}
+    },
+    "Err": null
+  },
+  "Attributes": null
+} (service config updated; resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #3] Channel switches to new LB policy "round_robin"	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #2] Channel switches to new LB policy "round_robin"	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[roundrobin]roundrobinPicker: Build called with info: {map[]}	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #2 SubChannel #5] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[roundrobin]roundrobinPicker: Build called with info: {map[]}	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #2] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel picks a new address "localhost:2379" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #2 SubChannel #5] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #2 SubChannel #5] Subchannel picks a new address "localhost:2379" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #3 SubChannel #4] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #2 SubChannel #5] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[roundrobin]roundrobinPicker: Build called with info: {map[SubConn(id:4):{{Addr: "localhost:2379", ServerName: "localhost", }}]}	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[roundrobin]roundrobinPicker: Build called with info: {map[SubConn(id:5):{{Addr: "localhost:2379", ServerName: "localhost", }}]}	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #3] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #2] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #8] Channel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #8] original dial target is: "127.0.0.1:3003"	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #8] dial target "127.0.0.1:3003" parse failed: parse "127.0.0.1:3003": first path segment in URL cannot contain colon	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #8] fallback to scheme "passthrough"	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #8] parsed dial target is: {Scheme:passthrough Authority: URL:{Scheme:passthrough Opaque: User: Host: Path:/127.0.0.1:3003 RawPath: OmitHost:false ForceQuery:false RawQuery: Fragment: RawFragment:}}	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #8] Channel authority set to "127.0.0.1:3003"	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #8] Resolver state updated: {
+  "Addresses": [
+    {
+      "Addr": "127.0.0.1:3003",
+      "ServerName": "",
+      "Attributes": null,
+      "BalancerAttributes": null,
+      "Type": 0,
+      "Metadata": null
+    }
+  ],
+  "ServiceConfig": null,
+  "Attributes": null
+} (resolver returned new addresses)	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #8] Channel switches to new LB policy "pick_first"	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #8 SubChannel #9] Subchannel created	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #8] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #8 SubChannel #9] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #8 SubChannel #9] Subchannel picks a new address "127.0.0.1:3003" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #8 SubChannel #9] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Channel #8] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:32:04	INFO	grpclog/component.go:36	[core][Server #1 ListenSocket #11] ListenSocket created	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:34:12	INFO	grpclog/component.go:36	[core][Channel #8 SubChannel #9] Subchannel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:34:12	INFO	grpclog/component.go:36	[core][Channel #8] Channel Connectivity change to IDLE	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:59:42	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-20T14:59:42+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "AddUser", "peer.address": "127.0.0.1:60258", "grpc.code": "OK", "grpc.time_ms": 1.784}
+2023-07-20 14:59:43	INFO	zap/options.go:212	finished unary call with code OK	{"grpc.start_time": "2023-07-20T14:59:43+08:00", "system": "grpc", "span.kind": "server", "grpc.service": "kob.matching.matching_system", "grpc.method": "AddUser", "peer.address": "127.0.0.1:60258", "grpc.code": "OK", "grpc.time_ms": 1.153}
+2023-07-20 14:59:47	INFO	matchutil/pool.go:59	matching success playerA:&{18 -1 1491 6}, playerB:&{19 -1 1524 4}
+2023-07-20 14:59:47	INFO	grpclog/component.go:36	[core][Channel #8 SubChannel #9] Subchannel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:59:47	INFO	grpclog/component.go:36	[core][Channel #8 SubChannel #9] Subchannel picks a new address "127.0.0.1:3003" to connect	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:59:47	INFO	grpclog/component.go:36	[core][Channel #8] Channel Connectivity change to CONNECTING	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:59:47	INFO	grpclog/component.go:36	[core][Channel #8 SubChannel #9] Subchannel Connectivity change to READY	{"system": "grpc", "grpc_log": true}
+2023-07-20 14:59:47	INFO	grpclog/component.go:36	[core][Channel #8] Channel Connectivity change to READY	{"system": "grpc", "grpc_log": true}

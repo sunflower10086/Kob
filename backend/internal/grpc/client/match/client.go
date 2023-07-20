@@ -1,7 +1,6 @@
 package match
 
 import (
-	"backend/conf/settings"
 	pb "backend/internal/grpc/client/match/pb"
 
 	"go.uber.org/zap"
@@ -12,14 +11,14 @@ import (
 
 var matchSysClient pb.MatchingSystemClient
 
-func Init(conf *settings.AppConfig) {
+func Init(endpoint string) {
 	// 连接服务器
 	var opts []grpc.DialOption
 
 	// 明文传输，不做认证
 	opts = append(opts, grpc.WithTransportCredentials(insecure.NewCredentials()))
 
-	conn, err := grpc.Dial(conf.AllServer.MatchConfig.GetAddr(), opts...)
+	conn, err := grpc.Dial(endpoint, opts...)
 	if err != nil {
 		zap.L().Error("match server net.Connect err: ", zap.Error(err))
 	}

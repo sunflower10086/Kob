@@ -1,11 +1,14 @@
 package settings
 
+import "fmt"
+
 var Conf = new(AppConfig)
 
 type AppConfig struct {
 	AllServer *AllServer   `mapstructure:"server"`
 	LogConf   *LogConfig   `mapstructure:"log"`
 	MysqlConf *MysqlConfig `mapstructure:"mysql"`
+	EtcdConf  *EtcdConfig  `mapstructure:"etcd"`
 }
 
 type AllServer struct {
@@ -18,6 +21,10 @@ type Server struct {
 	Mode string `mapstructure:"mode"`
 	Host string `mapstructure:"host"`
 	Port string `mapstructure:"port"`
+}
+
+func (s *Server) GetAddr() string {
+	return fmt.Sprintf("%s:%s", s.Host, s.Port)
 }
 
 type LogConfig struct {
@@ -37,4 +44,8 @@ type MysqlConfig struct {
 	Dbname       string `mapstructure:"dbname"`
 	MaxIdleConns int    `mapstructure:"max_idle_conns"`
 	MaxOpenConns int    `mapstructure:"max_open_conns"`
+}
+
+type EtcdConfig struct {
+	Endpoint string `mapstructure:"endpoint"`
 }

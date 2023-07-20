@@ -13,13 +13,13 @@ import (
 
 var botRunningClient pb.CodeRunClient
 
-func Init() {
+func Init(endpoint string) {
 	var opts []grpc.DialOption
 
 	opts = append(opts, grpc.WithTransportCredentials(insecure.NewCredentials()))
 
 	fmt.Println(settings.Conf.AllServer.BotRunningConfig)
-	conn, err := grpc.Dial(settings.Conf.AllServer.BotRunningConfig.Port, opts...)
+	conn, err := grpc.Dial(endpoint, opts...)
 	if err != nil {
 		log.Fatalf("net.Connect err: %v", err)
 	}
